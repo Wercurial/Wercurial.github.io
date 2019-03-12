@@ -153,7 +153,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 minutes read (About 797 words)
+                    5 minutes read (About 798 words)
                 </span>
                 
                 
@@ -167,12 +167,12 @@
         </h1>
         <div class="content">
             <h2 id="Day01"><a href="#Day01" class="headerlink" title="Day01"></a>Day01<img src="/2019/03/12/Django-Book-2-0-学习心得/天气\晴.jpg" alt></h2><h3 id="第一章-介绍Django"><a href="#第一章-介绍Django" class="headerlink" title="第一章:介绍Django"></a>第一章:介绍Django</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">前言:Django，一个可以使Web开发工作愉快并且高效的Web开发框架。 使用Django，使你能够以最小的代价构建和维护高质量的Web应用。</span><br></pre></td></tr></table></figure>
-<pre><code>为了让开发人员专注于web应用上有趣而又关键性的东西,Django应运而生。通过阅读这本书,我们将学会快速开发功能强大网站的技巧,并且我们的代码将会十分清晰,易于维护.本书的代码清晰,易维护,通过学习,可以快速开发功能强大的网站。
-</code></pre><h4 id="框架是什么"><a href="#框架是什么" class="headerlink" title="框架是什么?"></a>框架是什么?</h4><p>​    Web框架为应用程序提供了一套程序框架， 这样你可以专注于编写清晰、易维护的代码，而无需从头做起。 简单来说，这就是Django所能做的。    </p>
-<h4 id="MVC设计模式"><a href="#MVC设计模式" class="headerlink" title="MVC设计模式"></a>MVC设计模式</h4><p>​    通过使用Django来完成一个网站功能的例子： <strong>首先</strong>，我们分成4个Python的文件，(models.py ,views.py , urls.py ) 和html模板文件 (latest_books.html )。<strong>然后</strong>，不用关心语法细节；只要用心感觉整体的设计。 这里只关注分割后的几个文件：</p>
+<p>​        为了让开发人员专注于web应用上有趣而又关键性的东西,Django应运而生。通过阅读这本书,我们将学会快速开发功能强大网站的技巧,并且我们的代码将会十分清晰,易于维护.本书的代码清晰,易维护,通过学习,可以快速开发功能强大的网站。</p>
+<h4 id="框架是什么"><a href="#框架是什么" class="headerlink" title="框架是什么?"></a>框架是什么?</h4><p>​        Web框架为应用程序提供了一套程序框架， 这样你可以专注于编写清晰、易维护的代码，而无需从头做起。 简单来说，这就是Django所能做的。    </p>
+<h4 id="MVC设计模式"><a href="#MVC设计模式" class="headerlink" title="MVC设计模式"></a>MVC设计模式</h4><p>​        通过使用Django来完成一个网站功能的例子： <strong>首先</strong>，我们分成4个Python的文件，(models.py ,views.py , urls.py ) 和html模板文件 (latest_books.html )。<strong>然后</strong>，不用关心语法细节；只要用心感觉整体的设计。 这里只关注分割后的几个文件：</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1)models.py 文件主要用一个Python类来描述数据表。称为模型(model)。运用这个类，你可以通过简单的Python的代码来创建、检索、更新、删除 数据库中的记录而无需写一条又一条的SQL语句。</span><br><span class="line">2)views.py文件包含了页面的业务逻辑。latest_books()函数叫做视图。</span><br><span class="line">3)urls.py 指出了什么样的URL调用什么的视图。在这个例子中/latest/URL将会调用latest_books()这个函数。换句话说，如果你的域名是example.com，任何人浏览网址http://example.com/latest/将会调用latest_books()这个函数。</span><br><span class="line">4)latest_books.html是html模板,它描述了这个页面的设计是如何的。使用带基本逻辑声明的模板语言，如&#123;% for book in book_list %&#125;</span><br></pre></td></tr></table></figure>
-<p>​    结合起来，这些部分松散遵循的模式称为模型-视图-控制器(MVC)。 简单的说， MVC 是一种软件开发的方法，它把代码的定义和数据访问的方法（模型）与请求逻辑（控制器）还有用户接口（视图）分开来。</p>
-<p>​    <strong>这种设计模式关键的优势</strong>在于各种组件都是松散结合的。这样，每个由Django驱动 的Web应用都有着明确的目的，并且可独立更改而不影响到其它的部分。比如，开发者更改一个应用程序中的 URL 而不用影响到这个程序底层的实现。设计师可以改变 HTML 页面 的样式而不用接触 Python 代码。数据库管理员可以重新命名数据表并且只需更改一个地方，无需从一大堆文件中进行查找和替换。    </p>
+<p>​        结合起来，这些部分松散遵循的模式称为模型-视图-控制器(MVC)。 简单的说， MVC 是一种软件开发的方法，它把代码的定义和数据访问的方法（模型）与请求逻辑（控制器）还有用户接口（视图）分开来。</p>
+<p>​        <strong>这种设计模式关键的优势</strong>在于各种组件都是松散结合的。这样，每个由Django驱动 的Web应用都有着明确的目的，并且可独立更改而不影响到其它的部分。比如，开发者更改一个应用程序中的 URL 而不用影响到这个程序底层的实现。设计师可以改变 HTML 页面 的样式而不用接触 Python 代码。数据库管理员可以重新命名数据表并且只需更改一个地方，无需从一大堆文件中进行查找和替换。    </p>
 
         </div>
         
