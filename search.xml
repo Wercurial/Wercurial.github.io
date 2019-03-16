@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[python手册-学习心得]]></title>
+    <url>%2F2019%2F03%2F14%2Fpython%E6%89%8B%E5%86%8C-%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%2F</url>
+    <content type="text"><![CDATA[2019.03.14 前言：python简介1Python是一种简单的、解释型的、交互式的、可移植的、面向对象的超高级语言。Python作为一种功能强大且通用的编程语言而广受好评，它具有非常清晰的语法特点，适用于多种操作系统。 ​ Python有一个交互式的开发环境。因为Python是解释运行的，也是说Python在代码的同时就可以进行运行，从而大大节省了类似java的编译时间。另外Python语法简单，且内置了多种高级数据结构，如字典、列表等，所以使用起来就特别简单。 ​ Python具有大部分面向对象语言的特征，可完全进行面向对象编程。Python具有简单易用，可移植性强的特点，颇受众多程序员们的喜爱。它可以在MS-DOS、WIndows、WIndows NT、Linux等多种操作系统上运行。（PS：在Python学习手册这本书出版时也即2009年，Python在TIOBE开发语言排行榜上名列第七，如今2019年3月份，Python已然杀到排行榜第三的位置，且逐渐逼近老二Java） ​ 本书只是作为Python的入门级书籍，将本书学完以后，可以继续学习轻量级书籍《Programming Python》或者《Python Pocket Reference》，那本书提供了更强大并且更完整的例子，还有应用程序编程技巧的教程。]]></content>
+      <tags>
+        <tag>study for python手册</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Django Book 2.0 学习心得(二)]]></title>
+    <url>%2F2019%2F03%2F13%2FDjango-Book-2-0-%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97-%E4%BA%8C%2F</url>
+    <content type="text"><![CDATA[2019.03.13第三章:视图和URL配置​ 前一章学习了如果创建一个Django项目并启动Django开发服务器。在这一章我们将学习使用Django创建动态网页的基本知识。]]></content>
+      <tags>
+        <tag>study for django</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Django Book 2.0 学习心得]]></title>
+    <url>%2F2019%2F03%2F12%2FDjango-Book-2-0-%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%2F</url>
+    <content type="text"><![CDATA[2019.03.12第一章:介绍Django1前言:Django，一个可以使Web开发工作愉快并且高效的Web开发框架。 使用Django，使你能够以最小的代价构建和维护高质量的Web应用。 ​ 为了让开发人员专注于web应用上有趣而又关键性的东西,Django应运而生。通过阅读这本书,我们将学会快速开发功能强大网站的技巧,并且我们的代码将会十分清晰,易于维护.本书的代码清晰,易维护,通过学习,可以快速开发功能强大的网站。 框架是什么?​ Web框架为应用程序提供了一套程序框架， 这样你可以专注于编写清晰、易维护的代码，而无需从头做起。 简单来说，这就是Django所能做的。 MVC设计模式​ 通过使用Django来完成一个网站功能的例子： 首先，我们分成4个Python的文件，(models.py ,views.py , urls.py ) 和html模板文件 (latest_books.html )。然后，不用关心语法细节；只要用心感觉整体的设计。 这里只关注分割后的几个文件： 12341)models.py 文件主要用一个Python类来描述数据表。称为模型(model)。运用这个类，你可以通过简单的Python的代码来创建、检索、更新、删除 数据库中的记录而无需写一条又一条的SQL语句。2)views.py文件包含了页面的业务逻辑。latest_books()函数叫做视图。3)urls.py 指出了什么样的URL调用什么的视图。在这个例子中/latest/URL将会调用latest_books()这个函数。换句话说，如果你的域名是example.com，任何人浏览网址http://example.com/latest/将会调用latest_books()这个函数。4)latest_books.html是html模板,它描述了这个页面的设计是如何的。使用带基本逻辑声明的模板语言，如&#123;% for book in book_list %&#125; ​ 结合起来，这些部分松散遵循的模式称为模型-视图-控制器(MVC)。 简单的说， MVC 是一种软件开发的方法，它把代码的定义和数据访问的方法（模型）与请求逻辑（控制器）还有用户接口（视图）分开来。 ​ 这种设计模式关键的优势在于各种组件都是松散结合的。这样，每个由Django驱动 的Web应用都有着明确的目的，并且可独立更改而不影响到其它的部分。比如，开发者更改一个应用程序中的 URL 而不用影响到这个程序底层的实现。设计师可以改变 HTML 页面 的样式而不用接触 Python 代码。数据库管理员可以重新命名数据表并且只需更改一个地方，无需从一大堆文件中进行查找和替换。 Django历史12345678如果你曾编写过网络应用程序。 那么你很有可能熟悉之前我们的 CGI 例子。1. 从头开始编写网络应用程序。2. 从头编写另一个网络应用程序。3. 从第一步中总结（找出其中通用的代码），并运用在第二步中。4. 重构代码使得能在第 2 个程序中使用第 1 个程序中的通用代码。5. 重复 2-4 步骤若干次。6. 意识到你发明了一个框架。这正是为什么 Django 建立的原因！ 第二章:入门Django和Python版本对应: ​ 最新最好的django的开发版本称为trunk,可以从django的subversion处获得。如果你想尝鲜，或者想为django贡献代码，那么你应当安装这个版本。]]></content>
+      <tags>
+        <tag>study for django</tag>
+      </tags>
+  </entry>
+</search>
