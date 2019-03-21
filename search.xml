@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[python技术点]]></title>
     <url>%2F2019%2F03%2F20%2Fpython%E6%8A%80%E6%9C%AF%E7%82%B9%2F</url>
-    <content type="text"><![CDATA[前言1本篇博文并无特定知识点，仅用作记录工作学习中遇到的问题，知识积累 一、装饰器装饰器的作用就是在不改变原有函数代码结构，功能的前提下增加新的功能。主要用途有： 123①缓存②重试③兼容旧版参数 二、Pycharm新建文件时自动导入utf-8按图示设置即可 1# *_*coding:utf-8 *_*]]></content>
+    <content type="text"><![CDATA[前言1本篇博文并无特定知识点，仅用作记录工作学习中遇到的问题，知识积累 一、装饰器装饰器的作用就是在不改变原有函数代码结构，功能的前提下增加新的功能。主要用途有： 123①缓存②重试③兼容旧版参数 二、Pycharm新建文件时文件第一行自动加上导入utf-8语句按图示设置即可 1# *_*coding:utf-8 *_*]]></content>
       <categories>
         <category>Python</category>
       </categories>
