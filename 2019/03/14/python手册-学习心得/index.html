@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="白小白 的 Cat">
 <meta property="og:description" content="前言：python简介1Python是一种简单的、解释型的、交互式的、可移植的、面向对象的超高级语言。Python作为一种功能强大且通用的编程语言而广受好评，它具有非常清晰的语法特点，适用于多种操作系统。 ​    Python有一个交互式的开发环境。因为Python是解释运行的，也是说Python在代码的同时就可以进行运行，从而大大节省了类似java的编译时间。另外Python语法简单，且内置了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-18T06:39:56.465Z">
+<meta property="og:updated_time" content="2019-03-21T07:02:49.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python手册-学习心得">
 <meta name="twitter:description" content="前言：python简介1Python是一种简单的、解释型的、交互式的、可移植的、面向对象的超高级语言。Python作为一种功能强大且通用的编程语言而广受好评，它具有非常清晰的语法特点，适用于多种操作系统。 ​    Python有一个交互式的开发环境。因为Python是解释运行的，也是说Python在代码的同时就可以进行运行，从而大大节省了类似java的编译时间。另外Python语法简单，且内置了">
@@ -380,7 +380,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  986
+                  1.4k
                 </span>
               
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -425,7 +425,7 @@
 <p><strong>②提高开发者效率</strong>：首先要声明的是Python属于解释型语言，相对于C、C++和Java等编译/静态类型语言，Python的开发者效率提高了数倍。Python代码的大小往往也只有C++或Java的1/5~1/3。这就意味者开发时，Python代码就相对较少，维护时就更不用说了。并且Python这种解释型语言的特性是开发时就可以立即运行的，进一步提高了程序员的开发效率。</p>
 <p><strong>③程序的可移植性</strong>：绝大多数的Python的程序不做任何改变即可在所有主流计算机平台上运行。例如，在Linux和WIndows之间移植Python代码，只需简单地在机器间复制代码即可立即运行。</p>
 <p><strong>④标准库的支持</strong>：Python内置了众多预编译并可移植的功能模块，这些功能模块叫做标准库（standard library）。标准库支持一系列应用级的编程任务。Python的第三方支持工具包括网站开发、数值计算、串口读写、游戏开发等各个方面。</p>
-<p><strong>⑤组件集成</strong>：Python脚本可通过灵活的集成机制轻松地与应用程序的其他部分进行通信。这种集成使得Python成为产品定制和扩展的工具。Python绝不仅仅是一个多里的工具。</p>
+<p><strong>⑤组件集成</strong>：Python脚本可通过灵活的集成机制轻松地与应用程序的其他部分进行通信。这种集成使得Python成为产品定制和扩展的工具。Python绝不仅仅是一个独立的工具。</p>
 <p><strong>⑥享受乐趣</strong>：Python的易用性和强大内置工具使编程成为一种乐趣而不是琐碎的重复劳动。</p>
 <h4 id="（二）Python的缺点"><a href="#（二）Python的缺点" class="headerlink" title="（二）Python的缺点"></a>（二）Python的缺点</h4><p>与编译语言相比较，Python的执行速度还不够快。</p>
 <h4 id="（三）使用Python可以做些什么"><a href="#（三）使用Python可以做些什么" class="headerlink" title="（三）使用Python可以做些什么"></a>（三）使用Python可以做些什么</h4><p>①系统编程</p>
@@ -443,6 +443,13 @@
 <p>⑤可混合</p>
 <p>⑥简单易用</p>
 <p>⑦简单易学</p>
+<h2 id="第二章-Python如何运行程序"><a href="#第二章-Python如何运行程序" class="headerlink" title="第二章:Python如何运行程序"></a>第二章:Python如何运行程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本章和下一章将给出程序执行的简要说明:应该如何开始编写代码以及Python如何运行代码。</span><br></pre></td></tr></table></figure>
+<h4 id="Python的视角"><a href="#Python的视角" class="headerlink" title="Python的视角"></a>Python的视角</h4><p>当Python运行脚本时,在代码开始进行处理之前,Python还会执行一些步骤。确切地说,第一步是编译成所谓的’字节码’,之后将其转发到所谓的’虚拟机’中。</p>
+<p>####　字节码编译</p>
+<p>当程序执行时，Python内部(对大多数用户是完全隐藏的)会先将源代码(文件中的语句)编译成所谓字节码的形式。相对于文本文件中原始的代码语句,字节码的运行速度要快很多。</p>
+<p>如果Python进程在机器上拥有写入权限,那么它将把程序的字节码保存为一个以.pyc为扩展名的文件(“.pyc”就是编译过的”.py” 源代码)。当程序运行以后，我们将会在源代码的同级目录下看到这些.pyc文件。</p>
+<p>Python这样保存字节码是作为一种启动速度的优化。下一次运行程序时,如果上次运行程序以后没有进行修改代码操作的话,Python将会直接加载.pyc的文件即跳过编译步骤。当Python必须重编译时,它会自动检查源文件和字节码文件的时间戳:如果你又保存了源代码,下次程序运行时,字节码将重新创建。</p>
+<p>字节码文件同样是分发Python程序的方法之一:如果Python找到的都是.pyc文件,它也很乐意运行这个程序,尽管没有原始的.py源文件。</p>
 <h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
       
     </div>
@@ -622,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言：python简介"><span class="nav-number">1.</span> <span class="nav-text">前言：python简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-问答环节"><span class="nav-number">2.</span> <span class="nav-text">第一章:问答环节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）人们为何使用Python"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）人们为何使用Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）Python的缺点"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）Python的缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）使用Python可以做些什么"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）使用Python可以做些什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）Python有哪些技术上的优点"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）Python有哪些技术上的优点</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#未完待续"><span class="nav-number"></span> <span class="nav-text">未完待续</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言：python简介"><span class="nav-number">1.</span> <span class="nav-text">前言：python简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-问答环节"><span class="nav-number">2.</span> <span class="nav-text">第一章:问答环节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）人们为何使用Python"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）人们为何使用Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）Python的缺点"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）Python的缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）使用Python可以做些什么"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）使用Python可以做些什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）Python有哪些技术上的优点"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）Python有哪些技术上的优点</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-Python如何运行程序"><span class="nav-number">3.</span> <span class="nav-text">第二章:Python如何运行程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python的视角"><span class="nav-number">3.0.1.</span> <span class="nav-text">Python的视角</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未完待续"><span class="nav-number"></span> <span class="nav-text">未完待续</span></a></li></div>
             
 
           </div>
@@ -661,7 +668,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
 
-    <span title="Site words total count">2.3k</span>
+    <span title="Site words total count">2.8k</span>
   
 </div>
 
