@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="白小白 的 Cat">
 <meta property="og:description" content="前言：python简介1Python是一种简单的、解释型的、交互式的、可移植的、面向对象的超高级语言。Python作为一种功能强大且通用的编程语言而广受好评，它具有非常清晰的语法特点，适用于多种操作系统。 ​    Python有一个交互式的开发环境。因为Python是解释运行的，也是说Python在代码的同时就可以进行运行，从而大大节省了类似java的编译时间。另外Python语法简单，且内置了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-21T12:39:44.701Z">
+<meta property="og:updated_time" content="2019-03-22T10:50:46.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python手册-学习心得">
 <meta name="twitter:description" content="前言：python简介1Python是一种简单的、解释型的、交互式的、可移植的、面向对象的超高级语言。Python作为一种功能强大且通用的编程语言而广受好评，它具有非常清晰的语法特点，适用于多种操作系统。 ​    Python有一个交互式的开发环境。因为Python是解释运行的，也是说Python在代码的同时就可以进行运行，从而大大节省了类似java的编译时间。另外Python语法简单，且内置了">
@@ -380,7 +380,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.7k
+                  2.1k
                 </span>
               
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  7
                 </span>
               
             </div>
@@ -445,15 +445,22 @@
 <p>⑦简单易学</p>
 <h2 id="第二章-Python如何运行程序"><a href="#第二章-Python如何运行程序" class="headerlink" title="第二章:Python如何运行程序"></a>第二章:Python如何运行程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本章和下一章将给出程序执行的简要说明:应该如何开始编写代码以及Python如何运行代码。</span><br></pre></td></tr></table></figure>
 <h4 id="Python的视角"><a href="#Python的视角" class="headerlink" title="Python的视角"></a>Python的视角</h4><p>当Python运行脚本时,在代码开始进行处理之前,Python还会执行一些步骤。确切地说,第一步是编译成所谓的’字节码’,之后将其转发到所谓的’虚拟机’中。</p>
-<p>####　字节码编译</p>
-<p>当程序执行时，Python内部(对大多数用户是完全隐藏的)会先将源代码(文件中的语句)编译成所谓字节码的形式。相对于文本文件中原始的代码语句,字节码的运行速度要快很多。</p>
+<h4 id="字节码编译"><a href="#字节码编译" class="headerlink" title="字节码编译"></a>字节码编译</h4><p>当程序执行时，Python内部(对大多数用户是完全隐藏的)会先将源代码(文件中的语句)编译成所谓字节码的形式。相对于文本文件中原始的代码语句,字节码的运行速度要快很多。</p>
 <p>如果Python进程在机器上拥有写入权限,那么它将把程序的字节码保存为一个以.pyc为扩展名的文件(“.pyc”就是编译过的”.py” 源代码)。当程序运行以后，我们将会在源代码的同级目录下看到这些.pyc文件。</p>
 <p>Python这样保存字节码是作为一种启动速度的优化。下一次运行程序时,如果上次运行程序以后没有进行修改代码操作的话,Python将会直接加载.pyc的文件即跳过编译步骤。当Python必须重编译时,它会自动检查源文件和字节码文件的时间戳:如果你又保存了源代码,下次程序运行时,字节码将重新创建。</p>
 <p>字节码文件同样是分发Python程序的方法之一:如果Python找到的都是.pyc文件,它也很乐意运行这个程序,尽管没有原始的.py源文件。</p>
 <h4 id="Python虚拟机-PVM"><a href="#Python虚拟机-PVM" class="headerlink" title="Python虚拟机(PVM)"></a>Python虚拟机(PVM)</h4><p>一旦程序编译成字节码(或者从已经编译好的.pyc文件中载入),之后的字节码会发送到Python虚拟机(Python Virtual Machine)上执行。PVM不是一个独立的程序,不需要安装。它是Python的运行引擎,是Python中实际运行脚本的组件。从技术层面考虑,它才是所谓”Python解释器”的最后一步。</p>
 <h4 id="性能的含义"><a href="#性能的含义" class="headerlink" title="性能的含义"></a>性能的含义</h4><p>Python与C和C++这类完全编译语言不同之处在于,Python是代码写好之后立即运行。另外一个就是,上文提到的字节码仅仅是特定于Python的一种表现形式,并不是机器的二进制代码。</p>
 <p>这就是Python代码无法运行的像C或C++代码一样快的原因:PVM循环仍需要解释字节码,并且字节码指令与CPU指令相比需要更多的工作。</p>
-<h4 id="开发的含义"><a href="#开发的含义" class="headerlink" title="开发的含义"></a>开发的含义</h4><h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
+<h4 id="开发的含义"><a href="#开发的含义" class="headerlink" title="开发的含义"></a>开发的含义</h4><p>Python执行模块的另一个情况是其开发和执行的环境实际上并没有区别。也就是说,编译和执行源代码是同一个系统。编译器总是在运行时出现,并且是运行程序系统的一部分。</p>
+<p>这使得开发周期大大缩短。在程序开始执行之前不需要预编译和连接,只需要简单输入并运行代码即可。这同样使Python具有更多的动态语言特性。</p>
+<h4 id="执行模块的变体"><a href="#执行模块的变体" class="headerlink" title="执行模块的变体"></a>执行模块的变体</h4><p>略</p>
+<h4 id="Python实现的替代者"><a href="#Python实现的替代者" class="headerlink" title="Python实现的替代者"></a>Python实现的替代者</h4><p>在该书编写过程中,Python语言主要有三种实现方式(CPython、JPython和Ironpython)以及一些次要的实现方式,例如Stackless Python。简要的说,CPython是标准的实现,其他的都是有特定的目标和角色的。</p>
+<h5 id="CPython"><a href="#CPython" class="headerlink" title="CPython"></a>CPython</h5><p>和python的其他两种实现方式对比，原始的、标准的python实现方式通常称作CPython。这个名字根据它是由可移植的ANSI C语言代码编写而成的这个事实而来的。</p>
+<h5 id="Jython"><a href="#Jython" class="headerlink" title="Jython"></a>Jython</h5><p>Jython系统(最初称为JPython)是一种Python语言的替代实现方式,其目的是为了与Java编程语言集成。Jython包含了Java类,这些类编译了Python源代码、形成Java字节码,并将得到的字节码映射到Java虚拟机(JVM)上。</p>
+<p>Jython的目的是让Python代码能够脚本化java应用程序,他实现了与java的无缝集成。但是Jython要比CPython慢而且也不够健壮,它往往被看做是一种有趣的工具。</p>
+<h5 id="Ironpython"><a href="#Ironpython" class="headerlink" title="Ironpython"></a>Ironpython</h5><p>Python的第三种实现方式（比前两种都要新），其目的是让python程序可以与windows平台的.NET框架以及与之对应的Linux上开源的Mono编程写的应用相集成。效果大体等同于Jython。</p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
       
     </div>
     
@@ -632,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言：python简介"><span class="nav-number">1.</span> <span class="nav-text">前言：python简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-问答环节"><span class="nav-number">2.</span> <span class="nav-text">第一章:问答环节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）人们为何使用Python"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）人们为何使用Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）Python的缺点"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）Python的缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）使用Python可以做些什么"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）使用Python可以做些什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）Python有哪些技术上的优点"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）Python有哪些技术上的优点</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-Python如何运行程序"><span class="nav-number">3.</span> <span class="nav-text">第二章:Python如何运行程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python的视角"><span class="nav-number">3.0.1.</span> <span class="nav-text">Python的视角</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python虚拟机-PVM"><span class="nav-number">3.0.2.</span> <span class="nav-text">Python虚拟机(PVM)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#性能的含义"><span class="nav-number">3.0.3.</span> <span class="nav-text">性能的含义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发的含义"><span class="nav-number">3.0.4.</span> <span class="nav-text">开发的含义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未完待续"><span class="nav-number"></span> <span class="nav-text">未完待续</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言：python简介"><span class="nav-number">1.</span> <span class="nav-text">前言：python简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-问答环节"><span class="nav-number">2.</span> <span class="nav-text">第一章:问答环节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）人们为何使用Python"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）人们为何使用Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）Python的缺点"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）Python的缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（三）使用Python可以做些什么"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）使用Python可以做些什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（四）Python有哪些技术上的优点"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）Python有哪些技术上的优点</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-Python如何运行程序"><span class="nav-number">3.</span> <span class="nav-text">第二章:Python如何运行程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python的视角"><span class="nav-number">3.0.1.</span> <span class="nav-text">Python的视角</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字节码编译"><span class="nav-number">3.0.2.</span> <span class="nav-text">字节码编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python虚拟机-PVM"><span class="nav-number">3.0.3.</span> <span class="nav-text">Python虚拟机(PVM)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#性能的含义"><span class="nav-number">3.0.4.</span> <span class="nav-text">性能的含义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发的含义"><span class="nav-number">3.0.5.</span> <span class="nav-text">开发的含义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#执行模块的变体"><span class="nav-number">3.0.6.</span> <span class="nav-text">执行模块的变体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python实现的替代者"><span class="nav-number">3.0.7.</span> <span class="nav-text">Python实现的替代者</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CPython"><span class="nav-number">3.0.7.1.</span> <span class="nav-text">CPython</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Jython"><span class="nav-number">3.0.7.2.</span> <span class="nav-text">Jython</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Ironpython"><span class="nav-number">3.0.7.3.</span> <span class="nav-text">Ironpython</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未完待续"><span class="nav-number"></span> <span class="nav-text">未完待续</span></a></li></div>
             
 
           </div>
@@ -671,7 +678,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
 
-    <span title="Site words total count">3k</span>
+    <span title="Site words total count">3.5k</span>
   
 </div>
 
