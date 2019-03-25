@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[终端天下之Linux]]></title>
     <url>%2F2019%2F03%2F25%2F%E7%BB%88%E7%AB%AF%E5%A4%A9%E4%B8%8B%E4%B9%8BLinux%2F</url>
-    <content type="text"><![CDATA[linux基本命令收录（本文指令均在基于Linux的Deepin系统下验证收集）1Linux相对于Windows来说，最独特的魅力大概就在于，一个终端走天下了吧，所以就在网上搜集了各式各样的终端命令，从此开启一场咩有硝烟的江湖之路～ 一、文件及目录操作12345cd /home 切换到‘/home’目录下cd .. 返回到当前目录的上一级目录cd ../.. 返回到当前目录的上两级目录cd 切换到当前用户的主目录cd ~&quot;用户名“ 切换到指定用户名主目录]]></content>
+    <content type="text"><![CDATA[linux基本命令收录（本文指令均在基于Linux的Deepin系统下验证收集）1Linux相对于Windows来说，最独特的魅力大概就在于，一手终端行天下了吧，所以就在网上搜集了各式各样的终端命令，从此开启一场咩有硝烟的江湖之路～ 一、文件及目录操作12345cd /home 切换到‘/home’目录下cd .. 返回到当前目录的上一级目录cd ../.. 返回到当前目录的上两级目录cd 切换到当前用户的主目录cd ~&quot;用户名“ 切换到指定用户名主目录 未完待续哦～]]></content>
       <categories>
         <category>Linux</category>
       </categories>
