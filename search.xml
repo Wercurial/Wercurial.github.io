@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[终端天下之Linux]]></title>
     <url>%2F2019%2F03%2F25%2F%E7%BB%88%E7%AB%AF%E5%A4%A9%E4%B8%8B%E4%B9%8BLinux%2F</url>
-    <content type="text"><![CDATA[linux基本命令收录（本文指令均在基于Linux的Deepin系统下验证收集）1Linux相对于Windows来说，最独特的魅力大概就在于，一手终端行天下了吧，所以就在网上搜集了各式各样的终端命令，从此开启一场咩有硝烟的江湖之路～ 一、文件及目录操作12345cd /home 切换到‘/home’目录下cd .. 返回到当前目录的上一级目录cd ../.. 返回到当前目录的上两级目录cd 切换到当前用户的主目录cd ~&quot;用户名“ 切换到指定用户名主目录 未完待续哦～]]></content>
+    <content type="text"><![CDATA[linux基本命令收录（本文指令均在基于Linux的Deepin系统下验证收集）1Linux相对于Windows来说，最独特的魅力大概就在于，一手终端行天下了吧，所以就在网上搜集了各式各样的终端命令，从此开启一场咩有硝烟的江湖之路～ 一、文件及目录操作12345678910111213141516cd /home 切换到‘/home’目录下cd .. 返回到当前目录的上一级目录cd ../.. 返回到当前目录的上两级目录cd 切换到当前用户的主目录cd ~&quot;用户名“ 切换到指定用户名主目录cd - 切换到上次所在目录pwd 显示当前工作路径ls 查看当前目录中的文件ls -a 查看当前目录中的文件（包含隐藏文件.或..）ls -al 同上条指令（+：以列表形式显示文件和目录的详细资料)ls -alh 同上条指令(+: 将文件大小以更直观的形式展示出来)ls *[0-9]* 将名称中包含数字的文件或目录展示出来tree 显示文件和目录由根目录开始的树形结构（deepin系统需sudo apt-get install tree安装tree命令)mkdir xxx 创建一个名为xxx的目录mkdir xx1 xx2 同时创建两个目录mkdir -p xx/xx1/xx2 在当前目录下创建一个目录树 未完待续哦～]]></content>
       <categories>
         <category>Linux</category>
       </categories>
