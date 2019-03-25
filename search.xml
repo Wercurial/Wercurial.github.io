@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[终端天下之Linux]]></title>
+    <url>%2F2019%2F03%2F25%2F%E7%BB%88%E7%AB%AF%E5%A4%A9%E4%B8%8B%E4%B9%8BLinux%2F</url>
+    <content type="text"><![CDATA[linux基本命令收录（本文指令均在基于Linux的Deepin系统下验证收集）1Linux相对于Windows来说，最独特的魅力大概就在于，一个终端走天下了吧，所以就在网上搜集了各式各样的终端命令，从此开启一场咩有硝烟的江湖之路～ 一、文件及目录操作12345cd /home 切换到‘/home’目录下cd .. 返回到当前目录的上一级目录cd ../.. 返回到当前目录的上两级目录cd 切换到当前用户的主目录cd ~&quot;用户名“ 切换到指定用户名主目录]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python技术点]]></title>
     <url>%2F2019%2F03%2F20%2Fpython%E6%8A%80%E6%9C%AF%E7%82%B9%2F</url>
     <content type="text"><![CDATA[前言1本篇博文并无特定知识点，仅用作记录工作学习中遇到的问题，知识积累 一、装饰器装饰器的作用就是在不改变原有函数代码结构，功能的前提下增加新的功能。主要用途有： 123①缓存②重试③兼容旧版参数 二、Pycharm新建文件时文件第一行自动加上导入utf-8语句按图示设置即可 1# *_*coding:utf-8 *_* 三、Python 性能提升小技巧python性能提升小技巧可参考该博文https://www.cnblogs.com/taceywong/p/5773220.html]]></content>
