@@ -556,7 +556,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  149
+                  289
                 </span>
               
 
@@ -602,6 +602,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># *_*coding:utf-8 *_*</span><br></pre></td></tr></table></figure>
 <p><img src="/2019/03/20/python技术点/pycharm.jpg" alt></p>
 <h4 id="三、Python-性能提升小技巧"><a href="#三、Python-性能提升小技巧" class="headerlink" title="三、Python 性能提升小技巧"></a>三、<a href="https://www.cnblogs.com/taceywong/p/5773220.html" target="_blank" rel="noopener">Python 性能提升小技巧</a></h4><p>python性能提升小技巧可参考该博文<a href="https://www.cnblogs.com/taceywong/p/5773220.html" target="_blank" rel="noopener">https://www.cnblogs.com/taceywong/p/5773220.html</a></p>
+<h4 id="四、Pandas之Dateframe-实现Excel读取与写入"><a href="#四、Pandas之Dateframe-实现Excel读取与写入" class="headerlink" title="四、Pandas之Dateframe 实现Excel读取与写入"></a>四、Pandas之Dateframe 实现Excel读取与写入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">目的：该模块可以实现将导出至Excel，方便数据的直观显现；或数据从Excel导入到程序中，方便操作</span><br></pre></td></tr></table></figure>
+<p>1、从Excel读取（ 需安装xlrd库）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line"></span><br><span class="line">pd.read_excel(&quot;test.xlsx&quot;,&apos;sheet1&apos;)  # 该文件路径为当前py程序路径</span><br></pre></td></tr></table></figure>
+<p>2、导出Excel文件（需安装openpyxl库- pip install openpyxl）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line"></span><br><span class="line">df.to_excel(&apos;test.xlsx&apos;,index=False)</span><br><span class="line"> *index：是否隐藏索引，df为二维数据</span><br></pre></td></tr></table></figure>
+<p> <strong>注意</strong>:使用pandas_DateFrame数据为二维数组</p>
 
           
         
@@ -1339,7 +1345,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
 
-    <span title="Site words total count">4.4k</span>
+    <span title="Site words total count">4.6k</span>
   
 </div>
 
