@@ -1934,7 +1934,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff533b;
+  background: #e3300b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3032,4 +3032,119 @@ hr {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+.header {
+  background: url("/images/header-bk.jpg");
+}
+.site-meta {
+  float: none;
+}
+.menu {
+  float: none;
+}
+.logo-line-before,
+.logo-line-after {
+  display: none;
+}
+.menu .menu-item a {
+  font-size: 14px;
+  color: #0f2e41;
+  border-radius: 4px;
+}
+.site-meta {
+  margin-left: 0px;
+  text-align: center;
+}
+.site-meta .site-title {
+  font-size: 28px;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #fff;
+}
+.sidebar {
+  background: url("/images/sider-bk.jpg");
+}
+.site-author-name {
+  margin: 48px 0 0;
+  color: #090;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+.links-of-blogroll {
+  font-size: 14px;
+  margin-bottom: 42px;
+}
+.links-of-author {
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+.sidebar-inner {
+  color: #ffd700;
+}
+.sidebar {
+  box-shadow: inset 2px 2px 40px #bdb2b2;
+}
+.sidebar a {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+  border-bottom: none;
+}
+.sidebar a:hover {
+  color: #0c0b0b;
+}
+.site-state-item {
+  display: inline-block;
+  padding: 8px 28px;
+  border-left: 1px solid #ffd700;
+}
+.sidebar-nav .sidebar-nav-active {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+}
+.sidebar-nav li:hover {
+  color: #0c0b0b;
+}
+.sidebar-toggle {
+  background: #0ff;
+}
+.back-to-top {
+  background: #0ff;
+}
+.post-toc .nav .active>a {
+  color: #4f7e96;
+}
+.post-toc ol a:hover {
+  color: #7784ba;
+}
+.sidebar-nav .sidebar-nav-active:hover {
+  color: #37596c;
+}
+a {
+  border-bottom: none;
+}
+.post-button {
+  margin-top: 30px;
+  text-align: center;
+}
+.post-button .btn {
+  color: #fff;
+  font-size: 15px;
+  background: #686868;
+  border-radius: 16px;
+  line-height: 2;
+  margin: 0 4px 8px 4px;
+  padding: 0 20px;
+}
+.post-button a {
+  border-bottom: 1px solid #666;
+}
+.post-button a:hover {
+  color: #7784ba;
+}
+.footer {
+  background: none;
+  font-size: 16px;
+}
+.footer-inner {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  color: #4c618f;
 }
