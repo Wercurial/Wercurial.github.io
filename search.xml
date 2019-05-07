@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[HEXO+github搭建个人博客]]></title>
+    <url>%2F2019%2F05%2F07%2FHEXO-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[基于HEXO的NEXT主题博客搭建一、]]></content>
+      <categories>
+        <category>IT</category>
+      </categories>
+      <tags>
+        <tag>HEXO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Docker学习心得]]></title>
     <url>%2F2019%2F04%2F08%2FDocker%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%2F</url>
     <content type="text"><![CDATA[Docker一、Docker与OpenStack对比]]></content>
