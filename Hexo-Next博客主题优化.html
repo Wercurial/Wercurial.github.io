@@ -103,18 +103,23 @@
 
 
 
-<meta name="description" content="Next博客主题优化">
+<meta name="description" content="Next博客主题优化一、前言说实话,写到这里的时候,我的内心是崩溃的ε=(´ο｀*)))唉(因为就在一个小时以前,我刚刚把这篇博文写的差不多了,想着叉掉,下次再写,蓝鹅叉掉以后,内容就不见了,也不知道是忘记保存了,还是咋的了,咱也不敢问) 自从搞了hexo博客以后,在博客优化上面是越走越远,怕走的太远,忘记了回头的路,遂写此博文,优化手段基本百度,少许加了自己的思路,有更有趣思路的盆友可以一起交流">
 <meta name="keywords" content="HEXO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Next博客主题优化">
 <meta property="og:url" content="http://5jp.top/Hexo-Next博客主题优化.html">
 <meta property="og:site_name" content="白小白 的 Cat">
-<meta property="og:description" content="Next博客主题优化">
+<meta property="og:description" content="Next博客主题优化一、前言说实话,写到这里的时候,我的内心是崩溃的ε=(´ο｀*)))唉(因为就在一个小时以前,我刚刚把这篇博文写的差不多了,想着叉掉,下次再写,蓝鹅叉掉以后,内容就不见了,也不知道是忘记保存了,还是咋的了,咱也不敢问) 自从搞了hexo博客以后,在博客优化上面是越走越远,怕走的太远,忘记了回头的路,遂写此博文,优化手段基本百度,少许加了自己的思路,有更有趣思路的盆友可以一起交流">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-10T08:38:07.714Z">
+<meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/1.jpg">
+<meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/2.jpg">
+<meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/3.jpg">
+<meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/4.jpg">
+<meta property="og:updated_time" content="2019-05-10T09:07:37.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Next博客主题优化">
-<meta name="twitter:description" content="Next博客主题优化">
+<meta name="twitter:description" content="Next博客主题优化一、前言说实话,写到这里的时候,我的内心是崩溃的ε=(´ο｀*)))唉(因为就在一个小时以前,我刚刚把这篇博文写的差不多了,想着叉掉,下次再写,蓝鹅叉掉以后,内容就不见了,也不知道是忘记保存了,还是咋的了,咱也不敢问) 自从搞了hexo博客以后,在博客优化上面是越走越远,怕走的太远,忘记了回头的路,遂写此博文,优化手段基本百度,少许加了自己的思路,有更有趣思路的盆友可以一起交流">
+<meta name="twitter:image" content="http://5jp.top/Hexo-Next博客主题优化/1.jpg">
 
 
 
@@ -407,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  7
+                  442
                 </span>
               
 
@@ -444,7 +449,20 @@
       
 
       
-        <h2 id="Next博客主题优化"><a href="#Next博客主题优化" class="headerlink" title="Next博客主题优化"></a>Next博客主题优化</h2>
+        <h2 id="Next博客主题优化"><a href="#Next博客主题优化" class="headerlink" title="Next博客主题优化"></a>Next博客主题优化</h2><h4 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h4><p>说实话,写到这里的时候,我的内心是崩溃的ε=(´ο｀*)))唉(因为就在一个小时以前,我刚刚把这篇博文写的差不多了,想着叉掉,下次再写,蓝鹅叉掉以后,内容就不见了,也不知道是忘记保存了,还是咋的了,咱也不敢问)</p>
+<p>自从搞了hexo博客以后,在博客优化上面是越走越远,怕走的太远,忘记了回头的路,遂写此博文,优化手段基本百度,少许加了自己的思路,有更有趣思路的盆友可以一起交流ヾ(❀^ω^)ﾉﾞ</p>
+<h4 id="二、关于本地图片上传网页后突然不显示问题"><a href="#二、关于本地图片上传网页后突然不显示问题" class="headerlink" title="二、关于本地图片上传网页后突然不显示问题"></a>二、关于本地图片上传网页后突然不显示问题</h4><p>(1)首先我的图片上传基于npm install hexo-asset-image –save(具体实现请君自行百度)</p>
+<p>(2)本来嘛,写好博文,上传,按部就班,图片显示都是没毛病滴,忽然有一天,想着搞个seo优化,让咱博客也能被搜索引擎搜到,遂搞之,蓝鹅优化后(Ps:后分析,主要问题出现在url优化上),图片就挂掉了,显示不出来,百度许久,发现可能是图片路径变了,又在本地查找,发现图片路径应该使用渲染后的图片路径,而不是本地md文件的路径</p>
+<p>(3)改后改前效果对比:</p>
+<p><img src="/Hexo-Next博客主题优化\1.jpg" alt></p>
+<p>渲染后图片路径展示:</p>
+<p><img src="/Hexo-Next博客主题优化\2.jpg" alt></p>
+<p>改后.md文件插入图片展示:</p>
+<p><img src="/Hexo-Next博客主题优化\3.jpg" alt></p>
+<p>改后,博客上传网页显示,没问题,但是本地编写.md文件时,不能实时显示图片了,暂时没有更好的解决思路,以上</p>
+<h4 id="三、博客顶部随机语句实现-调用木芽一言api"><a href="#三、博客顶部随机语句实现-调用木芽一言api" class="headerlink" title="三、博客顶部随机语句实现(调用木芽一言api)"></a>三、博客顶部随机语句实现(调用木芽一言api)</h4><p>(1)效果展示:</p>
+<p><img src="/Hexo-Next博客主题优化\4.jpg" alt></p>
+
       
     </div>
     
@@ -675,7 +693,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Next博客主题优化"><span class="nav-number">1.</span> <span class="nav-text">Next博客主题优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Next博客主题优化"><span class="nav-number">1.</span> <span class="nav-text">Next博客主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、前言"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、关于本地图片上传网页后突然不显示问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、关于本地图片上传网页后突然不显示问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、博客顶部随机语句实现-调用木芽一言api"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、博客顶部随机语句实现(调用木芽一言api)</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -714,7 +732,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
 
-    <span title="Site words total count">6.3k</span>
+    <span title="Site words total count">6.7k</span>
   
 </div>
 
