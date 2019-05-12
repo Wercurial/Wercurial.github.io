@@ -876,6 +876,28 @@ setInterval("createtime()",250);
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="/js/src/valine.js"></script>  
+
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wrz0mMYpfTkL09Fjvm8hkzX7-gzGzoHsz',
+        appKey: '71WcGfN0YubXc3K3mwoczECk',
+        placeholder: 'ヾﾉ≧∀≦)o欢迎五湖四海的盆友们一起交流~~~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
