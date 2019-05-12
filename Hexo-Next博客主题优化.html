@@ -120,7 +120,8 @@
 <meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/7.jpg">
 <meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/8.jpg">
 <meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/9.jpg">
-<meta property="og:updated_time" content="2019-05-12T02:40:44.507Z">
+<meta property="og:image" content="http://5jp.top/Hexo-Next博客主题优化/10.jpg">
+<meta property="og:updated_time" content="2019-05-12T03:55:41.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Next博客主题优化">
 <meta name="twitter:description" content="Next博客主题优化一、前言说实话,写到这里的时候,我的内心是崩溃的ε=(´ο｀*)))唉(因为就在一个小时以前,我刚刚把这篇博文写的差不多了,想着叉掉,下次再写,蓝鹅叉掉以后,内容就不见了,也不知道是忘记保存了,还是咋的了,咱也不敢问) 自从搞了hexo博客以后,在博客优化上面是越走越远,怕走的太远,忘记了回头的路,遂写此博文,优化手段基本百度,少许加了自己的思路,有更有趣思路的盆友可以一起交流">
@@ -417,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  555
+                  817
                 </span>
               
 
@@ -433,7 +434,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -481,15 +482,16 @@
 <p><img src="/Hexo-Next博客主题优化\8.jpg" alt></p>
 <p><img src="/Hexo-Next博客主题优化\9.jpg" alt></p>
 <p>以上~~</p>
-<h4 id="五、侧边栏访客地址以3DEarth的形式展现"><a href="#五、侧边栏访客地址以3DEarth的形式展现" class="headerlink" title="五、侧边栏访客地址以3DEarth的形式展现"></a>五、侧边栏访客地址以3DEarth的形式展现</h4><p>test for pdf</p>
+<h4 id="五、侧边栏访客地址以3DEarth的形式展现"><a href="#五、侧边栏访客地址以3DEarth的形式展现" class="headerlink" title="五、侧边栏访客地址以3DEarth的形式展现"></a>五、侧边栏访客地址以3DEarth的形式展现</h4><h4 id="六、增加上传及下载PDF文件功能"><a href="#六、增加上传及下载PDF文件功能" class="headerlink" title="六、增加上传及下载PDF文件功能"></a>六、增加上传及下载PDF文件功能</h4><p>1)有时候看到好的文档,就会忍不住想要分享,遂百度了一番,发现有pdf文档上传及下载的功能,至于其他格式的暂时没有发现,此处留白</p>
+<p>2)要实现pdf文档的上传,在线预览,及下载,首先要安装hexo-pdf</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-pdf</span><br></pre></td></tr></table></figure>
+<p>3)在md文件添加代码及在md文件所在路径下的同名文件夹中添加文件(此处介绍本地文件上传到你的在线博客)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">外部链接：</span><br><span class="line">&#123;% pdf http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf %&#125;</span><br><span class="line">本地连接：</span><br><span class="line">&#123;% pdf ./文件名.pdf %&#125;</span><br></pre></td></tr></table></figure>
+<p>4)情况说明,本人使用本地连接调试许久,始终不能成功加载pdf文件,联想到本篇博文第一章图片问题,遂采用如下的网址调用方式,但是还是需在本地上传文件才行)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%  pdf  http://yoursite/md文件同名文件夹名称/pdf名称.pdf  %&#125;</span><br></pre></td></tr></table></figure>
+<p>5)效果展示:</p>
+<p><img src="/Hexo-Next博客主题优化\10.jpg" alt></p>
 
-
-	<div class="row">
-    <embed src="./流畅的Python.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
- 
       
     </div>
     
@@ -720,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Next博客主题优化"><span class="nav-number">1.</span> <span class="nav-text">Next博客主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、前言"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、关于本地图片上传网页后突然不显示问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、关于本地图片上传网页后突然不显示问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、博客顶部随机语句实现-调用木芽一言api"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、博客顶部随机语句实现(调用木芽一言api)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、侧边栏访客IP-时间-浏览器内核显示"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、侧边栏访客IP/时间/浏览器内核显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、侧边栏访客地址以3DEarth的形式展现"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、侧边栏访客地址以3DEarth的形式展现</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Next博客主题优化"><span class="nav-number">1.</span> <span class="nav-text">Next博客主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、前言"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、关于本地图片上传网页后突然不显示问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、关于本地图片上传网页后突然不显示问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、博客顶部随机语句实现-调用木芽一言api"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、博客顶部随机语句实现(调用木芽一言api)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、侧边栏访客IP-时间-浏览器内核显示"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、侧边栏访客IP/时间/浏览器内核显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、侧边栏访客地址以3DEarth的形式展现"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、侧边栏访客地址以3DEarth的形式展现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、增加上传及下载PDF文件功能"><span class="nav-number">1.0.6.</span> <span class="nav-text">六、增加上传及下载PDF文件功能</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -759,7 +761,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
 
-    <span title="Site words total count">6.9k</span>
+    <span title="Site words total count">7.1k</span>
   
 </div>
 
