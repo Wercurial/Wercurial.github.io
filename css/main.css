@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bb5ec1;
+  background: #49ff0b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3092,7 +3092,7 @@ hr {
 }
 .site-author-name {
   margin: 48px 0 0;
-  color: #090;
+  color: #f00;
   font-family: 'Comic Sans MS', sans-serif;
 }
 .links-of-blogroll {
@@ -3104,14 +3104,14 @@ hr {
   margin-bottom: 58px;
 }
 .sidebar-inner {
-  color: #ffd700;
+  color: #ff1493;
 }
 .sidebar {
   box-shadow: inset 2px 2px 40px #bdb2b2;
 }
 .sidebar a {
-  color: #ffd700;
-  border-bottom-color: #ffd700;
+  color: #ff1493;
+  border-bottom-color: #ff1493;
   border-bottom: none;
 }
 .sidebar a:hover {
@@ -3120,20 +3120,20 @@ hr {
 .site-state-item {
   display: inline-block;
   padding: 8px 28px;
-  border-left: 1px solid #ffd700;
+  border-left: 1px solid #ff1493;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #ffd700;
-  border-bottom-color: #ffd700;
+  color: #ff1493;
+  border-bottom-color: #ff1493;
 }
 .sidebar-nav li:hover {
   color: #0c0b0b;
 }
 .sidebar-toggle {
-  background: #0ff;
+  background: #c1cdc1;
 }
 .back-to-top {
-  background: #0ff;
+  background: #c1cdc1;
 }
 .post-toc .nav .active>a {
   color: #4f7e96;
