@@ -103,7 +103,7 @@
 
 
 
-  <meta name="keywords" content="-MySQL -Redis -MangoDB,">
+  <meta name="keywords" content="MySQL,Redis,MangoDB,">
 
 
 
@@ -117,23 +117,23 @@
 
 
 <meta name="description" content="一、MySQL篇1)MySQL的两种存储引擎对比MyISAM： 　　①不支持事务，但是整个操作是原子性的 (事务具备四种特性：原子性、一致性、隔离性、持久性); 　　②不支持外键，支持表锁，每次锁住的是整张表 　　　　 MyISAM 的表锁有读锁和写锁 (两个锁都是表级别)： 　　　　表共享读锁和表独占写锁。在对 MyISAM 表进行读操作时，不会阻塞其他用户对同一张表的读请求，但是会阻塞其他用户">
-<meta name="keywords" content="-MySQL -Redis -MangoDB">
+<meta name="keywords" content="MySQL,Redis,MangoDB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库的爱恨情仇">
 <meta property="og:url" content="http://5jp.top/数据库的爱恨情仇.html">
 <meta property="og:site_name" content="白小白 的 Cat">
 <meta property="og:description" content="一、MySQL篇1)MySQL的两种存储引擎对比MyISAM： 　　①不支持事务，但是整个操作是原子性的 (事务具备四种特性：原子性、一致性、隔离性、持久性); 　　②不支持外键，支持表锁，每次锁住的是整张表 　　　　 MyISAM 的表锁有读锁和写锁 (两个锁都是表级别)： 　　　　表共享读锁和表独占写锁。在对 MyISAM 表进行读操作时，不会阻塞其他用户对同一张表的读请求，但是会阻塞其他用户">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图.jpg">
-<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图1.jpg">
-<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图2.jpg">
-<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图3.jpg">
-<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图4.jpg">
-<meta property="og:updated_time" content="2019-05-19T02:52:25.817Z">
+<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图.png">
+<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图1.png">
+<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图2.png">
+<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图3.png">
+<meta property="og:image" content="http://5jp.top/数据库的爱恨情仇/索引图4.png">
+<meta property="og:updated_time" content="2019-05-19T02:59:50.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库的爱恨情仇">
 <meta name="twitter:description" content="一、MySQL篇1)MySQL的两种存储引擎对比MyISAM： 　　①不支持事务，但是整个操作是原子性的 (事务具备四种特性：原子性、一致性、隔离性、持久性); 　　②不支持外键，支持表锁，每次锁住的是整张表 　　　　 MyISAM 的表锁有读锁和写锁 (两个锁都是表级别)： 　　　　表共享读锁和表独占写锁。在对 MyISAM 表进行读操作时，不会阻塞其他用户对同一张表的读请求，但是会阻塞其他用户">
-<meta name="twitter:image" content="http://5jp.top/数据库的爱恨情仇/索引图.jpg">
+<meta name="twitter:image" content="http://5jp.top/数据库的爱恨情仇/索引图.png">
 
 
 
@@ -418,7 +418,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-05-19T10:52:25+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-05-19T10:59:50+08:00">
                 2019-05-19
               </time>
             
@@ -522,15 +522,15 @@
 <p>　　　　表共享读锁和表独占写锁。在对 MyISAM 表进行读操作时，不会阻塞其他用户对同一张表的读请求，但是会阻塞其他用户对表的写请求；对其进行写操作时会阻塞对同一表读操作和写操作</p>
 <p>　　　　MyISAM 存储引擎的读锁和写锁是互斥的，<strong>读写操作是串行的</strong>。那么，一个进程请求某个 MyISAM 表的读锁，同时另一个进程也请求同一表的写锁，MySQL 如何处理呢？答案是写进程先获得锁。不仅如此，即使读请求先到锁等待队列，写请求后到，写锁也会插到读锁请求之前！这是因为 MySQL 认为写请求一般比读请求要重要。这也正是 MyISAM 表不太适合于有大量更新操作和查询操作应用的原因，因为，<strong>大量的更新操作会造成查询操作很难获得读锁，从而可能永远阻塞。</strong>这种情况有时可能会变得非常糟糕！ </p>
 <p>　　③一个 MyISAM 表有三个文件：索引文件，表结构文件，数据文件;</p>
-<p>​    ④存储表的总行数，执行 select count(*) from table 时只要简单的读出保存好的行数即可</p>
+<p>​        ④存储表的总行数，执行 select count(*) from table 时只要简单的读出保存好的行数即可</p>
 <p>　　　　(myisam 存储引擎的表，count(*) 速度快的也仅仅是不带 where 条件的 count。这个想想容易理解的，因为你带了 where 限制条件，原来所以中缓存的表总数能够直接返回用吗？不能用。这个查询引擎也是需要根据 where 条件去表中扫描数据，进行统计返回的。)</p>
 <p>　　⑤采用非聚集索引，索引文件的数据域存储指向数据文件的指针。辅索引与主索引基本一致，但是辅索引不用保证唯一性。</p>
 <p>　　⑥支持全文索引和空间索引;</p>
 <p>　　⑦对于 AUTO_INCREMENT 类型的字段，在 MyISAM 表中，可以和其他字段一起建立联合索引;</p>
 <pre><code>MyISAM 的主索引图：索引文件的每个数据域存储指向数据文件的指针 (每个索引指向了数据地址)
-</code></pre><p><img src="/数据库的爱恨情仇\索引图.jpg" alt></p>
+</code></pre><p><img src="/数据库的爱恨情仇\索引图.png" alt></p>
 <p>MyISAM 的辅索引：索引文件的每个数据域存储指向数据文件的指针 (每个索引指向了数据地址)，辅索引不用保证唯一性</p>
-<p><img src="/数据库的爱恨情仇\索引图1.jpg" alt></p>
+<p><img src="/数据库的爱恨情仇\索引图1.png" alt></p>
 <p><strong>Innodb：</strong></p>
 <p>　　①支持事务，支持事务的四种隔离级别; 是一种具有事务 (commit)、回滚(rollback) 和崩溃修复能力 (crash recovery capabilities) 的事务安全 (transaction-safe (ACID compliant)) 型表。</p>
 <p>　　②支持行锁和外键约束，因此可以支持写并发;</p>
@@ -540,12 +540,12 @@
 <p>　　⑥一个 Innodb 表存储在一个文件内 (共享表空间，表大小不受操作系统的限制)，也可能为多个 (设置为独立表空间，表大小受操作系统限制，大小为 2G)，受操作系统文件大小的限制;</p>
 <p>　　⑦主键索引采用聚集索引（索引的数据域存储数据文件本身），辅索引的数据域存储主键的值；因此从辅索引查找数据，需要先通过辅索引找到主键值，再访问主键索引；最好使用自增主键，防止插入数据时，为维持 B + 树结构，文件的大调整。</p>
 <p>　　　　Innodb 的主索引图:（索引位置上存储的直接是数据本身）</p>
-<p><img src="/数据库的爱恨情仇\索引图2.jpg" alt></p>
+<p><img src="/数据库的爱恨情仇\索引图2.png" alt></p>
 <p>　　　　Innodb 的辅索引图:</p>
-<p><img src="/数据库的爱恨情仇\索引图3.jpg" alt></p>
+<p><img src="/数据库的爱恨情仇\索引图3.png" alt></p>
 <p>　　　　总结大图：</p>
-<p><img src="/数据库的爱恨情仇\索引图4.jpg" alt></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/数据库的爱恨情仇\索引图4.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">参考博客: https://www.cnblogs.com/rgever/p/9736374.html</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -581,7 +581,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MySQL-Redis-MangoDB/" rel="tag"><i class="fa fa-tag"></i> -MySQL -Redis -MangoDB</a>
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+            <a href="/tags/Redis/" rel="tag"><i class="fa fa-tag"></i> Redis</a>
+          
+            <a href="/tags/MangoDB/" rel="tag"><i class="fa fa-tag"></i> MangoDB</a>
           
         </div>
       
@@ -735,7 +739,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -788,7 +792,7 @@
            
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL-Redis-MangoDB/">-MySQL -Redis -MangoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/">HEXO</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux命令/">Linux命令</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-django/">study for django</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-python/">study for python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-python手册/">study for python手册</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-算法/">study for 算法</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/">HEXO</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux命令/">Linux命令</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MangoDB/">MangoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-django/">study for django</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-python/">study for python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-python手册/">study for python手册</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study-for-算法/">study for 算法</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
 
             </div>
