@@ -59,6 +59,16 @@
     </item>
     
     <item>
+      <title>docker开放远程操作api（2375）</title>
+      <link>https://Wercurial.github.io/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/</guid>
+      <description>&lt;p&gt;实现docker远程操作api（2375端口）开放。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Windows配置Go环境</title>
       <link>https://Wercurial.github.io/go/windows%E9%85%8D%E7%BD%AEgo%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
@@ -74,16 +84,6 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/</guid>
-      <description>&lt;p&gt;本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>网络记录</title>
-      <link>https://Wercurial.github.io/kubernetes/%E7%BD%91%E7%BB%9C/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/kubernetes/%E7%BD%91%E7%BB%9C/</guid>
       <description>&lt;p&gt;本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。&lt;/p&gt;</description>
       
     </item>
