@@ -56,7 +56,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/containerd/</loc>
+    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/docker/</loc>
+    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/kubernetes/docker%E5%8F%8Acontainerd%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -75,6 +87,12 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/kubernetes/</loc>
+    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/proxy/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
