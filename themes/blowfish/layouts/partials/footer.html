@@ -33,6 +33,10 @@
       {{ now.Format "2006" }}
       {{ .Site.Author.name | markdownify }}
       {{- end }}
+      <br />
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv">本站访问量：<span id="busuanzi_value_site_pv"></span> 次~  </span><span id="busuanzi_container_site_uv">您是本站第：<span id="busuanzi_value_site_uv"></span> 位访问者</span>
+      <br>
     </p>
     {{ end }}
 
@@ -65,4 +69,5 @@
   {{ if templates.Exists "partials/extend-footer.html" }}
   {{ partialCached "extend-footer.html" . }}
   {{ end }}
+
 </footer>
