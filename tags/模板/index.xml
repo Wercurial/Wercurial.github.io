@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>模板 on Blowfish</title>
+    <link>https://localhost:1313/tags/%E6%A8%A1%E6%9D%BF/</link>
+    <description>Recent content in 模板 on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Blowfish</copyright>
+    <lastBuildDate>Tue, 22 Dec 1987 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/tags/%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用指南模板</title>
+      <link>https://localhost:1313/guides/template/</link>
+      <pubDate>Tue, 22 Dec 1987 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/guides/template/</guid>
+      <description>感谢您愿意为 Blowfish 社区做出贡献。 如何开始？ # 这是一篇模板文章，将</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/guides/template/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
