@@ -143,12 +143,12 @@ smartTOCHideUnfocusedChildren = false
   # token = "XXXXXX"
   # enableTrackEvent = false
 
-[buymeacoffee]
-  identifier = "nunocoracao"
-  globalWidget = true
-  globalWidgetMessage = ""
-  globalWidgetColor = "#FFDD00"
-  globalWidgetPosition = "Right"
+# [buymeacoffee]
+#   identifier = "nunocoracao"
+#   globalWidget = true
+#   globalWidgetMessage = ""
+#   globalWidgetColor = "#FFDD00"
+#   globalWidgetPosition = "Right"
 
 [verification]
   # google = ""
