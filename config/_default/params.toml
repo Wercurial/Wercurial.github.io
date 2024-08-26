@@ -62,7 +62,7 @@ smartTOCHideUnfocusedChildren = false
   layoutBackgroundBlur = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = true
+  showEdit = false
   editURL = "https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content"
   editAppendPath = true
   seriesOpened = false
@@ -75,7 +75,7 @@ smartTOCHideUnfocusedChildren = false
   relatedContentLimit = 6
   showTaxonomies = true 
   showAuthorsBadges = true 
-  showWordCount = false
+  showWordCount = true
   sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
   showZenMode = true
 
