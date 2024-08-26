@@ -1,7 +1,7 @@
 languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 4
-title = "Blowfish"
+title = "云一二三"
 
 [params]
   displayName = "简体中文"
@@ -9,13 +9,13 @@ title = "Blowfish"
   rtl = false
   dateFormat = "2006-01-02"
   logo = "img/blowfish_logo_transparent.png"
-  description = "一个强大、轻量级的 Hugo 主题。"
+  description = "朝看水东流，暮看日西坠~"
 
 [author]
-  name = "Blowfish"
+  name = "古德"
   image = "img/blowfish_logo.png"
-  headline = "一个强大、轻量级的 Hugo 主题。"
-  bio = "一个强大、轻量级的 Hugo 主题。"
+  headline = "朝看水东流，暮看日西坠~"
+  bio = "朝看水东流，暮看日西坠~"
   links = [
-    { github = "https://github.com/nunocoracao/blowfish" },
+    { github = "https://github.com/Wercurial" },
   ]

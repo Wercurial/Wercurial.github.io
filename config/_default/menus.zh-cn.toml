@@ -10,47 +10,54 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+# 云原生知识专栏
 [[main]]
-  name = "文档"
-  pageRef = "docs"
+  name = "云原生"
+  pageRef = "cloudnative"
   weight = 10
 
 [[main]]
-  name = "简码"
-  pageRef = "docs/shortcodes"
-  weight = 15
+  name = "Kubernetes"
+  parent = "云原生"
+  pageRef = "Kubernetes"
+  weight = 10
 
 [[main]]
-  name = "示例"
-  weight = 20
+  name = "k8s问题解决与记录"
+  parent = "云原生"
+  pageRef = "k8s-solve"
+  weight = 12
+
+# 云原生存储知识专栏
+[[main]]
+  name = "云存储"
+  pageRef = "cloudstorage"
+  weight = 11
 
 [[main]]
-  name = "功能示例"
-  parent = "示例"
-  pageRef = "samples"
-  weight = 16
+  name = "longhorn"
+  parent = "云存储"
+  pageRef = "longhorn"
+  weight = 10
 
 [[main]]
-  name = "模板示例"
-  parent = "示例"
-  pageRef = "examples"
-  weight = 30
+  name = "ceph"
+  parent = "云存储"
+  pageRef = "ceph"
+  weight = 12
+
+# 编程语言知识专栏
+[[main]]
+  name = "编程语言"
+  pageRef = "code-languages"
+  weight = 12
 
 [[main]]
-  name = "部署指南"
-  parent = "示例"
-  pageRef = "guides"
-  weight = 40
+  name = "Go语言"
+  parent = "编程语言"
+  pageRef = "go"
+  weight = 10
 
-[[main]]
-  name = "用户列表"
-  pageRef = "users"
-  weight = 90
-
-[[main]]
-  name = "周边"
-  url = "https://www.teepublic.com/user/blowfish-store/t-shirts"
-  weight = 100
 
 #[[main]]
 #  name = "Test"
@@ -67,7 +74,7 @@
 [[main]]
   identifier = "github"
   pre = "github"
-  url = "https://github.com/nunocoracao/blowfish"
+  url = "https://github.com/Wercurial"
   weight = 400
 
 
@@ -80,7 +87,7 @@
    pageRef = "tags"
    weight = 10
 
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20
+#  [[footer]]
+#    name = "作者"
+#    pageRef = "authors"
+#    weight = 20

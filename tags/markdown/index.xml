@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Markdown on Blowfish</title>
+    <title>Markdown on 云一二三</title>
     <link>https://Wercurial.github.io/tags/markdown/</link>
-    <description>Recent content in Markdown on Blowfish</description>
+    <description>Recent content in Markdown on 云一二三</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>© 2024 Blowfish</copyright>
+    <copyright>© 2024 古德</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown</title>
-      <link>https://Wercurial.github.io/samples/markdown/</link>
+      <title>部署问题解决记录</title>
+      <link>https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/samples/markdown/</guid>
+      <guid>https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/</guid>
+      <description>&lt;p&gt;本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>网络记录</title>
+      <link>https://Wercurial.github.io/kubernetes/%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/%E7%BD%91%E7%BB%9C/</guid>
       <description>&lt;p&gt;本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。&lt;/p&gt;</description>
       
     </item>
