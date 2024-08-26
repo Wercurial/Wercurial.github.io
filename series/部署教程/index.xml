@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>部署教程 on Blowfish</title>
-    <link>https://localhost:1313/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</link>
+    <link>https://Wercurial.github.io/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</link>
     <description>Recent content in 部署教程 on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Blowfish</copyright>
-    <atom:link href="https://localhost:1313/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Wercurial.github.io/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎来到 Blowfish</title>
-      <link>https://localhost:1313/docs/welcome/</link>
+      <link>https://Wercurial.github.io/docs/welcome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/docs/welcome/</guid>
+      <guid>https://Wercurial.github.io/docs/welcome/</guid>
       <description>Blowfish 包含了大量的特性功能。 Blowfish 的目标是开发一个简单且轻量级的主题</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/welcome/featured.svg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://Wercurial.github.io/docs/welcome/featured.svg" />
     </item>
     
   </channel>

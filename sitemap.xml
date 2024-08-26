@@ -3,173 +3,173 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://localhost:1313/docs/welcome/</loc>
+    <loc>https://Wercurial.github.io/docs/welcome/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/blowfish/</loc>
+    <loc>https://Wercurial.github.io/tags/blowfish/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/categories/blowfish/</loc>
+    <loc>https://Wercurial.github.io/categories/blowfish/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/categories/</loc>
+    <loc>https://Wercurial.github.io/categories/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/hugo/</loc>
+    <loc>https://Wercurial.github.io/tags/hugo/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/authors/nunocoracao/</loc>
+    <loc>https://Wercurial.github.io/authors/nunocoracao/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/</loc>
+    <loc>https://Wercurial.github.io/tags/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/</loc>
+    <loc>https://Wercurial.github.io/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/categories/%E5%BC%80%E6%BA%90/</loc>
+    <loc>https://Wercurial.github.io/categories/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/guides/</loc>
+    <loc>https://Wercurial.github.io/guides/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://Wercurial.github.io/tags/%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/authors/</loc>
+    <loc>https://Wercurial.github.io/authors/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/</loc>
+    <loc>https://Wercurial.github.io/tags/%E7%A4%BA%E4%BE%8B/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/users/</loc>
+    <loc>https://Wercurial.github.io/users/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E5%8F%8B%E9%93%BE/</loc>
+    <loc>https://Wercurial.github.io/tags/%E5%8F%8B%E9%93%BE/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/css/</loc>
+    <loc>https://Wercurial.github.io/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/html/</loc>
+    <loc>https://Wercurial.github.io/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/markdown/</loc>
+    <loc>https://Wercurial.github.io/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/samples/markdown/</loc>
+    <loc>https://Wercurial.github.io/samples/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/samples/</loc>
+    <loc>https://Wercurial.github.io/samples/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E6%A8%A1%E6%9D%BF/</loc>
+    <loc>https://Wercurial.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>1987-12-22T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/guides/template/</loc>
+    <loc>https://Wercurial.github.io/guides/template/</loc>
     <lastmod>1987-12-22T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/authors/secondauthor/</loc>
+    <loc>https://Wercurial.github.io/authors/secondauthor/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/series/</loc>
+    <loc>https://Wercurial.github.io/series/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://Wercurial.github.io/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/advanced/</loc>
+    <loc>https://Wercurial.github.io/tags/advanced/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E6%96%87%E6%A1%A3/</loc>
+    <loc>https://Wercurial.github.io/tags/%E6%96%87%E6%A1%A3/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/docs/</loc>
+    <loc>https://Wercurial.github.io/docs/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E6%96%B0%E6%89%8B/</loc>
+    <loc>https://Wercurial.github.io/tags/%E6%96%B0%E6%89%8B/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://localhost:1313/tags/%E7%BB%84%E7%BB%87%E7%AB%99%E7%82%B9/</loc>
+    <loc>https://Wercurial.github.io/tags/%E7%BB%84%E7%BB%87%E7%AB%99%E7%82%B9/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
