@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/shell/</link>
+    <description>Recent content in Shell on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetest命令集合</title>
+      <link>https://Wercurial.github.io/kubernetes/kubernetes%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/kubernetes%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</guid>
+      <description>&lt;p&gt;收集各类常见kubernetes命令。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
