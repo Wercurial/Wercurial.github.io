@@ -8,6 +8,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/calico/</loc>
+    <lastmod>2024-08-26T14:31:40+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/calico/deploy/</loc>
+    <lastmod>2024-08-26T14:31:40+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/ceph/deploy/</loc>
     <lastmod>2024-08-26T14:31:40+08:00</lastmod>
     <changefreq>always</changefreq>
@@ -33,6 +45,12 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-08-26T14:31:40+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/calico/bug%E8%A7%A3%E5%86%B3/</loc>
     <lastmod>2024-08-26T14:31:40+08:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -146,6 +164,42 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/cloudnetissues/k8s%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E9%85%8D/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/nossh/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/port/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/service/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/ssh/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/go/windows%E9%85%8D%E7%BD%AEgo%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -153,6 +207,12 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnetissues/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -235,6 +295,11 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/cloudstorage/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnet/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

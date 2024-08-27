@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/service/</link>
+    <description>Recent content in Service on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/service/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k8s端口号定义及分配</title>
+      <link>https://Wercurial.github.io/cloudnetissues/k8s%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E9%85%8D/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/cloudnetissues/k8s%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E9%85%8D/</guid>
+      <description>&lt;p&gt;实现k8s端口号定义及分配&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

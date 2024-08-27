@@ -30,27 +30,45 @@
 
 # 云原生存储知识专栏
 [[main]]
-  name = "云存储"
+  name = "云原生存储"
   pageRef = "cloudstorage"
   weight = 11
 
 [[main]]
   name = "longhorn"
-  parent = "云存储"
+  parent = "云原生存储"
   pageRef = "longhorn"
   weight = 10
 
 [[main]]
   name = "ceph"
-  parent = "云存储"
+  parent = "云原生存储"
   pageRef = "ceph"
+  weight = 12
+
+# 云原生网络知识专栏
+[[main]]
+  name = "云原生网络"
+  pageRef = "cloudnet"
+  weight = 12
+
+[[main]]
+  name = "calico"
+  parent = "云原生网络"
+  pageRef = "calico"
+  weight = 10
+
+[[main]]
+  name = "云原生网络记录"
+  parent = "云原生网络"
+  pageRef = "cloudnetissues"
   weight = 12
 
 # 编程语言知识专栏
 [[main]]
   name = "编程语言"
   pageRef = "code-languages"
-  weight = 12
+  weight = 13
 
 [[main]]
   name = "Go语言"
