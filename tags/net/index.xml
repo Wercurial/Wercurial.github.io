@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Net on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/net/</link>
+    <description>Recent content in Net on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k8s网络问题解决记录</title>
+      <link>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;k8s网络问题解决记录&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

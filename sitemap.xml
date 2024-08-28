@@ -68,6 +68,42 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/kubernetes/ownerreference%E5%92%8Cfinalizers/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/kubernetes/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/pod/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/spec/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/api/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -98,18 +134,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
-    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/kubernetes/</loc>
-    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/tags/proxy/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -128,12 +152,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/tags/volume/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -142,6 +160,30 @@
   <url>
     <loc>https://Wercurial.github.io/volume-solve/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/net/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/service/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnetissues/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -212,12 +254,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/service/</loc>
-    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/tags/ssh/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -231,12 +267,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/cloudnetissues/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>

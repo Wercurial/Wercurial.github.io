@@ -79,6 +79,16 @@
     </item>
     
     <item>
+      <title>【Kubernetes知识】OwnerReference和Finalizers</title>
+      <link>https://Wercurial.github.io/kubernetes/ownerreference%E5%92%8Cfinalizers/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/ownerreference%E5%92%8Cfinalizers/</guid>
+      <description>&lt;p&gt;OwnerReference和Finalizers.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>docker及containerd镜像代理配置</title>
       <link>https://Wercurial.github.io/kubernetes/docker%E5%8F%8Acontainerd%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
@@ -107,6 +117,16 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;仅限PVC绑定其它未删除POD且自身处于terminating状态。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>k8s网络问题解决记录</title>
+      <link>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;k8s网络问题解决记录&lt;/p&gt;</description>
       
     </item>
     
