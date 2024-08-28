@@ -35,10 +35,16 @@
   weight = 11
 
 [[main]]
+  name = "云存储问题解决"
+  parent = "云原生存储"
+  pageRef = "volume-solve"
+  weight = 10
+
+[[main]]
   name = "longhorn"
   parent = "云原生存储"
   pageRef = "longhorn"
-  weight = 10
+  weight = 11
 
 [[main]]
   name = "ceph"
