@@ -108,7 +108,7 @@
     "keywords": ["markdown","css","html","示例"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "326"
+    "wordCount": "370"
   }]
   </script>
 
@@ -1100,7 +1100,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time><span class="px-2 text-primary-500">&middot;</span><span>326 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time><span class="px-2 text-primary-500">&middot;</span><span>370 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1295,6 +1295,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#51-contoller也是unhealthy解决方案">5.1 contoller也是unhealthy解决方案</a></li>
+    <li><a href="#52-重启服务">5.2 重启服务</a></li>
   </ul>
 </nav>
   </div>
@@ -1309,6 +1310,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#51-contoller也是unhealthy解决方案">5.1 contoller也是unhealthy解决方案</a></li>
+    <li><a href="#52-重启服务">5.2 重启服务</a></li>
   </ul>
 </nav>
   </div>
@@ -1518,6 +1520,21 @@
     </figure>
 </li>
 </ul>
+
+
+<h2 class="relative group">5.2 重启服务 
+    <div id="52-%E9%87%8D%E5%90%AF%E6%9C%8D%E5%8A%A1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#52-%E9%87%8D%E5%90%AF%E6%9C%8D%E5%8A%A1" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>本文操作时并未重启服务，修改文件即可，如修改文件不生效，可手动重启服务</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl restart kubelet.service
+</span></span></code></pre></div>
           
           
           

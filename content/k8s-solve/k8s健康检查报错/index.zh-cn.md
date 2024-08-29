@@ -49,3 +49,9 @@ kubectl get cs
 其它步骤同上，文件需要修改，注释port=0
 - /etc/kubernetes/manifests/
 ![image.png](./6.png)
+
+## 5.2 重启服务
+本文操作时并未重启服务，修改文件即可，如修改文件不生效，可手动重启服务
+```bash
+systemctl restart kubelet.service
+```
