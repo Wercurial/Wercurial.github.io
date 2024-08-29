@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>部署问题解决记录 &middot; 云一二三</title>
-  <meta name="title" content="部署问题解决记录 &middot; 云一二三" />
+  <title>k8s（kubectl get cs）健康检查报错 &middot; 云一二三</title>
+  <meta name="title" content="k8s（kubectl get cs）健康检查报错 &middot; 云一二三" />
   
-  <meta name="description" content="在 Markdown 文章中添加 HTML 元素的基本语法和格式。" />
+  <meta name="description" content="k8s健康检查报错修复。" />
   <meta name="keywords" content="markdown, css, html, 示例, " />
   
   
-  <link rel="canonical" href="https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/" />
+  <link rel="canonical" href="https://Wercurial.github.io/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/" />
   
   
   
@@ -64,15 +64,15 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/">
+  <meta property="og:url" content="https://Wercurial.github.io/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="部署问题解决记录">
-  <meta property="og:description" content="在 Markdown 文章中添加 HTML 元素的基本语法和格式。">
+  <meta property="og:title" content="k8s（kubectl get cs）健康检查报错">
+  <meta property="og:description" content="k8s健康检查报错修复。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="k8s-solve">
-    <meta property="article:published_time" content="2019-03-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2019-03-11T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-08-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-11T00:00:00+00:00">
     <meta property="article:tag" content="Markdown">
     <meta property="article:tag" content="Css">
     <meta property="article:tag" content="Html">
@@ -80,8 +80,8 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="部署问题解决记录">
-  <meta name="twitter:description" content="在 Markdown 文章中添加 HTML 元素的基本语法和格式。">
+  <meta name="twitter:title" content="k8s（kubectl get cs）健康检查报错">
+  <meta name="twitter:description" content="k8s健康检查报错修复。">
 
   
   <script type="application/ld+json">
@@ -89,26 +89,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "k8s问题解决与记录",
-    "name": "部署问题解决记录",
-    "headline": "部署问题解决记录",
-    "description": "在 Markdown 文章中添加 HTML 元素的基本语法和格式。",
-    "abstract": "\u003cp\u003e本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。\u003c\/p\u003e",
+    "name": "k8s（kubectl get cs）健康检查报错",
+    "headline": "k8s（kubectl get cs）健康检查报错",
+    "description": "k8s健康检查报错修复。",
+    "abstract": "\u003cp\u003e本文解决了k8s健康检查时提示unhealthy的问题。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/k8s-solve\/%E9%83%A8%E7%BD%B2\/",
+    "url" : "https:\/\/Wercurial.github.io\/k8s-solve\/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
-    "copyrightYear": "2019",
-    "dateCreated": "2019-03-11T00:00:00\u002b00:00",
-    "datePublished": "2019-03-11T00:00:00\u002b00:00",
+    "copyrightYear": "2024",
+    "dateCreated": "2024-08-11T00:00:00\u002b00:00",
+    "datePublished": "2024-08-11T00:00:00\u002b00:00",
     
-    "dateModified": "2019-03-11T00:00:00\u002b00:00",
+    "dateModified": "2024-08-11T00:00:00\u002b00:00",
     
     "keywords": ["markdown","css","html","示例"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "635"
+    "wordCount": "326"
   }]
   </script>
 
@@ -1043,8 +1043,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/k8s-solve/%E9%83%A8%E7%BD%B2/"
-      >部署问题解决记录</a
+      href="/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/"
+      >k8s（kubectl get cs）健康检查报错</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1053,7 +1053,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      部署问题解决记录
+      k8s（kubectl get cs）健康检查报错
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1100,7 +1100,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2019-03-11 00:00:00 &#43;0000 UTC">2019-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>635 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time><span class="px-2 text-primary-500">&middot;</span><span>326 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1294,46 +1294,7 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#标题">标题</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#h2">H2</a>
-      <ul>
-        <li><a href="#h3">H3</a>
-          <ul>
-            <li><a href="#h4">H4</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#段落">段落</a></li>
-    <li><a href="#块引用">块引用</a>
-      <ul>
-        <li><a href="#没有参考链接的块引用">没有参考链接的块引用</a></li>
-        <li><a href="#有参考链接的块引用">有参考链接的块引用</a></li>
-      </ul>
-    </li>
-    <li><a href="#表格">表格</a>
-      <ul>
-        <li><a href="#表格内内联-markdown">表格内内联 Markdown</a></li>
-      </ul>
-    </li>
-    <li><a href="#代码块">代码块</a>
-      <ul>
-        <li><a href="#带反引号的代码块">带反引号的代码块</a></li>
-        <li><a href="#缩进四个空格的代码块">缩进四个空格的代码块</a></li>
-        <li><a href="#带有-hugo-内部高亮简码的代码块">带有 Hugo 内部高亮简码的代码块</a></li>
-      </ul>
-    </li>
-    <li><a href="#列表">列表</a>
-      <ul>
-        <li><a href="#有序列表">有序列表</a></li>
-        <li><a href="#无序列表">无序列表</a></li>
-        <li><a href="#嵌套列表">嵌套列表</a></li>
-      </ul>
-    </li>
-    <li><a href="#其他元素--abbrsubsupkbdmark">其他元素 — abbr、sub、sup、kbd、mark</a></li>
+    <li><a href="#51-contoller也是unhealthy解决方案">5.1 contoller也是unhealthy解决方案</a></li>
   </ul>
 </nav>
   </div>
@@ -1347,46 +1308,7 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#标题">标题</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#h2">H2</a>
-      <ul>
-        <li><a href="#h3">H3</a>
-          <ul>
-            <li><a href="#h4">H4</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#段落">段落</a></li>
-    <li><a href="#块引用">块引用</a>
-      <ul>
-        <li><a href="#没有参考链接的块引用">没有参考链接的块引用</a></li>
-        <li><a href="#有参考链接的块引用">有参考链接的块引用</a></li>
-      </ul>
-    </li>
-    <li><a href="#表格">表格</a>
-      <ul>
-        <li><a href="#表格内内联-markdown">表格内内联 Markdown</a></li>
-      </ul>
-    </li>
-    <li><a href="#代码块">代码块</a>
-      <ul>
-        <li><a href="#带反引号的代码块">带反引号的代码块</a></li>
-        <li><a href="#缩进四个空格的代码块">缩进四个空格的代码块</a></li>
-        <li><a href="#带有-hugo-内部高亮简码的代码块">带有 Hugo 内部高亮简码的代码块</a></li>
-      </ul>
-    </li>
-    <li><a href="#列表">列表</a>
-      <ul>
-        <li><a href="#有序列表">有序列表</a></li>
-        <li><a href="#无序列表">无序列表</a></li>
-        <li><a href="#嵌套列表">嵌套列表</a></li>
-      </ul>
-    </li>
-    <li><a href="#其他元素--abbrsubsupkbdmark">其他元素 — abbr、sub、sup、kbd、mark</a></li>
+    <li><a href="#51-contoller也是unhealthy解决方案">5.1 contoller也是unhealthy解决方案</a></li>
   </ul>
 </nav>
   </div>
@@ -1468,401 +1390,134 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。</p>
-<h2 class="relative group">标题 
-    <div id="%E6%A0%87%E9%A2%98" class="anchor"></div>
+          <p>本文解决了k8s健康检查时提示unhealthy的问题。</p>
+<h1 class="relative group">1.kubectl get cs组件状态异常 
+    <div id="1kubectl-get-cs%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81%E5%BC%82%E5%B8%B8" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A0%87%E9%A2%98" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>以下 HTML 元素 <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> 表示六个级别的标题。 <code>&lt;h1&gt;</code> 是最高的标题级别，而 <code>&lt;h6&gt;</code> 是最低的。</p>
-
-
-<h1 class="relative group">H1 
-    <div id="h1" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h1" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#1kubectl-get-cs%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81%E5%BC%82%E5%B8%B8" aria-label="锚点">#</a>
     </span>        
     
 </h1>
-
-
-<h2 class="relative group">H2 
-    <div id="h2" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h2" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">H3 
-    <div id="h3" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h3" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-
-
-<h4 class="relative group">H4 
-    <div id="h4" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h4" aria-label="锚点">#</a>
-    </span>        
-    
-</h4>
-
-
-<h5 class="relative group">H5 
-    <div id="h5" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h5" aria-label="锚点">#</a>
-    </span>        
-    
-</h5>
-
-
-<h6 class="relative group">H6 
-    <div id="h6" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#h6" aria-label="锚点">#</a>
-    </span>        
-    
-</h6>
-
-
-<h2 class="relative group">段落 
-    <div id="%E6%AE%B5%E8%90%BD" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%AE%B5%E8%90%BD" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-
-
-<h2 class="relative group">块引用 
-    <div id="%E5%9D%97%E5%BC%95%E7%94%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%9D%97%E5%BC%95%E7%94%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>块引用表示从其他来源引用的内容，可以用于位于 <code>footer</code> 或 <code>cite</code> 元素内的引文，并且可以表示一些补充说明（例如注释和缩写）。</p>
-
-
-<h3 class="relative group">没有参考链接的块引用 
-    <div id="%E6%B2%A1%E6%9C%89%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%E7%9A%84%E5%9D%97%E5%BC%95%E7%94%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%B2%A1%E6%9C%89%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%E7%9A%84%E5%9D%97%E5%BC%95%E7%94%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
-
-
-<h3 class="relative group">有参考链接的块引用 
-    <div id="%E6%9C%89%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%E7%9A%84%E5%9D%97%E5%BC%95%E7%94%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9C%89%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%E7%9A%84%E5%9D%97%E5%BC%95%E7%94%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
-</blockquote>
-
-
-<h2 class="relative group">表格 
-    <div id="%E8%A1%A8%E6%A0%BC" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%A1%A8%E6%A0%BC" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p>表格不是核心 Markdown 规范的一部分，但 Hugo 支持渲染。</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bob</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Alice</td>
-<td>23</td>
-</tr>
-</tbody>
-</table>
-
-
-<h3 class="relative group">表格内内联 Markdown 
-    <div id="%E8%A1%A8%E6%A0%BC%E5%86%85%E5%86%85%E8%81%94-markdown" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%A1%A8%E6%A0%BC%E5%86%85%E5%86%85%E8%81%94-markdown" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<table>
-<thead>
-<tr>
-<th>Italics</th>
-<th>Bold</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>italics</em></td>
-<td><strong>bold</strong></td>
-<td><code>code</code></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 class="relative group">代码块 
-    <div id="%E4%BB%A3%E7%A0%81%E5%9D%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BB%A3%E7%A0%81%E5%9D%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">带反引号的代码块 
-    <div id="%E5%B8%A6%E5%8F%8D%E5%BC%95%E5%8F%B7%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B8%A6%E5%8F%8D%E5%BC%95%E5%8F%B7%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-
-<h3 class="relative group">缩进四个空格的代码块 
-    <div id="%E7%BC%A9%E8%BF%9B%E5%9B%9B%E4%B8%AA%E7%A9%BA%E6%A0%BC%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E7%BC%A9%E8%BF%9B%E5%9B%9B%E4%B8%AA%E7%A9%BA%E6%A0%BC%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-
-<h3 class="relative group">带有 Hugo 内部高亮简码的代码块 
-    <div id="%E5%B8%A6%E6%9C%89-hugo-%E5%86%85%E9%83%A8%E9%AB%98%E4%BA%AE%E7%AE%80%E7%A0%81%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B8%A6%E6%9C%89-hugo-%E5%86%85%E9%83%A8%E9%AB%98%E4%BA%AE%E7%AE%80%E7%A0%81%E7%9A%84%E4%BB%A3%E7%A0%81%E5%9D%97" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="hl"><span class="lnt"> 4
-</span></span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="hl"><span class="lnt"> 7
-</span></span><span class="hl"><span class="lnt"> 8
-</span></span><span class="hl"><span class="lnt"> 9
-</span></span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line hl"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line hl"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line hl"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line hl"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-
-
-<h2 class="relative group">列表 
-    <div id="%E5%88%97%E8%A1%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%88%97%E8%A1%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-
-
-<h3 class="relative group">有序列表 
-    <div id="%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-
-
-<h3 class="relative group">无序列表 
-    <div id="%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8" aria-label="锚点">#</a>
-    </span>        
-    
-</h3>
 <ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
+<li>报错信息提示10251端口拒绝连接</li>
 </ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Get <span class="s2">&#34;http://127.0.0.1:10251/healthz&#34;</span>: dial tcp 127.0.0.1:10251: connect: connection refused
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
+      
+    </figure>
+</p>
 
 
-<h3 class="relative group">嵌套列表 
-    <div id="%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8" class="anchor"></div>
+<h1 class="relative group">2. 查看端口状态 
+    <div id="2-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E7%8A%B6%E6%80%81" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#2-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E7%8A%B6%E6%80%81" aria-label="锚点">#</a>
     </span>        
     
-</h3>
+</h1>
 <ul>
-<li>Fruit
-<ul>
-<li>Apple</li>
-<li>Orange</li>
-<li>Banana</li>
+<li>服务确实未启动</li>
 </ul>
-</li>
-<li>Dairy
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -lnpt <span class="p">|</span>grep <span class="m">1025</span>
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./2.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">3. 修改kube-scheduler.yaml,注释port=0 
+    <div id="3-%E4%BF%AE%E6%94%B9kube-scheduleryaml%E6%B3%A8%E9%87%8Aport0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E4%BF%AE%E6%94%B9kube-scheduleryaml%E6%B3%A8%E9%87%8Aport0" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>查看scheduler配置文件是否禁用非安全端口。文件路径在/etc/kubernetes/manifests</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /etc/kubernetes/manifests
+</span></span><span class="line"><span class="cl">vim kube-scheduler.yaml
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./3.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">4. 再次检查端口及服务 
+    <div id="4-%E5%86%8D%E6%AC%A1%E6%A3%80%E6%9F%A5%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%9C%8D%E5%8A%A1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-%E5%86%8D%E6%AC%A1%E6%A3%80%E6%9F%A5%E7%AB%AF%E5%8F%A3%E5%8F%8A%E6%9C%8D%E5%8A%A1" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
 <ul>
-<li>Milk</li>
-<li>Cheese</li>
+<li>一切正常</li>
 </ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -lnpt <span class="p">|</span>grep <span class="m">1025</span>
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./4.png" alt="image.png" />
+      
+    </figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl get cs
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./5.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">5.其它情况 
+    <div id="5%E5%85%B6%E5%AE%83%E6%83%85%E5%86%B5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5%E5%85%B6%E5%AE%83%E6%83%85%E5%86%B5" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>因为本次仅遇到了scheduler的unhealthy的问题，所以仅修改了一个文件，根据经验之谈，如果contoller也是unhealthy的情况</p>
+
+
+<h2 class="relative group">5.1 contoller也是unhealthy解决方案 
+    <div id="51-contoller%E4%B9%9F%E6%98%AFunhealthy%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#51-contoller%E4%B9%9F%E6%98%AFunhealthy%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>其它步骤同上，文件需要修改，注释port=0</p>
+<ul>
+<li>/etc/kubernetes/manifests/
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./6.png" alt="image.png" />
+      
+    </figure>
 </li>
 </ul>
-
-
-<h2 class="relative group">其他元素 — abbr、sub、sup、kbd、mark 
-    <div id="%E5%85%B6%E4%BB%96%E5%85%83%E7%B4%A0--abbrsubsupkbdmark" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%85%B6%E4%BB%96%E5%85%83%E7%B4%A0--abbrsubsupkbdmark" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
-<p>H<sub>2</sub>O</p>
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
-<p>Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.</p>
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>上述引文摘自 Rob Pike 在 2015 年 11 月 18 日 Gopherfest 期间的<a href="https://www.youtube.com/watch?v=PAAkCSZUG1c" target="_blank">谈论“什么都没有”</a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
           
           
           
@@ -1895,7 +1550,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/k8s-solve/%E9%83%A8%E7%BD%B2/&amp;subject=%e9%83%a8%e7%bd%b2%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3%e8%ae%b0%e5%bd%95"
+      href="mailto:?body=https://Wercurial.github.io/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/&amp;subject=k8s%ef%bc%88kubectl%20get%20cs%ef%bc%89%e5%81%a5%e5%ba%b7%e6%a3%80%e6%9f%a5%e6%8a%a5%e9%94%99"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1916,6 +1571,148 @@
         
 
 
+<h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
+<section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/kubernetes/ownerreference%E5%92%8Cfinalizers/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/kubernetes/ownerreference%E5%92%8Cfinalizers/">【Kubernetes知识】OwnerReference和Finalizers</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-03-11 00:00:00 &#43;0000 UTC">2024-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>1336 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pod/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Pod
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/spec/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Spec
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+</section>
+
   
       </div>
      
@@ -1927,8 +1724,8 @@
           
         
       <script>
-        var oid = "views_k8s-solve\/部署\/index.md"
-        var oid_likes = "likes_k8s-solve\/部署\/index.md"
+        var oid = "views_k8s-solve\/k8s健康检查报错\/index.md"
+        var oid_likes = "likes_k8s-solve\/k8s健康检查报错\/index.md"
       </script>
       
       
