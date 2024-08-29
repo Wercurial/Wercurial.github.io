@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>docker开放远程操作api（2375） &middot; 云一二三</title>
-  <meta name="title" content="docker开放远程操作api（2375） &middot; 云一二三" />
+  <title>k8s资源删除报Terminating卡住 &middot; 云一二三</title>
+  <meta name="title" content="k8s资源删除报Terminating卡住 &middot; 云一二三" />
   
-  <meta name="description" content="实现docker远程操作api（2375端口）开放" />
-  <meta name="keywords" content="Kubernetes, docker, api, " />
+  <meta name="description" content="k8s资源删除报Terminating卡住。" />
+  <meta name="keywords" content="Kubernetes, terminating, crd, namespace, " />
   
   
-  <link rel="canonical" href="https://Wercurial.github.io/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/" />
+  <link rel="canonical" href="https://Wercurial.github.io/k8s-solve/k8s%E8%B5%84%E6%BA%90%E5%88%A0%E9%99%A4%E6%8A%A5terminating%E5%8D%A1%E4%BD%8F/" />
   
   
   
@@ -64,50 +64,51 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/">
+  <meta property="og:url" content="https://Wercurial.github.io/k8s-solve/k8s%E8%B5%84%E6%BA%90%E5%88%A0%E9%99%A4%E6%8A%A5terminating%E5%8D%A1%E4%BD%8F/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="docker开放远程操作api（2375）">
-  <meta property="og:description" content="实现docker远程操作api（2375端口）开放">
+  <meta property="og:title" content="k8s资源删除报Terminating卡住">
+  <meta property="og:description" content="k8s资源删除报Terminating卡住。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="kubernetes">
-    <meta property="article:published_time" content="2023-03-11T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-03-11T00:00:00+00:00">
+    <meta property="article:section" content="k8s-solve">
+    <meta property="article:published_time" content="2024-08-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-29T00:00:00+00:00">
     <meta property="article:tag" content="Kubernetes">
-    <meta property="article:tag" content="Docker">
-    <meta property="article:tag" content="Api">
+    <meta property="article:tag" content="Terminating">
+    <meta property="article:tag" content="Crd">
+    <meta property="article:tag" content="Namespace">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="docker开放远程操作api（2375）">
-  <meta name="twitter:description" content="实现docker远程操作api（2375端口）开放">
+  <meta name="twitter:title" content="k8s资源删除报Terminating卡住">
+  <meta name="twitter:description" content="k8s资源删除报Terminating卡住。">
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Kubernetes",
-    "name": "docker开放远程操作api（2375）",
-    "headline": "docker开放远程操作api（2375）",
-    "description": "实现docker远程操作api（2375端口）开放",
-    "abstract": "\u003cp\u003e实现docker远程操作api（2375端口）开放。\u003c\/p\u003e",
+    "articleSection": "k8s问题解决与记录",
+    "name": "k8s资源删除报Terminating卡住",
+    "headline": "k8s资源删除报Terminating卡住",
+    "description": "k8s资源删除报Terminating卡住。",
+    "abstract": "\u003cp\u003e本文解决了k8s资源删除报Terminating卡住的问题。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/kubernetes\/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375\/",
+    "url" : "https:\/\/Wercurial.github.io\/k8s-solve\/k8s%E8%B5%84%E6%BA%90%E5%88%A0%E9%99%A4%E6%8A%A5terminating%E5%8D%A1%E4%BD%8F\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
-    "copyrightYear": "2023",
-    "dateCreated": "2023-03-11T00:00:00\u002b00:00",
-    "datePublished": "2023-03-11T00:00:00\u002b00:00",
+    "copyrightYear": "2024",
+    "dateCreated": "2024-08-29T00:00:00\u002b00:00",
+    "datePublished": "2024-08-29T00:00:00\u002b00:00",
     
-    "dateModified": "2023-03-11T00:00:00\u002b00:00",
+    "dateModified": "2024-08-29T00:00:00\u002b00:00",
     
-    "keywords": ["Kubernetes","docker","api"],
+    "keywords": ["Kubernetes","terminating","crd","namespace"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "195"
+    "wordCount": "190"
   }]
   </script>
 
@@ -1033,8 +1034,8 @@
   <li class="inline ">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/kubernetes/"
-      >Kubernetes</a
+      href="/k8s-solve/"
+      >k8s问题解决与记录</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1042,8 +1043,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/"
-      >docker开放远程操作api（2375）</a
+      href="/k8s-solve/k8s%E8%B5%84%E6%BA%90%E5%88%A0%E9%99%A4%E6%8A%A5terminating%E5%8D%A1%E4%BD%8F/"
+      >k8s资源删除报Terminating卡住</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1052,7 +1053,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      docker开放远程操作api（2375）
+      k8s资源删除报Terminating卡住
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1099,7 +1100,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>195 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-08-29 00:00:00 &#43;0000 UTC">2024-08-29</time><span class="px-2 text-primary-500">&middot;</span><span>190 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1166,18 +1167,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/terminating/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
+    Terminating
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/api/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/crd/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Api
+    Crd
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/namespace/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Namespace
   </span>
 </span>
   </span>
@@ -1271,111 +1280,7 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-     <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
-
-         <details open id="TOCView"
-  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
-  <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#21-修改docker配置文件-etcdockerdaemonjson">2.1 修改docker配置文件: <code>/etc/docker/daemon.json</code></a></li>
-    <li><a href="#22-重启docker">2.2 重启docker</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    目录
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#21-修改docker配置文件-etcdockerdaemonjson">2.1 修改docker配置文件: <code>/etc/docker/daemon.json</code></a></li>
-    <li><a href="#22-重启docker">2.2 重启docker</a></li>
-  </ul>
-</nav>
-  </div>
-</details>
-
-<script>
-
-  var margin = 200;
-  var marginError = 50;
-
-  (function () {
-    var $window = $(window);
-    var $toc = $('#TOCView');
-    var tocHeight = $toc.height();
-
-    function onResize() {
-      var windowAndMarginHeight = $window.height() - margin;
-      if(tocHeight >= windowAndMarginHeight) {
-        $toc.css("overflow-y", "scroll")
-        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
-      } else {
-        $toc.css("overflow-y", "hidden")
-        $toc.css("max-height", "9999999px")
-      }
-    }
-
-    $window.on('resize', onResize);
-    $(document).ready(onResize);
-  })();
-
-
-
-  (function () {
-    var $toc = $('#TableOfContents');
-    if ($toc.length > 0) {
-      var $window = $(window);
-
-      function onScroll() {
-        var currentScroll = $window.scrollTop();
-        var h = $('.anchor');
-        var id = "";
-        h.each(function (i, e) {
-          e = $(e);
-          if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = decodeURIComponent(e.attr('id'));
-          }
-        });
-        var active = $toc.find('a.active');      
-        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-        active.each(function (i, e) {
-          
-            $(e).removeClass('active');
-          
-        });
-        $toc.find('a[href="#' + id + '"]').addClass('active')
-        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
-        });
-      }
-
-      $window.on('scroll', onScroll);
-      $(document).ready(function () {
-        
-        onScroll();
-      });
-    }
-  })();
-
-
-</script>
-   </div>
-      </div>
-      
+    
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -1383,69 +1288,47 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>实现docker远程操作api（2375端口）开放。</p>
-<h1 class="relative group">1. 检查2375端口是否开启 
-    <div id="1-%E6%A3%80%E6%9F%A52375%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF" class="anchor"></div>
+          <p>本文解决了k8s资源删除报Terminating卡住的问题。</p>
+<h1 class="relative group">1.方案一 
+    <div id="1%E6%96%B9%E6%A1%88%E4%B8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-%E6%A3%80%E6%9F%A52375%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#1%E6%96%B9%E6%A1%88%E4%B8%80" aria-label="锚点">#</a>
     </span>        
     
 </h1>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">netstat -tuln <span class="p">|</span> grep <span class="m">2375</span>
-</span></span></code></pre></div><p>如果已开启，则会出现如下日志</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@work01:~# netstat -tuln <span class="p">|</span> grep <span class="m">2375</span>
-</span></span><span class="line"><span class="cl">tcp6       <span class="m">0</span>      <span class="m">0</span> :::2375                 :::*                    LISTEN
-</span></span></code></pre></div><p>如果未输出以上日志，则进入下一步开启2375端口</p>
-
-
-<h1 class="relative group">2. 开启2375端口 
-    <div id="2-%E5%BC%80%E5%90%AF2375%E7%AB%AF%E5%8F%A3" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E5%BC%80%E5%90%AF2375%E7%AB%AF%E5%8F%A3" aria-label="锚点">#</a>
-    </span>        
-    
-</h1>
-
-
-<h2 class="relative group">2.1 修改docker配置文件: <code>/etc/docker/daemon.json</code> 
-    <div id="21-%E4%BF%AE%E6%94%B9docker%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-etcdockerdaemonjson" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#21-%E4%BF%AE%E6%94%B9docker%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-etcdockerdaemonjson" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
+<blockquote>
+<p>适用资源类型：pod、deploy、namespaces、crd</p>
+</blockquote>
 <ul>
-<li>新增如下配置
-<ul>
-<li>这段配置的意思是允许Docker监听在0.0.0.0的2375端口上，这样就可以远程访问Docker</li>
+<li>使用kubectl delete crd卡住，用以下命令更新该资源的状态：</li>
 </ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;hosts&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;tcp://0.0.0.0:2375&#34;</span><span class="p">,</span> <span class="s2">&#34;unix:///var/run/docker.sock&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl patch crd/inferenceservices.serving.kserve.io -p <span class="s1">&#39;{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}&#39;</span> --type<span class="o">=</span>merge
 </span></span></code></pre></div>
 
-<h2 class="relative group">2.2 重启docker 
-    <div id="22-%E9%87%8D%E5%90%AFdocker" class="anchor"></div>
+<h1 class="relative group">2.方案2(优先方案一) 
+    <div id="2%E6%96%B9%E6%A1%882%E4%BC%98%E5%85%88%E6%96%B9%E6%A1%88%E4%B8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#22-%E9%87%8D%E5%90%AFdocker" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#2%E6%96%B9%E6%A1%882%E4%BC%98%E5%85%88%E6%96%B9%E6%A1%88%E4%B8%80" aria-label="锚点">#</a>
     </span>        
     
-</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl restart docker
+</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1.导出配置</span>
+</span></span><span class="line"><span class="cl">kubectl get ns rook-ceph -o json &gt; tmp.json
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2.删除tmp.json中spec及status部分的内容</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3.启动代理</span>
+</span></span><span class="line"><span class="cl">kubectl proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4.调用接口删除</span>
+</span></span><span class="line"><span class="cl">curl -k -H <span class="s2">&#34;Content-Type: application/json&#34;</span> -X PUT --data-binary @tmp.json http://127.0.0.1:8001/api/v1/namespaces/rook-ceph/finalize
 </span></span></code></pre></div>
           
           
@@ -1479,7 +1362,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/&amp;subject=docker%e5%bc%80%e6%94%be%e8%bf%9c%e7%a8%8b%e6%93%8d%e4%bd%9capi%ef%bc%882375%ef%bc%89"
+      href="mailto:?body=https://Wercurial.github.io/k8s-solve/k8s%E8%B5%84%E6%BA%90%E5%88%A0%E9%99%A4%E6%8A%A5terminating%E5%8D%A1%E4%BD%8F/&amp;subject=k8s%e8%b5%84%e6%ba%90%e5%88%a0%e9%99%a4%e6%8a%a5Terminating%e5%8d%a1%e4%bd%8f"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1502,6 +1385,280 @@
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/kubernetes/ownerreference%E5%92%8Cfinalizers/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/kubernetes/ownerreference%E5%92%8Cfinalizers/">【Kubernetes知识】OwnerReference和Finalizers</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-03-11 00:00:00 &#43;0000 UTC">2024-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>1336 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pod/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Pod
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/spec/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Spec
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/volume-solve/pvc%E8%AF%AF%E5%88%A0%E9%99%A4%E5%90%8E%E6%81%A2%E5%A4%8D/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/volume-solve/pvc%E8%AF%AF%E5%88%A0%E9%99%A4%E5%90%8E%E6%81%A2%E5%A4%8D/">PVC误删除后恢复操作</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>275 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pvc/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Pvc
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/volume/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Volume
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
   
   
 
@@ -1650,7 +1807,7 @@
   
   
 
-  <a href="/volume-solve/pvc%E8%AF%AF%E5%88%A0%E9%99%A4%E5%90%8E%E6%81%A2%E5%A4%8D/" class="min-w-full">
+  <a href="/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1662,7 +1819,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/volume-solve/pvc%E8%AF%AF%E5%88%A0%E9%99%A4%E5%90%8E%E6%81%A2%E5%A4%8D/">PVC误删除后恢复操作</div>
+          href="/kubernetes/docker%E5%BC%80%E6%94%BE%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9Capi2375/">docker开放远程操作api（2375）</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1705,7 +1862,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>275 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>195 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -1751,18 +1908,18 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pvc/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pvc
+    Docker
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/volume/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/api/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Volume
+    Api
   </span>
 </span>
   </span>
@@ -2067,280 +2224,6 @@
   </a>
 
   
-  
-
-  <a href="/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/">k8s容器间免密访问方案</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2022-03-11 00:00:00 &#43;0000 UTC">2022-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>1020 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Kubernetes
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ssh/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ssh
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nossh/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nossh
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/cloudnetissues/k8s%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E9%85%8D/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/featured.svg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/cloudnetissues/k8s%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E9%85%8D/">k8s端口号定义及分配</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2022-03-11 00:00:00 &#43;0000 UTC">2022-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>337 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Kubernetes
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/service/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Service
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/port/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Port
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -2354,8 +2237,8 @@
           
         
       <script>
-        var oid = "views_Kubernetes\/docker开放远程操作api（2375）\/index.md"
-        var oid_likes = "likes_Kubernetes\/docker开放远程操作api（2375）\/index.md"
+        var oid = "views_k8s-solve\/k8s资源删除报Terminating卡住\/index.md"
+        var oid_likes = "likes_k8s-solve\/k8s资源删除报Terminating卡住\/index.md"
       </script>
       
       
@@ -2375,7 +2258,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/kubernetes/kubernetes%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/">
+            <a class="flex group mr-3" href="/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2387,11 +2270,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Kubernetes命令集合</span
+                  >k8s（kubectl get cs）健康检查报错</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2022-03-12 00:00:00 &#43;0000 UTC">2022-03-12</time>
+                    <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time>
                   
                 </span>
               </span>
@@ -2399,28 +2282,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/kubernetes/docker%E5%8F%8Acontainerd%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >docker及containerd镜像代理配置</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

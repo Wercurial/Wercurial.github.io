@@ -9,6 +9,16 @@
     <copyright>© 2024 古德</copyright>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Crd</title>
+      <link>https://Wercurial.github.io/tags/crd/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/crd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Download</title>
       <link>https://Wercurial.github.io/tags/download/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
@@ -39,51 +49,41 @@
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://Wercurial.github.io/tags/css/</link>
-      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/css/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://Wercurial.github.io/tags/html/</link>
-      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/html/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://Wercurial.github.io/tags/markdown/</link>
-      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/markdown/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>示例</title>
-      <link>https://Wercurial.github.io/tags/%E7%A4%BA%E4%BE%8B/</link>
-      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/%E7%A4%BA%E4%BE%8B/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Kubernetes</title>
       <link>https://Wercurial.github.io/tags/kubernetes/</link>
-      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Namespace</title>
+      <link>https://Wercurial.github.io/tags/namespace/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/namespace/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Terminating</title>
+      <link>https://Wercurial.github.io/tags/terminating/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/terminating/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Unhealthy</title>
+      <link>https://Wercurial.github.io/tags/unhealthy/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/unhealthy/</guid>
       <description></description>
       
     </item>

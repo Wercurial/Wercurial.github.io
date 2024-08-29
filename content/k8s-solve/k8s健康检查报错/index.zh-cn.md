@@ -2,7 +2,7 @@
 title: "k8s（kubectl get cs）健康检查报错"
 date: 2024-08-11
 description: "k8s健康检查报错修复。"
-tags: ["markdown", "css", "html", "示例"]
+tags: ["kubernetes", "unhealthy"]
 type: 'k8s-solve'
 ---
 
