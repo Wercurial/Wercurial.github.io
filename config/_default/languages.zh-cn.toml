@@ -8,12 +8,12 @@ title = "云一二三"
   isoCode = "zh-cn"
   rtl = false
   dateFormat = "2006-01-02"
-  logo = "img/blowfish_logo_transparent.png"
+  logo = "img/1.png"
   description = "朝看水东流，暮看日西坠~"
 
 [author]
   name = "古德"
-  image = "img/blowfish_logo.png"
+  image = "img/1.png"
   headline = "朝看水东流，暮看日西坠~"
   bio = "朝看水东流，暮看日西坠~"
   links = [

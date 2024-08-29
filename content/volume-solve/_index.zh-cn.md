@@ -3,8 +3,8 @@ title: "云存储问题解决"
 description: "记录云存储使用过程中的问题解决"
 
 cascade:
-  showDate: false
-  showAuthor: false
+  showDate: true
+  showAuthor: true
   invertPagination: true
 ---
 
