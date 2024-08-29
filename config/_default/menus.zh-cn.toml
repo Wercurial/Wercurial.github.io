@@ -82,6 +82,18 @@
   pageRef = "go"
   weight = 10
 
+# 编程语言知识专栏
+[[main]]
+  name = "奇淫技巧"
+  pageRef = "skill-tech"
+  weight = 14
+
+[[main]]
+  name = "文件下载"
+  parent = "奇淫技巧"
+  pageRef = "filedown"
+  weight = 10
+
 
 #[[main]]
 #  name = "Test"
