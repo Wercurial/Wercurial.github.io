@@ -140,6 +140,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/blowfish/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/hugo/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/hugos/blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%BB%84%E4%BB%B6/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/hugos/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/music/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>

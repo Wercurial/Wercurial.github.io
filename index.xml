@@ -99,6 +99,16 @@
     </item>
     
     <item>
+      <title>hugo博客-blowfish主题添加音乐组件</title>
+      <link>https://Wercurial.github.io/hugos/blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/hugos/blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%BB%84%E4%BB%B6/</guid>
+      <description>&lt;p&gt;添加音乐组件，并在切换页面时保持音乐播放。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>k8s（kubectl get cs）健康检查报错</title>
       <link>https://Wercurial.github.io/k8s-solve/k8s%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E6%8A%A5%E9%94%99/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
