@@ -1321,7 +1321,7 @@
   
   
 
-  <a href="/calico/deploy/" class="min-w-full">
+  <a href="/ceph/deploy/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1333,7 +1333,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/calico/deploy/">First</div>
+          href="/ceph/deploy/">First</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1543,7 +1543,7 @@
   
   
 
-  <a href="/ceph/deploy/" class="min-w-full">
+  <a href="/calico/deploy/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1555,7 +1555,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ceph/deploy/">First</div>
+          href="/calico/deploy/">First</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2172,6 +2172,36 @@
                 ]
             });
         
+        isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
     </script>
 </body>
 
