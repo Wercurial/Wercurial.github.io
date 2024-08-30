@@ -94,6 +94,11 @@
   pageRef = "filedown"
   weight = 10
 
+[[main]]
+  name = "博客搭建"
+  parent = "奇淫技巧"
+  pageRef = "hugos"
+  weight = 11
 
 #[[main]]
 #  name = "Test"
