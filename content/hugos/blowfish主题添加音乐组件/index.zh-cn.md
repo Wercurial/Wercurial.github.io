@@ -3,7 +3,7 @@ title: "hugo博客-blowfish主题添加音乐组件"
 date: 2024-08-25
 description: "添加音乐组件，并在切换页面时保持音乐播放。"
 tags: ["hugo", "blowfish", "music"]
-type: 'skill-tech'
+type: 'blog'
 ---
 
 添加音乐组件，并在切换页面时保持音乐播放。

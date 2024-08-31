@@ -3,7 +3,7 @@ title: "docker开放远程操作api（2375）"
 date: 2023-03-11
 description: "实现docker远程操作api（2375端口）开放"
 tags: ["Kubernetes", "docker", "api"]
-type: 'Kubernetes'
+type: 'blog'
 ---
 
 实现docker远程操作api（2375端口）开放。

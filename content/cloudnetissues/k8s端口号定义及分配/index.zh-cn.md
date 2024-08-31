@@ -3,7 +3,7 @@ title: "k8s端口号定义及分配"
 date: 2022-03-11
 description: "实现k8s端口号定义及分配"
 tags: ["Kubernetes", "service", "port"]
-type: 'cloudnet'
+type: 'blog'
 ---
 
 实现k8s端口号定义及分配

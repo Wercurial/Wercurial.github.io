@@ -81,21 +81,23 @@
 
         <div class="article-content max-w-prose mb-20">
 
-          {{ range (.Site.RegularPages.GroupByDate "2006") }}  
-          {{- if ne .Key "0001-01-01" }}  
+          {{ range (.Site.RegularPages.GroupByDate "2006") }}   
           <h3>{{ .Key }}</h3>  
           <ul class="archive-list">  
-              {{ range .Pages }}  
+            {{ range (where .Pages "Type" "blog") }}
+            
+              
                   <li>  
                       {{ .PublishDate.Format "2006-01-02" }}  
                       ->  
                       <a href="{{ .RelPermalink }}">{{ .Title }}</a>  
                   </li>  
+          
               {{ end }}  
           </ul>  
           {{ end }}  
-      {{ end }}
       
+
           {{ $defaultReplyByEmail := .Site.Params.replyByEmail }}
           {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
           {{ if $replyByEmail }}

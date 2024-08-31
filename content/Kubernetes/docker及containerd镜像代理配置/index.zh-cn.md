@@ -3,7 +3,7 @@ title: "docker及containerd镜像代理配置"
 date: 2023-03-11
 description: "实现docker及containerd镜像代理"
 tags: ["Kubernetes", "docker", "containerd", "proxy"]
-type: 'Kubernetes'
+type: 'blog'
 ---
 
 实现docker及containerd镜像代理配置。

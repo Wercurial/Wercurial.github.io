@@ -79,16 +79,6 @@
     </item>
     
     <item>
-      <title>解决bug</title>
-      <link>https://Wercurial.github.io/longhorn/bug%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Mon, 26 Aug 2024 14:31:40 +0800</pubDate>
-      
-      <guid>https://Wercurial.github.io/longhorn/bug%E8%A7%A3%E5%86%B3/</guid>
-      <description>这是一个标题 #</description>
-      
-    </item>
-    
-    <item>
       <title>hugo博客-blowfish主题添加音乐组件</title>
       <link>https://Wercurial.github.io/hugos/blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%BB%84%E4%BB%B6/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
@@ -151,6 +141,16 @@
     </item>
     
     <item>
+      <title>解决bug</title>
+      <link>https://Wercurial.github.io/longhorn/bug%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/longhorn/bug%E8%A7%A3%E5%86%B3/</guid>
+      <description>这是一个标题 #</description>
+      
+    </item>
+    
+    <item>
       <title>k8s网络问题解决记录</title>
       <link>https://Wercurial.github.io/cloudnetissues/k8s%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
@@ -201,7 +201,7 @@
     </item>
     
     <item>
-      <title>归档</title>
+      <title>时间轴</title>
       <link>https://Wercurial.github.io/archives/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       

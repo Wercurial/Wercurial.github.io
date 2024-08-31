@@ -3,7 +3,7 @@ title: "Kubernetes命令集合"
 date: 2022-03-12
 description: "收集各类常见kubernetes命令"
 tags: ["Kubernetes", "shell", "command", "sh"]
-type: 'Kubernetes'
+type: 'blog'
 ---
 
 收集各类常见kubernetes命令。

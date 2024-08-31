@@ -3,7 +3,7 @@ title: "Windows配置Go环境"
 date: 2022-03-11
 description: "在Windows环境配置Go环境。"
 tags: ["coding", "Go", "环境"]
-type: 'go'
+type: 'blog'
 ---
 
 本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。

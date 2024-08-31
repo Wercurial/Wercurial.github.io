@@ -3,7 +3,7 @@ title: "【Kubernetes知识】OwnerReference和Finalizers"
 date: 2024-03-11
 description: "实现docker及containerd镜像代理"
 tags: ["Kubernetes", "pod", "spec"]
-type: 'Kubernetes'
+type: 'blog'
 ---
 
 OwnerReference和Finalizers.

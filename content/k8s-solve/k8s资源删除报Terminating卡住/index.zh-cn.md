@@ -3,7 +3,7 @@ title: "k8s资源删除报Terminating卡住"
 date: 2024-08-29
 description: "k8s资源删除报Terminating卡住。"
 tags: ["Kubernetes", "terminating", "crd", "namespace"]
-type: 'k8s-solve'
+type: 'blog'
 ---
 
 本文解决了k8s资源删除报Terminating卡住的问题。

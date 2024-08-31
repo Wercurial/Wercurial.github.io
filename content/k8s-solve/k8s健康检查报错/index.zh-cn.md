@@ -3,7 +3,7 @@ title: "k8s（kubectl get cs）健康检查报错"
 date: 2024-08-11
 description: "k8s健康检查报错修复。"
 tags: ["kubernetes", "unhealthy"]
-type: 'k8s-solve'
+type: 'blog'
 ---
 
 本文解决了k8s健康检查时提示unhealthy的问题。

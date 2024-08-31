@@ -3,7 +3,7 @@ title: "下载gs协议的文件"
 date: 2024-08-29
 description: "下载gs协议（gs://）的文件。"
 tags: ["file", "download", "gs"]
-type: 'skill-tech'
+type: 'blog'
 ---
 
 本文提供了下载gs协议的文件方案。

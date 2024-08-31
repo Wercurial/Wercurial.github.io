@@ -3,7 +3,7 @@ title: "k8s容器间免密访问方案"
 date: 2022-03-11
 description: "实现k8s容器间免密访问方案"
 tags: ["Kubernetes", "ssh", "nossh"]
-type: 'cloudnet'
+type: 'blog'
 ---
 
 实现k8s容器间免密访问方案

@@ -3,7 +3,7 @@ title: "k8s网络问题解决记录"
 date: 2023-02-11
 description: "k8s网络问题解决记录"
 tags: ["Kubernetes", "service", "net"]
-type: 'cloudnet'
+type: 'blog'
 ---
 
 k8s网络问题解决记录
