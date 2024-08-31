@@ -4,6 +4,7 @@
 
   <url>
     <loc>https://Wercurial.github.io/cloudnative/welcome/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -356,6 +357,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/series/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/ssh/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -368,8 +375,38 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnative/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/%E6%96%B0%E6%89%8B/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/archives/</loc>
+    <lastmod>2017-07-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -384,37 +421,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/series/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/code-languages/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/series/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/skill-tech/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/%E6%96%87%E6%A1%A3/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/cloudnative/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/%E6%96%B0%E6%89%8B/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

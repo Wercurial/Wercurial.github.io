@@ -113,6 +113,12 @@
 #  url = "https://masto.ai/@blowfish"
 
 [[main]]
+  name = "文章归档"
+  url = "archives"
+  weight = 300 #主页上面的按钮排序为第5
+  
+
+[[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/Wercurial"
