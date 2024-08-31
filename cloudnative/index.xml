@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文档 on 云一二三</title>
+    <title>云原生 on 云一二三</title>
     <link>https://Wercurial.github.io/cloudnative/</link>
-    <description>Recent content in 文档 on 云一二三</description>
+    <description>Recent content in 云原生 on 云一二三</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/cloudnative/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>欢迎来到 Blowfish</title>
-      <link>https://Wercurial.github.io/cloudnative/welcome/</link>
-      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/cloudnative/welcome/</guid>
-      <description>Blowfish 包含了大量的特性功能。 Blowfish 的目标是开发一个简单且轻量级的主题</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://Wercurial.github.io/cloudnative/welcome/featured.svg" />
-    </item>
-    
+    <atom:link href="https://Wercurial.github.io/cloudnative/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
