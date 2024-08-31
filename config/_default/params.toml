@@ -45,11 +45,11 @@ smartTOCHideUnfocusedChildren = false
   layout = "custom" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "/img/iceland.jpg" # used in: hero, and card
   showRecent = false
-  showRecentItems = 6
-  showMoreLink = true
-  showMoreLinkDest = "docs"
+  showRecentItems = 8
+  showMoreLink = false
+  showMoreLinkDest = "kubernetes"
   cardView = true
-  cardViewScreenWidth = false
+  cardViewScreenWidth = true
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]

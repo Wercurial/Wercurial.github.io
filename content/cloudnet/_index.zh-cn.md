@@ -3,9 +3,9 @@ title: "云原生网络"
 description: "用于记录云原生场景下的网络知识"
 
 cascade:
-  showEdit: false
-  showSummary: false
-  hideFeatureImage: false
+  showDate: true
+  showAuthor: true
+  invertPagination: true
 ---
 
 {{< lead >}}

@@ -3,9 +3,9 @@ title: "Kubernetes"
 description: "用于记录Kubernetes相关知识"
 
 cascade:
-  showEdit: false
-  showSummary: false
-  hideFeatureImage: true
+  showDate: true
+  showAuthor: true
+  invertPagination: true
 ---
 
 {{< lead >}}
