@@ -21,8 +21,11 @@ disableImageOptimization = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "/img/background.svg"
-defaultFeaturedImage = "/img/featured.svg"
+# defaultBackgroundImage = "/img/background.svg"
+# defaultFeaturedImage = "/img/featured.svg"
+
+defaultBackgroundImage = "/img/1.jpg"
+defaultFeaturedImage = "/img/2.jpg"
 
 highlightCurrentMenuArea = true
 smartTOC = true
