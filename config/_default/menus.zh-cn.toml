@@ -114,7 +114,7 @@
 
 [[main]]
   name = "文章归档"
-  url = "archives"
+  pageRef = "archives"
   weight = 300 #主页上面的按钮排序为第5
   
 
