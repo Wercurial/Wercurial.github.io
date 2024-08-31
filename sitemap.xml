@@ -129,6 +129,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/archives/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/blowfish/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -136,6 +142,12 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/hugo/</loc>
+    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/hugos/blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4%E8%BD%B4/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
