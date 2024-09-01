@@ -100,6 +100,12 @@
   pageRef = "hugos"
   weight = 11
 
+[[main]]
+  name = "windows记录"
+  parent = "奇淫技巧"
+  pageRef = "windows"
+  weight = 12
+
 #[[main]]
 #  name = "Test"
 #  pageRef = "pagTest"

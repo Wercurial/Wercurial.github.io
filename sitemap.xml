@@ -195,6 +195,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/os/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/wifi/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/windows/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/windows/wifi%E8%BF%9E%E6%8E%A5%E6%AD%A3%E5%B8%B8%E4%B8%8A%E4%B8%8D%E4%BA%86%E7%BD%91/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/windows/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/kubernetes/ownerreference%E5%92%8Cfinalizers/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
