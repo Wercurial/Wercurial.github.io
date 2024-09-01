@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Containerd</title>
+      <link>https://Wercurial.github.io/tags/containerd/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/containerd/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://Wercurial.github.io/tags/kubernetes/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Question</title>
+      <link>https://Wercurial.github.io/tags/question/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/question/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Solve</title>
+      <link>https://Wercurial.github.io/tags/solve/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/solve/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Crd</title>
       <link>https://Wercurial.github.io/tags/crd/</link>
@@ -44,16 +84,6 @@
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/gs/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://Wercurial.github.io/tags/kubernetes/</link>
-      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
       <description></description>
       
     </item>
@@ -139,11 +169,21 @@
     </item>
     
     <item>
-      <title>Lock</title>
-      <link>https://Wercurial.github.io/tags/lock/</link>
+      <title>Https</title>
+      <link>https://Wercurial.github.io/tags/https/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/tags/lock/</guid>
+      <guid>https://Wercurial.github.io/tags/https/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Net</title>
+      <link>https://Wercurial.github.io/tags/net/</link>
+      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/net/</guid>
       <description></description>
       
     </item>
@@ -159,21 +199,11 @@
     </item>
     
     <item>
-      <title>Pdf</title>
-      <link>https://Wercurial.github.io/tags/pdf/</link>
+      <title>Tools</title>
+      <link>https://Wercurial.github.io/tags/tools/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/tags/pdf/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Unlock</title>
-      <link>https://Wercurial.github.io/tags/unlock/</link>
-      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/unlock/</guid>
+      <guid>https://Wercurial.github.io/tags/tools/</guid>
       <description></description>
       
     </item>
@@ -194,6 +224,46 @@
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/windows/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Centos7</title>
+      <link>https://Wercurial.github.io/tags/centos7/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/centos7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Gitlab-Ce</title>
+      <link>https://Wercurial.github.io/tags/gitlab-ce/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/gitlab-ce/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kernel</title>
+      <link>https://Wercurial.github.io/tags/kernel/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kernel/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://Wercurial.github.io/tags/linux/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/linux/</guid>
       <description></description>
       
     </item>
@@ -224,16 +294,6 @@
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/api/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Containerd</title>
-      <link>https://Wercurial.github.io/tags/containerd/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/containerd/</guid>
       <description></description>
       
     </item>
@@ -274,16 +334,6 @@
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/volume/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Net</title>
-      <link>https://Wercurial.github.io/tags/net/</link>
-      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/net/</guid>
       <description></description>
       
     </item>

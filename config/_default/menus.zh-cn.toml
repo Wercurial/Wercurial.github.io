@@ -107,10 +107,16 @@
   weight = 12
 
 [[main]]
+  name = "Linux记录"
+  parent = "奇淫技巧"
+  pageRef = "Linux"
+  weight = 13
+
+[[main]]
   name = "工具集合"
   parent = "奇淫技巧"
   pageRef = "tools"
-  weight = 13
+  weight = 14
 
 
 #[[main]]

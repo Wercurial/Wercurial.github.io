@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kernel on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/kernel/</link>
+    <description>Recent content in Kernel on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux系统内核升级</title>
+      <link>https://Wercurial.github.io/linux/centos7%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/linux/centos7%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/</guid>
+      <description>1. 参考网站 # centos7 离线升级/在线升级操作系统内核_centos7</description>
+      
+    </item>
+    
+  </channel>
+</rss>
