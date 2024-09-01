@@ -143,6 +143,12 @@
   url = "https://github.com/Wercurial"
   weight = 400
 
+[[main]]
+  identifier = "rss"
+  pre = "rss"
+  url = "https://wercurial.github.io/index.xml"
+  weight = 400
+
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
