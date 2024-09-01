@@ -1,6 +1,6 @@
 ---
-title: "文件下载"
-description: "用来记录下载各类文件时遇到的问题解决方案"
+title: "windows问题解决"
+description: "用来记录windows系统遇到的各种问题解决"
 
 cascade:
   showDate: true

@@ -195,7 +195,31 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/lock/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/os/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/pdf/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/pdf%E6%96%87%E4%BB%B6%E8%A7%A3%E9%94%81/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/unlock/</loc>
     <lastmod>2024-07-29T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -220,6 +244,12 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/windows/</loc>
+    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/</loc>
     <lastmod>2024-07-29T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
