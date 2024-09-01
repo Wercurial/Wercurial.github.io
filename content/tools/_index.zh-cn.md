@@ -1,5 +1,5 @@
 ---
-title: "工具合计"
+title: "工具合集"
 description: "用来记录各种工具合集"
 
 cascade:
