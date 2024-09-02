@@ -60,4 +60,16 @@ Imagine 7 是一款用于压缩 PNG 和 JPEG 的桌面应用程序，用户界�
 ```url
 https://github.com/meowtec/Imagine
 ```
+
+## 1.6 windows文件夹防丢小助手（DirTag）
+运行DirTag后，当你打开某文件夹（目标是更深处的文件夹），如果存在深处子文件夹已处于打开状态，那么会跳出菜单，单击菜单项即可转到。
+- 原文地址：[小众论坛](https://meta.appinn.net/t/topic/60533)
+```url
+http://dogbean.ysepan.com/
+```
+
+
+
+
+
 # 2. 学习类网址
