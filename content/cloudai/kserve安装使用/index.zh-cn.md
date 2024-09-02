@@ -151,7 +151,8 @@ kubectl patch configmap/inferenceservice-config -n kserve --type=strategic -p '{
 kubectl create namespace test
 ```
 - demo-tensorflow.yaml
-   - 注意：在kserve v0.13.0版本中，模型发布需要发布在非default命名空间或是kserve具有权限的命名空间中，否则模型对应Pod会报错`No such file or directory: '/mnt/models'`，初步怀疑跟`2.3`部署的CertManager配置有关系，暂未深究
+   - ~~注意：在kserve v0.13.0版本中，模型发布需要发布在非default命名空间或是kserve具有权限的命名空间中，否则模型对应Pod会报错`No such file or directory: '/mnt/models'`，初步怀疑跟`2.3`部署的CertManager配置有关系，暂未深究~~
+   - 注意：kserve创建的模型发布不能发布在kserve命名空间以及没有权限的命名空间中，否则模型对应Pod会报错`No such file or directory: '/mnt/models'`，这是kserve的webhook检查导致的，具体可以参考[这个issue](https://github.com/kserve/kserve/issues/3473)
    - name：tensorflow-kserve
    - storageUri：[http://172.16.2.132:9999/00000123.tar](http://172.16.2.132:9999/00000123.tar)（采用文件服务器形式提供模型文件tar包或zip包，服务会自动解压）
    - [模型下载链接，tags2 4](https://drive.filen.io/d/6a3895ad-5200-4af6-9574-5d6b60db9e67#CqoscfaWspU5Kta3VQrSlwZTgYYmm420)
