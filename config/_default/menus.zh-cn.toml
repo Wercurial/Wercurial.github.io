@@ -28,6 +28,13 @@
   pageRef = "k8s-solve"
   weight = 12
 
+[[main]]
+  name = "云原生AI技术"
+  parent = "云原生"
+  pageRef = "cloudai"
+  weight = 13
+
+
 # 云原生存储知识专栏
 [[main]]
   name = "云原生存储"

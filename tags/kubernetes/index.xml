@@ -19,6 +19,16 @@
     </item>
     
     <item>
+      <title>kserve安装使用</title>
+      <link>https://Wercurial.github.io/cloudai/kserve%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/cloudai/kserve%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <description>1. kserve-0.10.0版本安装 # 1.1 kserve与依赖版</description>
+      
+    </item>
+    
+    <item>
       <title>kubernetes问题解决集合</title>
       <link>https://Wercurial.github.io/k8s-solve/kubernetes%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E9%9B%86%E5%90%88/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
