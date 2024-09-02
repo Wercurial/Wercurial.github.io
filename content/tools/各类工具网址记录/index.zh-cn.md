@@ -33,4 +33,18 @@ https://www.iconfont.cn/
 https://mp3.ltyuanfang.cn/
 ```
 
+# 1.4 图片裁剪圆形网址
+```url
+https://bigimage.11zon.com/zh-cn/crop-circle-image/
+
+https://crop.imageonline.co/cn/
+```
+
+# 1.5 图片压缩网址
+```url
+http://v.yalijuda.com:32723/%e5%9b%be%e7%89%87%e5%8e%8b%e7%bc%a9-%e5%89%af%e6%9c%ac-2/
+
+https://www.youcompress.com/zh-cn/
+```
+
 # 2. 学习类网址
