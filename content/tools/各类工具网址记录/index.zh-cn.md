@@ -33,18 +33,31 @@ https://www.iconfont.cn/
 https://mp3.ltyuanfang.cn/
 ```
 
-# 1.4 图片裁剪圆形网址
+## 1.4 图片裁剪圆形网址
 ```url
 https://bigimage.11zon.com/zh-cn/crop-circle-image/
 
 https://crop.imageonline.co/cn/
 ```
 
-# 1.5 图片压缩网址
+## 1.5 图片压缩
+在线压缩：
 ```url
 http://v.yalijuda.com:32723/%e5%9b%be%e7%89%87%e5%8e%8b%e7%bc%a9-%e5%89%af%e6%9c%ac-2/
 
 https://www.youcompress.com/zh-cn/
 ```
-
+压缩软件：
+### 1.5.1 Imagine
+Imagine 7 是一款用于压缩 PNG 和 JPEG 的桌面应用程序，用户界面现代而友好。
+- 特点：
+    - 多种格式（JPEG、PNG、WebP）
+    - 格式转换
+    - 跨平台
+    - GUI 图形用户界面
+    - 批量优化
+    - (English, 简体中文, Nederlands, Español, Français, Italiano, Deutsch)
+```url
+https://github.com/meowtec/Imagine
+```
 # 2. 学习类网址
