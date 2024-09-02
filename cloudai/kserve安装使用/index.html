@@ -92,7 +92,7 @@
     "name": "kserve安装使用",
     "headline": "kserve安装使用",
     "description": "实现kserve的安装使用",
-    "abstract": "1. kserve-0.10.0版本安装 # 1.1 kserve与依赖版",
+    "abstract": "注意 # 需要注意的是kserve使用的模型下载链接storag",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/Wercurial.github.io\/cloudai\/kserve%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8\/",
     "author" : {
@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","cloud","machinelearning","ai"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1594"
+    "wordCount": "1825"
   }]
   </script>
 
@@ -1252,7 +1252,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1594 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1825 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1446,6 +1446,7 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#注意">注意</a></li>
     <li><a href="#1-kserve-0100版本安装">1. kserve-0.10.0版本安装</a>
       <ul>
         <li><a href="#11-kserve与依赖版本对应">1.1 kserve与依赖版本对应</a></li>
@@ -1487,6 +1488,7 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#注意">注意</a></li>
     <li><a href="#1-kserve-0100版本安装">1. kserve-0.10.0版本安装</a>
       <ul>
         <li><a href="#11-kserve与依赖版本对应">1.1 kserve与依赖版本对应</a></li>
@@ -1597,6 +1599,22 @@
 
         <div class="article-content max-w-prose mb-20">
           
+
+<h1 class="relative group">注意 
+    <div id="%E6%B3%A8%E6%84%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B3%A8%E6%84%8F" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>需要注意的是kserve使用的模型下载链接<code>storageUri: &quot;http://172.16.2.132:9999/00000123.tar&quot;</code>对应的模型压缩包：应该是解压后模型及配置文件平铺开来的，而不是解压后还有一层目录包裹的</li>
+<li>同时对于<code>storageUri: &quot;http://172.16.2.132:9999/00000123&quot;</code>的模型链接，00000123里面的内容应该直接是模型及配置文件，而不应该再有深层次的目录</li>
+</ul>
+
 
 <h1 class="relative group">1. kserve-0.10.0版本安装 
     <div id="1-kserve-0100%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85" class="anchor"></div>
