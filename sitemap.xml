@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://Wercurial.github.io/tags/backup/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/harbor/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnative/harbor%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/image/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/cloudnative/</loc>
+    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/containerd/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -10,12 +58,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/k8s-solve/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -34,18 +76,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/solve/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -528,11 +558,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/skill-tech/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/cloudnative/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

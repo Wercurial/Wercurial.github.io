@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>云原生 on 云一二三</title>
-    <link>https://Wercurial.github.io/cloudnative/</link>
-    <description>Recent content in 云原生 on 云一二三</description>
+    <title>Backup on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/backup/</link>
+    <description>Recent content in Backup on 云一二三</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/cloudnative/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/backup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Harbor镜像仓库迁移</title>
       <link>https://Wercurial.github.io/cloudnative/harbor%E8%BF%81%E7%A7%BB/</link>
