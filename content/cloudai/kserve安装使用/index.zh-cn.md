@@ -97,7 +97,7 @@ curl -H "Host: ${SERVICE_HOSTNAME}" http://${INGRESS_HOST}:${INGRESS_PORT}/v1/mo
 | --- | --- |
 | [KServe](https://github.com/kserve/kserve/releases/download/v0.13.0/) | v0.13.0 |
 | [Cert-manager]() | v1.15.3 |
-| [Ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start)（[与k8s版本对应关系](https://github.com/kubernetes/ingress-nginx#supported-versions-table)） | v4.11.2 |
+| [Ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start)（[与k8s版本对应关系](https://github.com/kubernetes/ingress-nginx#supported-versions-table)） | v1.11.2 |
 ## 2.2 部署ingress-nginx
 > 采用RawDeployment模式，因此不需要按照官网要求安装Istio（Istio较重）
 - 通过管理Ingress，控制路由，因此部署 Ingress-Nginx 即可。
