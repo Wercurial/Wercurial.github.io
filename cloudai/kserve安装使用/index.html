@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","cloud","machinelearning","ai"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1481"
+    "wordCount": "1483"
   }]
   </script>
 
@@ -1252,7 +1252,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1481 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1483 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1976,19 +1976,19 @@
     
 </h3>
 <ul>
-<li>INGRESS_HOST：10.96.1.200（Ingress-nginx地址）</li>
-<li>MODEL_NAME：<code>1.5.1</code>定义的name</li>
+<li>INGRESS_HOST：10.96.0.158（Ingress-nginx地址）</li>
+<li>MODEL_NAME：<code>2.5.1</code>定义的name</li>
 <li>INPUT_PATH：模型入参</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="c1"># nginx ingress 的访问地址</span>
-</span></span><span class="line"><span class="cl"><span class="nv">INGRESS_HOST</span><span class="o">=</span>10.96.1.200
+</span></span><span class="line"><span class="cl"><span class="nv">INGRESS_HOST</span><span class="o">=</span>10.96.0.158
 </span></span><span class="line"><span class="cl"><span class="nv">INGRESS_PORT</span><span class="o">=</span><span class="m">80</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">MODEL_NAME</span><span class="o">=</span>tensorflow-kserve
 </span></span><span class="line"><span class="cl"><span class="nv">INPUT_PATH</span><span class="o">=</span>@./input.json
-</span></span><span class="line"><span class="cl"><span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice <span class="si">${</span><span class="nv">MODEL_NAME</span><span class="si">}</span> -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&#34;/&#34;</span> -f 3<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl -n <span class="nb">test</span> get inferenceservice <span class="si">${</span><span class="nv">MODEL_NAME</span><span class="si">}</span> -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&#34;/&#34;</span> -f 3<span class="k">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">curl -H <span class="s2">&#34;Host: </span><span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span><span class="s2">&#34;</span> http://<span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span>/v1/models/<span class="nv">$MODEL_NAME</span>:predict -d <span class="nv">$INPUT_PATH</span>
 </span></span></code></pre></div><ul>

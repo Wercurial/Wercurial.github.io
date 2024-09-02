@@ -167,19 +167,19 @@ spec:
       storageUri: "http://172.16.2.132:9999/00000123.tar"
 ```
 ### 2.5.2 使用ingress测试
-- INGRESS_HOST：10.96.1.200（Ingress-nginx地址）
-- MODEL_NAME：`1.5.1`定义的name
+- INGRESS_HOST：10.96.0.158（Ingress-nginx地址）
+- MODEL_NAME：`2.5.1`定义的name
 - INPUT_PATH：模型入参
 ```bash
 #!/bin/bash
 
 # nginx ingress 的访问地址
-INGRESS_HOST=10.96.1.200
+INGRESS_HOST=10.96.0.158
 INGRESS_PORT=80
 
 MODEL_NAME=tensorflow-kserve
 INPUT_PATH=@./input.json
-SERVICE_HOSTNAME=$(kubectl get inferenceservice ${MODEL_NAME} -o jsonpath='{.status.url}' | cut -d "/" -f 3)
+SERVICE_HOSTNAME=$(kubectl -n test get inferenceservice ${MODEL_NAME} -o jsonpath='{.status.url}' | cut -d "/" -f 3)
 
 curl -H "Host: ${SERVICE_HOSTNAME}" http://${INGRESS_HOST}:${INGRESS_PORT}/v1/models/$MODEL_NAME:predict -d $INPUT_PATH
 ```
