@@ -32,7 +32,26 @@
     </div>
     {{ end }}
     {{ with .Site.Author.bio | markdownify }}
-    <div class="text-sm text-neutral-700 dark:text-neutral-400">{{ . }}</div>
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">
+      
+    
+      <h5 id="typeit-bac439989ee33a309fe408a364363917"></h5>
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#typeit-bac439989ee33a309fe408a364363917", {
+              strings: { . },
+              speed:  80 ,
+              lifeLike:  true ,
+              startDelay:  0 ,
+              breakLines:  true ,
+              waitUntilVisible:  true ,
+              loop:  true 
+            }).go();
+          });
+      </script>
+    
+    
+    </div>
     {{ end }}
     <div class="text-2xl sm:text-lg">{{ partialCached "author-links.html" . }}</div>
   </div>

@@ -14,7 +14,22 @@
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/</guid>
-      <description>&lt;p&gt;实现k8s容器间免密访问方案&lt;/p&gt;</description>
+      <description>&lt;h5 id=&#34;typeit-160ffb4398e5bafcd4fb121984200d01&#34;&gt;&lt;/h5&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+      new TypeIt(&#34;#typeit-160ffb4398e5bafcd4fb121984200d01&#34;, {
+        strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
+        speed:  80 ,
+        lifeLike:  true ,
+        startDelay:  0 ,
+        breakLines:  true ,
+        waitUntilVisible:  true ,
+        loop:  true 
+      }).go();
+    });
+&lt;/script&gt;
+&lt;p&gt;实现k8s容器间免密访问方案&lt;/p&gt;</description>
       
     </item>
     

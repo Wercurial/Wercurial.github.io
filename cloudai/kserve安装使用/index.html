@@ -92,7 +92,7 @@
     "name": "kserve安装使用",
     "headline": "kserve安装使用",
     "description": "实现kserve的安装使用",
-    "abstract": "注意 # 需要注意的是kserve使用的模型下载链接storag",
+    "abstract": "\u003ch5 id=\u0022typeit-bac439989ee33a309fe408a364363917\u0022\u003e\u003c\/h5\u003e\n\n\u003cscript\u003e\n    document.addEventListener(\u0022DOMContentLoaded\u0022, function () {\n      new TypeIt(\u0022#typeit-bac439989ee33a309fe408a364363917\u0022, {\n        strings: [\u0022\\\u0022无聊望见了犹豫, 达到理想不太易~\\\u0022\u0022,\u0022\u0022],\n        speed:  80 ,\n        lifeLike:  true ,\n        startDelay:  0 ,\n        breakLines:  true ,\n        waitUntilVisible:  true ,\n        loop:  true \n      }).go();\n    });\n\u003c\/script\u003e\n\n\n\u003ch1 class=\u0022relative group\u0022\u003e注意 \n    \u003cdiv id=\u0022%E6%B3%A8%E6%84%8F\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E6%B3%A8%E6%84%8F\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cul\u003e\n\u003cli\u003e需要注意的是kserve使用的模型下载链接\u003ccode\u003estorageUri: \u0026quot;http:\/\/172.16.2.132:9999\/00000123.tar\u0026quot;\u003c\/code\u003e对应的模型压缩包：应该是解压后模型及配置文件平铺开来的，而不是解压后还有一层目录包裹的\u003c\/li\u003e\n\u003cli\u003e同时对于\u003ccode\u003estorageUri: \u0026quot;http:\/\/172.16.2.132:9999\/00000123\u0026quot;\u003c\/code\u003e的模型链接，00000123里面的内容应该直接是模型及配置文件，而不应该再有深层次的目录\u003c\/li\u003e\n\u003c\/ul\u003e\n\n\n\u003ch1 class=\u0022relative group\u0022\u003e1. kserve-0.10.0版本安装 \n    \u003cdiv id=\u00221-kserve-0100%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#1-kserve-0100%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e1.1 kserve与依赖版本对应 \n    \u003cdiv id=\u002211-kserve%E4%B8%8E%E4%BE%9D%E8%B5%96%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#11-kserve%E4%B8%8E%E4%BE%9D%E8%B5%96%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n      \u003ctr\u003e\n          \u003cth style=\u0022text-align: left\u0022\u003eK8s\u003c\/th\u003e\n          \u003cth style=\u0022text-align: left\u0022\u003ev1.22.15\u003c\/th\u003e\n      \u003c\/tr\u003e\n  \u003c\/thead\u003e\n  \u003ctbody\u003e\n      \u003ctr\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003e\u003ca href=\u0022https:\/\/github.com\/kserve\/kserve\/releases\/download\/v0.10.0\/kserve.yaml\/\u0022 target=\u0022_blank\u0022\u003eKServe\u003c\/a\u003e\u003c\/td\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003ev0.10.0\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003e\u003ca href=\u0022\u0022\u003eCert-manager\u003c\/a\u003e\u003c\/td\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003ev1.11.0\u003c\/td\u003e\n      \u003c\/tr\u003e\n      \u003ctr\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003e\u003ca href=\u0022https:\/\/kubernetes.github.io\/ingress-nginx\/deploy\/#quick-start\u0022 target=\u0022_blank\u0022\u003eIngress-nginx\u003c\/a\u003e（\u003ca href=\u0022https:\/\/github.com\/kubernetes\/ingress-nginx#supported-versions-table\u0022 target=\u0022_blank\u0022\u003e与k8s版本对应关系\u003c\/a\u003e）\u003c\/td\u003e\n          \u003ctd style=\u0022text-align: left\u0022\u003ev1.3.0\u003c\/td\u003e\n      \u003c\/tr\u003e\n  \u003c\/tbody\u003e\n\u003c\/table\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e1.2 部署ingress-nginx \n    \u003cdiv id=\u002212-%E9%83%A8%E7%BD%B2ingress-nginx\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#12-%E9%83%A8%E7%BD%B2ingress-nginx\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cblockquote\u003e\n\u003cp\u003e采用RawDeployment模式，因此不需要按照官网要求安装Istio（Istio较重）\u003c\/p\u003e",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/Wercurial.github.io\/cloudai\/kserve%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8\/",
     "author" : {
@@ -137,6 +137,9 @@
 
 
 
+
+
+<script defer src="/lib/typeit/typeit.umd.1b3200cb448f5cd1f548f2781452643d3511a43584b377b82c03a58055da4fdb7bc8f6c6c2ce846480c7677ff25bfd0d75f15823c09443ab18e0fd2cad792587.js" integrity="sha512-GzIAy0SPXNH1SPJ4FFJkPTURpDWEs3e4LAOlgFXaT9t7yPbGws6EZIDHZ3/yW/0NdfFYI8CUQ6sY4P0srXklhw=="></script>
 
 
 
@@ -1389,7 +1392,26 @@
     </div>
     
     
-    <div class="text-sm text-neutral-700 dark:text-neutral-400">朝看水东流，暮看日西坠~</div>
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">
+      
+    
+      <h5 id="typeit-bac439989ee33a309fe408a364363917"></h5>
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#typeit-bac439989ee33a309fe408a364363917", {
+              strings: { . },
+              speed:  80 ,
+              lifeLike:  true ,
+              startDelay:  0 ,
+              breakLines:  true ,
+              waitUntilVisible:  true ,
+              loop:  true 
+            }).go();
+          });
+      </script>
+    
+    
+    </div>
     
     <div class="text-2xl sm:text-lg">
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
@@ -1598,7 +1620,22 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <h5 id="typeit-bac439989ee33a309fe408a364363917"></h5>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new TypeIt("#typeit-bac439989ee33a309fe408a364363917", {
+        strings: ["\"无聊望见了犹豫, 达到理想不太易~\"",""],
+        speed:  80 ,
+        lifeLike:  true ,
+        startDelay:  0 ,
+        breakLines:  true ,
+        waitUntilVisible:  true ,
+        loop:  true 
+      }).go();
+    });
+</script>
+
 
 <h1 class="relative group">注意 
     <div id="%E6%B3%A8%E6%84%8F" class="anchor"></div>
@@ -1639,26 +1676,26 @@
     
 </h2>
 <table>
-<thead>
-<tr>
-<th>K8s</th>
-<th>v1.22.15</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/kserve/kserve/releases/download/v0.10.0/kserve.yaml/" target="_blank">KServe</a></td>
-<td>v0.10.0</td>
-</tr>
-<tr>
-<td><a href="">Cert-manager</a></td>
-<td>v1.11.0</td>
-</tr>
-<tr>
-<td><a href="https://kubernetes.github.io/ingress-nginx/deploy/#quick-start" target="_blank">Ingress-nginx</a>（<a href="https://github.com/kubernetes/ingress-nginx#supported-versions-table" target="_blank">与k8s版本对应关系</a>）</td>
-<td>v1.3.0</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">K8s</th>
+          <th style="text-align: left">v1.22.15</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://github.com/kserve/kserve/releases/download/v0.10.0/kserve.yaml/" target="_blank">KServe</a></td>
+          <td style="text-align: left">v0.10.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="">Cert-manager</a></td>
+          <td style="text-align: left">v1.11.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://kubernetes.github.io/ingress-nginx/deploy/#quick-start" target="_blank">Ingress-nginx</a>（<a href="https://github.com/kubernetes/ingress-nginx#supported-versions-table" target="_blank">与k8s版本对应关系</a>）</td>
+          <td style="text-align: left">v1.3.0</td>
+      </tr>
+  </tbody>
 </table>
 
 
@@ -1834,26 +1871,26 @@
     
 </h2>
 <table>
-<thead>
-<tr>
-<th>K8s</th>
-<th>v1.29.7</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/kserve/kserve/releases/download/v0.13.0/" target="_blank">KServe</a></td>
-<td>v0.13.0</td>
-</tr>
-<tr>
-<td><a href="">Cert-manager</a></td>
-<td>v1.15.3</td>
-</tr>
-<tr>
-<td><a href="https://kubernetes.github.io/ingress-nginx/deploy/#quick-start" target="_blank">Ingress-nginx</a>（<a href="https://github.com/kubernetes/ingress-nginx#supported-versions-table" target="_blank">与k8s版本对应关系</a>）</td>
-<td>v1.11.2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">K8s</th>
+          <th style="text-align: left">v1.29.7</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://github.com/kserve/kserve/releases/download/v0.13.0/" target="_blank">KServe</a></td>
+          <td style="text-align: left">v0.13.0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="">Cert-manager</a></td>
+          <td style="text-align: left">v1.15.3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://kubernetes.github.io/ingress-nginx/deploy/#quick-start" target="_blank">Ingress-nginx</a>（<a href="https://github.com/kubernetes/ingress-nginx#supported-versions-table" target="_blank">与k8s版本对应关系</a>）</td>
+          <td style="text-align: left">v1.11.2</td>
+      </tr>
+  </tbody>
 </table>
 
 

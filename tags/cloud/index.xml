@@ -14,7 +14,97 @@
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/cloudai/kserve%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
-      <description>注意 # 需要注意的是kserve使用的模型下载链接storag</description>
+      <description>&lt;h5 id=&#34;typeit-bac439989ee33a309fe408a364363917&#34;&gt;&lt;/h5&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+      new TypeIt(&#34;#typeit-bac439989ee33a309fe408a364363917&#34;, {
+        strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
+        speed:  80 ,
+        lifeLike:  true ,
+        startDelay:  0 ,
+        breakLines:  true ,
+        waitUntilVisible:  true ,
+        loop:  true 
+      }).go();
+    });
+&lt;/script&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;注意 
+    &lt;div id=&#34;%E6%B3%A8%E6%84%8F&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%B3%A8%E6%84%8F&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;需要注意的是kserve使用的模型下载链接&lt;code&gt;storageUri: &amp;quot;http://172.16.2.132:9999/00000123.tar&amp;quot;&lt;/code&gt;对应的模型压缩包：应该是解压后模型及配置文件平铺开来的，而不是解压后还有一层目录包裹的&lt;/li&gt;
+&lt;li&gt;同时对于&lt;code&gt;storageUri: &amp;quot;http://172.16.2.132:9999/00000123&amp;quot;&lt;/code&gt;的模型链接，00000123里面的内容应该直接是模型及配置文件，而不应该再有深层次的目录&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;1. kserve-0.10.0版本安装 
+    &lt;div id=&#34;1-kserve-0100%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-kserve-0100%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;1.1 kserve与依赖版本对应 
+    &lt;div id=&#34;11-kserve%E4%B8%8E%E4%BE%9D%E8%B5%96%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#11-kserve%E4%B8%8E%E4%BE%9D%E8%B5%96%E7%89%88%E6%9C%AC%E5%AF%B9%E5%BA%94&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;K8s&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;v1.22.15&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/kserve/kserve/releases/download/v0.10.0/kserve.yaml/&#34; target=&#34;_blank&#34;&gt;KServe&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v0.10.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;&#34;&gt;Cert-manager&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.11.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://kubernetes.github.io/ingress-nginx/deploy/#quick-start&#34; target=&#34;_blank&#34;&gt;Ingress-nginx&lt;/a&gt;（&lt;a href=&#34;https://github.com/kubernetes/ingress-nginx#supported-versions-table&#34; target=&#34;_blank&#34;&gt;与k8s版本对应关系&lt;/a&gt;）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.3.0&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;1.2 部署ingress-nginx 
+    &lt;div id=&#34;12-%E9%83%A8%E7%BD%B2ingress-nginx&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#12-%E9%83%A8%E7%BD%B2ingress-nginx&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;采用RawDeployment模式，因此不需要按照官网要求安装Istio（Istio较重）&lt;/p&gt;</description>
       
     </item>
     

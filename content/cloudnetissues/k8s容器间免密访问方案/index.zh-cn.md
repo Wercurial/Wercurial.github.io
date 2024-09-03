@@ -5,6 +5,13 @@ description: "实现k8s容器间免密访问方案"
 tags: ["Kubernetes", "ssh", "nossh"]
 type: 'blog'
 ---
+{{< typeit
+  tag=h5
+  speed=80
+  loop=true
+  lifeLike=true
+>}}"无聊望见了犹豫, 达到理想不太易~"
+{{< /typeit >}}
 
 实现k8s容器间免密访问方案
 

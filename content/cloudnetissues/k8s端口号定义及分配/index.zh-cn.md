@@ -5,6 +5,13 @@ description: "实现k8s端口号定义及分配"
 tags: ["Kubernetes", "service", "port"]
 type: 'blog'
 ---
+{{< typeit
+  tag=h5
+  speed=80
+  loop=true
+  lifeLike=true
+>}}"无聊望见了犹豫, 达到理想不太易~"
+{{< /typeit >}}
 
 实现k8s端口号定义及分配
 

@@ -5,6 +5,13 @@ description: "实现Harbor镜像仓库迁移"
 tags: ["Kubernetes", "Harbor", "backup", "image"]
 type: 'blog'
 ---
+{{< typeit
+  tag=h5
+  speed=80
+  loop=true
+  lifeLike=true
+>}}"无聊望见了犹豫, 达到理想不太易~"
+{{< /typeit >}}
 
 # 1. 待迁移Harbor仓库配置
 ## 1.1 通过仓库管理添加新Harbor仓库关联

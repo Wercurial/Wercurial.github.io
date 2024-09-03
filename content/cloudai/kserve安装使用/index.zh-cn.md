@@ -5,6 +5,13 @@ description: "实现kserve的安装使用"
 tags: ["Kubernetes", "cloud", "machinelearning", "ai"]
 type: 'blog'
 ---
+{{< typeit
+  tag=h5
+  speed=80
+  loop=true
+  lifeLike=true
+>}}"无聊望见了犹豫, 达到理想不太易~"
+{{< /typeit >}}
 
 # 注意
 - 需要注意的是kserve使用的模型下载链接`storageUri: "http://172.16.2.132:9999/00000123.tar"`对应的模型压缩包：应该是解压后模型及配置文件平铺开来的，而不是解压后还有一层目录包裹的
