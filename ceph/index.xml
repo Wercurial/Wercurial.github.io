@@ -10,51 +10,15 @@
     <lastBuildDate>Mon, 26 Aug 2024 14:31:40 +0800</lastBuildDate><atom:link href="https://Wercurial.github.io/ceph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>https://Wercurial.github.io/ceph/deploy/</link>
+      <link>https://Wercurial.github.io/ceph/20240826-1/</link>
       <pubDate>Mon, 26 Aug 2024 14:31:40 +0800</pubDate>
       
-      <guid>https://Wercurial.github.io/ceph/deploy/</guid>
-      <description>&lt;h5 id=&#34;typeit-482a35846917158ea00a6cb8edf43fcd&#34;&gt;&lt;/h5&gt;
+      <guid>https://Wercurial.github.io/ceph/20240826-1/</guid>
+      <description>&lt;h5 id=&#34;typeit-4b3b2247ac91943a2fe576ae718ab317&#34;&gt;&lt;/h5&gt;
 
 &lt;script&gt;
     document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
-      new TypeIt(&#34;#typeit-482a35846917158ea00a6cb8edf43fcd&#34;, {
-        strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
-        speed:  80 ,
-        lifeLike:  true ,
-        startDelay:  0 ,
-        breakLines:  true ,
-        waitUntilVisible:  true ,
-        loop:  true 
-      }).go();
-    });
-&lt;/script&gt;
-
-
-&lt;h1 class=&#34;relative group&#34;&gt;这是一个标题 
-    &lt;div id=&#34;%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h1&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>解决bug</title>
-      <link>https://Wercurial.github.io/ceph/bug%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Mon, 26 Aug 2024 14:31:40 +0800</pubDate>
-      
-      <guid>https://Wercurial.github.io/ceph/bug%E8%A7%A3%E5%86%B3/</guid>
-      <description>&lt;h5 id=&#34;typeit-423471c7d78ea593b90652f2248b267d&#34;&gt;&lt;/h5&gt;
-
-&lt;script&gt;
-    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
-      new TypeIt(&#34;#typeit-423471c7d78ea593b90652f2248b267d&#34;, {
+      new TypeIt(&#34;#typeit-4b3b2247ac91943a2fe576ae718ab317&#34;, {
         strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
         speed:  80 ,
         lifeLike:  true ,

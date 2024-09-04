@@ -10,15 +10,15 @@
     <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/harbor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Harbor镜像仓库迁移</title>
-      <link>https://Wercurial.github.io/cloudnative/harbor%E8%BF%81%E7%A7%BB/</link>
+      <link>https://Wercurial.github.io/cloudnative/20240902-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/cloudnative/harbor%E8%BF%81%E7%A7%BB/</guid>
-      <description>&lt;h5 id=&#34;typeit-2629e851a7742e2e977646fa9146ce62&#34;&gt;&lt;/h5&gt;
+      <guid>https://Wercurial.github.io/cloudnative/20240902-1/</guid>
+      <description>&lt;h5 id=&#34;typeit-44468b13ec0e2d9a786f3228a14e74ca&#34;&gt;&lt;/h5&gt;
 
 &lt;script&gt;
     document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
-      new TypeIt(&#34;#typeit-2629e851a7742e2e977646fa9146ce62&#34;, {
+      new TypeIt(&#34;#typeit-44468b13ec0e2d9a786f3228a14e74ca&#34;, {
         strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
         speed:  80 ,
         lifeLike:  true ,

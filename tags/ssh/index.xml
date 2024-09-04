@@ -10,15 +10,15 @@
     <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>k8s容器间免密访问方案</title>
-      <link>https://Wercurial.github.io/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/</link>
+      <link>https://Wercurial.github.io/cloudnetissues/20220311-2/</link>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/cloudnetissues/k8s%E5%AE%B9%E5%99%A8%E9%97%B4%E5%85%8D%E5%AF%86%E8%AE%BF%E9%97%AE%E6%96%B9%E6%A1%88/</guid>
-      <description>&lt;h5 id=&#34;typeit-160ffb4398e5bafcd4fb121984200d01&#34;&gt;&lt;/h5&gt;
+      <guid>https://Wercurial.github.io/cloudnetissues/20220311-2/</guid>
+      <description>&lt;h5 id=&#34;typeit-b20707817a1a961b2a788c0f2e033193&#34;&gt;&lt;/h5&gt;
 
 &lt;script&gt;
     document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
-      new TypeIt(&#34;#typeit-160ffb4398e5bafcd4fb121984200d01&#34;, {
+      new TypeIt(&#34;#typeit-b20707817a1a961b2a788c0f2e033193&#34;, {
         strings: [&#34;\&#34;无聊望见了犹豫, 达到理想不太易~\&#34;&#34;,&#34;&#34;],
         speed:  80 ,
         lifeLike:  true ,

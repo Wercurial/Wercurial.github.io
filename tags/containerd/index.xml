@@ -10,20 +10,20 @@
     <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kubernetes问题解决集合</title>
-      <link>https://Wercurial.github.io/k8s-solve/kubernetes%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E9%9B%86%E5%90%88/</link>
+      <link>https://Wercurial.github.io/k8s-solve/20240901-3/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/k8s-solve/kubernetes%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E9%9B%86%E5%90%88/</guid>
+      <guid>https://Wercurial.github.io/k8s-solve/20240901-3/</guid>
       <description>&lt;p&gt;kubernetes问题解决集合。&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>docker及containerd镜像代理配置</title>
-      <link>https://Wercurial.github.io/kubernetes/docker%E5%8F%8Acontainerd%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
+      <link>https://Wercurial.github.io/kubernetes/20230311-1/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://Wercurial.github.io/kubernetes/docker%E5%8F%8Acontainerd%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://Wercurial.github.io/kubernetes/20230311-1/</guid>
       <description>&lt;p&gt;实现docker及containerd镜像代理配置。&lt;/p&gt;</description>
       
     </item>
