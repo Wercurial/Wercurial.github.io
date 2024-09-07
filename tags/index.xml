@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frp</title>
+      <link>https://Wercurial.github.io/tags/frp/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/frp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Net</title>
+      <link>https://Wercurial.github.io/tags/net/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/net/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Proxy</title>
+      <link>https://Wercurial.github.io/tags/proxy/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/proxy/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Ai</title>
       <link>https://Wercurial.github.io/tags/ai/</link>
@@ -239,16 +269,6 @@
     </item>
     
     <item>
-      <title>Net</title>
-      <link>https://Wercurial.github.io/tags/net/</link>
-      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/net/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Os</title>
       <link>https://Wercurial.github.io/tags/os/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
@@ -364,16 +384,6 @@
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/docker/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Proxy</title>
-      <link>https://Wercurial.github.io/tags/proxy/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/proxy/</guid>
       <description></description>
       
     </item>

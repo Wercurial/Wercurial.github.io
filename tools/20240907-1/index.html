@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>First &middot; 云一二三</title>
-  <meta name="title" content="First &middot; 云一二三" />
+  <title>内网穿透工具FRP使用 &middot; 云一二三</title>
+  <meta name="title" content="内网穿透工具FRP使用 &middot; 云一二三" />
   
-  <meta name="description" content="朝看水东流，暮看日西坠~" />
+  <meta name="description" content="内网穿透工具。" />
+  <meta name="keywords" content="net, proxy, frp, " />
   
   
-  
-  <link rel="canonical" href="https://Wercurial.github.io/calico/20240826-1/" />
+  <link rel="canonical" href="https://Wercurial.github.io/tools/20240907-1/" />
   
   
   
@@ -64,47 +64,50 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/calico/20240826-1/">
+  <meta property="og:url" content="https://Wercurial.github.io/tools/20240907-1/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="First">
-  <meta property="og:description" content=" 这是一个标题 # ">
+  <meta property="og:title" content="内网穿透工具FRP使用">
+  <meta property="og:description" content="内网穿透工具。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="calico">
-    <meta property="article:published_time" content="2024-08-26T14:31:40+08:00">
-    <meta property="article:modified_time" content="2024-08-26T14:31:40+08:00">
+    <meta property="article:section" content="tools">
+    <meta property="article:published_time" content="2024-09-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-07T00:00:00+00:00">
+    <meta property="article:tag" content="Net">
+    <meta property="article:tag" content="Proxy">
+    <meta property="article:tag" content="Frp">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="First">
-  <meta name="twitter:description" content=" 这是一个标题 # ">
+  <meta name="twitter:title" content="内网穿透工具FRP使用">
+  <meta name="twitter:description" content="内网穿透工具。">
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "calico",
-    "name": "First",
-    "headline": "First",
-    
-    "abstract": "\u003ch5 id=\u0022typeit-ccaa400c54080eb69775b832cdd583dd\u0022\u003e\u003c\/h5\u003e\n\n\u003cscript\u003e\n    document.addEventListener(\u0022DOMContentLoaded\u0022, function () {\n      new TypeIt(\u0022#typeit-ccaa400c54080eb69775b832cdd583dd\u0022, {\n        strings: [\u0022\\\u0022无聊望见了犹豫, 达到理想不太易~\\\u0022\u0022,\u0022\u0022],\n        speed:  80 ,\n        lifeLike:  true ,\n        startDelay:  0 ,\n        breakLines:  true ,\n        waitUntilVisible:  true ,\n        loop:  true \n      }).go();\n    });\n\u003c\/script\u003e\n\n\n\u003ch1 class=\u0022relative group\u0022\u003e这是一个标题 \n    \u003cdiv id=\u0022%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e",
+    "articleSection": "工具合集",
+    "name": "内网穿透工具FRP使用",
+    "headline": "内网穿透工具FRP使用",
+    "description": "内网穿透工具。",
+    "abstract": "\u003ch1 class=\u0022relative group\u0022\u003e0. 前言 \n    \u003cdiv id=\u00220-%E5%89%8D%E8%A8%80\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#0-%E5%89%8D%E8%A8%80\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cp\u003e本文主要用于通过一台具有公网ip地址的服务器来代理可访问公网的nas内部的局域网服务，需注意的是本方案存在一定的被黑客攻击风险，需谨慎使用。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/calico\/20240826-1\/",
+    "url" : "https:\/\/Wercurial.github.io\/tools\/20240907-1\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-08-26T14:31:40\u002b08:00",
-    "datePublished": "2024-08-26T14:31:40\u002b08:00",
+    "dateCreated": "2024-09-07T00:00:00\u002b00:00",
+    "datePublished": "2024-09-07T00:00:00\u002b00:00",
     
-    "dateModified": "2024-08-26T14:31:40\u002b08:00",
+    "dateModified": "2024-09-07T00:00:00\u002b00:00",
     
-    
+    "keywords": ["net","proxy","frp"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "7"
+    "wordCount": "528"
   }]
   </script>
 
@@ -133,9 +136,6 @@
 
 
 
-
-
-<script defer src="/lib/typeit/typeit.umd.1b3200cb448f5cd1f548f2781452643d3511a43584b377b82c03a58055da4fdb7bc8f6c6c2ce846480c7677ff25bfd0d75f15823c09443ab18e0fd2cad792587.js" integrity="sha512-GzIAy0SPXNH1SPJ4FFJkPTURpDWEs3e4LAOlgFXaT9t7yPbGws6EZIDHZ3/yW/0NdfFYI8CUQ6sY4P0srXklhw=="></script>
 
 
 
@@ -1185,8 +1185,8 @@
   <li class="inline ">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/calico/"
-      >calico</a
+      href="/tools/"
+      >工具合集</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1194,8 +1194,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/calico/20240826-1/"
-      >First</a
+      href="/tools/20240907-1/"
+      >内网穿透工具FRP使用</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1204,7 +1204,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      First
+      内网穿透工具FRP使用
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1251,7 +1251,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-26 14:31:40 &#43;0800 &#43;0800">2024-08-26</time><span class="px-2 text-primary-500">&middot;</span><span>7 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-07 00:00:00 &#43;0000 UTC">2024-09-07</time><span class="px-2 text-primary-500">&middot;</span><span>528 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1307,6 +1307,32 @@
   
   
   
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/net/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Net
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Proxy
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/frp/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Frp
+  </span>
+</span>
+  </span>
   
   
   
@@ -1430,7 +1456,9 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#这是一个标题">这是一个标题</a></li>
+    <li><a href="#0-前言">0. 前言</a></li>
+    <li><a href="#1-frps配置及部署服务端">1. frps配置及部署（服务端）</a></li>
+    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a></li>
   </ul>
 </nav>
   </div>
@@ -1444,7 +1472,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#这是一个标题">这是一个标题</a></li>
+    <li><a href="#0-前言">0. 前言</a></li>
+    <li><a href="#1-frps配置及部署服务端">1. frps配置及部署（服务端）</a></li>
+    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a></li>
   </ul>
 </nav>
   </div>
@@ -1526,34 +1556,136 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <h5 id="typeit-ccaa400c54080eb69775b832cdd583dd"></h5>
+          
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new TypeIt("#typeit-ccaa400c54080eb69775b832cdd583dd", {
-        strings: ["\"无聊望见了犹豫, 达到理想不太易~\"",""],
-        speed:  80 ,
-        lifeLike:  true ,
-        startDelay:  0 ,
-        breakLines:  true ,
-        waitUntilVisible:  true ,
-        loop:  true 
-      }).go();
-    });
-</script>
-
-
-<h1 class="relative group">这是一个标题 
-    <div id="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98" class="anchor"></div>
+<h1 class="relative group">0. 前言 
+    <div id="0-%E5%89%8D%E8%A8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#0-%E5%89%8D%E8%A8%80" aria-label="锚点">#</a>
     </span>        
     
 </h1>
+<p>本文主要用于通过一台具有公网ip地址的服务器来代理可访问公网的nas内部的局域网服务，需注意的是本方案存在一定的被黑客攻击风险，需谨慎使用。</p>
 
+
+<h1 class="relative group">1. frps配置及部署（服务端） 
+    <div id="1-frps%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E7%AB%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-frps%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E7%AB%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>部署在具有公网ip地址的服务器上</p>
+<ul>
+<li>运行命令</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-compose -f docker-compose.yaml up -d
+</span></span></code></pre></div><ul>
+<li>docker-compose.yaml</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">frp</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">frps</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">snowdreamtech/frps:0.60</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;host&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">TZ=Asia/Shanghai</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;/data/software/frps/frps.toml:/etc/frp/frps.toml&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always              </span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>配置：frps.toml</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">common</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">bindAddr</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">.</span><span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">bind_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">xxx</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 启用面板</span>
+</span></span><span class="line"><span class="cl"><span class="nx">dashboard_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">x1x</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 面板登录名和密码</span>
+</span></span><span class="line"><span class="cl"><span class="nx">dashboard_user</span> <span class="p">=</span> <span class="nx">xxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">dashboard_pwd</span> <span class="p">=</span> <span class="nx">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 使用http代理并使用5x2x端口进行穿透</span>
+</span></span><span class="line"><span class="cl"><span class="nx">vhost_http_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">x2x</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 使用https代理并使用5x3x端口进行穿透</span>
+</span></span><span class="line"><span class="cl"><span class="nx">vhost_https_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">x3x</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 日志路径</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log_file</span> <span class="p">=</span> <span class="p">.</span><span class="err">/</span><span class="nx">frps</span><span class="p">.</span><span class="nx">log</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 日志级别</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log_level</span> <span class="p">=</span> <span class="nx">info</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 日志最大保存天数</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log_max_days</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 认证超时时间</span>
+</span></span><span class="line"><span class="cl"><span class="nx">authentication_timeout</span> <span class="p">=</span> <span class="mi">900</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 认证token，客户端需要和此对应</span>
+</span></span><span class="line"><span class="cl"><span class="nx">token</span><span class="p">=</span><span class="mi">123456</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 最大连接数</span>
+</span></span><span class="line"><span class="cl"><span class="nx">max_pool_count</span> <span class="p">=</span> <span class="mi">50</span>
+</span></span><span class="line"><span class="cl"><span class="nx">max_ports_per_client</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span></code></pre></div>
+
+<h1 class="relative group">2. frpc配置及部署（客户端） 
+    <div id="2-frpc%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2%E5%AE%A2%E6%88%B7%E7%AB%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-frpc%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2%E5%AE%A2%E6%88%B7%E7%AB%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>部署在可访问公网的nas上</p>
+<ul>
+<li>运行命令</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-compose -f docker-compose.yaml up -d
+</span></span></code></pre></div><ul>
+<li>docker-compose.yaml</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">frp</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">frpc</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">snowdreamtech/frpc:0.60</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;host&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">TZ=Asia/Shanghai</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;/vol1/1000/frpc/frpc.toml:/etc/frp/frpc.toml&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always          </span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>配置：frpc.toml
+<ul>
+<li>token、server_addr、server_port：对应frps的配置来填写</li>
+<li>custom_domains、customDomains：如果没有域名，则填写frps服务器的ip地址</li>
+<li>remote_port：设定frps服务器代理的端口</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">common</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">server_addr</span> <span class="p">=</span> <span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">server_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">xxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;123456&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">to</span> <span class="p">=</span> <span class="s2">&#34;./frpc.log&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">level</span> <span class="p">=</span> <span class="nx">info</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">maxDays</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">disablePrintColor</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">proxies</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="nx">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">type</span> <span class="p">=</span> <span class="nx">http</span>
+</span></span><span class="line"><span class="cl"><span class="nx">local_ip</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">.</span><span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">local_port</span> <span class="p">=</span> <span class="nx">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">custom_domains</span> <span class="p">=</span> <span class="nx">frps</span><span class="p">.</span><span class="nx">ip</span>
+</span></span><span class="line"><span class="cl"><span class="nx">customDomains</span> <span class="p">=</span> <span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">remote_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">x2x</span>
+</span></span></code></pre></div>
           
           
           
@@ -1586,7 +1718,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/calico/20240826-1/&amp;subject=First"
+      href="mailto:?body=https://Wercurial.github.io/tools/20240907-1/&amp;subject=%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f%e5%b7%a5%e5%85%b7FRP%e4%bd%bf%e7%94%a8"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1612,7 +1744,7 @@
   
   
 
-  <a href="/longhorn/20240826-1/" class="min-w-full">
+  <a href="/tools/20240729-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1624,7 +1756,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/longhorn/20240826-1/">First</div>
+          href="/tools/20240729-1/">各类工具网址记录</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1667,7 +1799,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-26 14:31:40 &#43;0800 &#43;0800">2024-08-26</time><span class="px-2 text-primary-500">&middot;</span><span>7 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2024-07-29 00:00:00 &#43;0000 UTC">2024-07-29</time><span class="px-2 text-primary-500">&middot;</span><span>343 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -1705,248 +1837,26 @@
   
   
   
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/ceph/20240826-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/ceph/20240826-1/">First</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-08-26 14:31:40 &#43;0800 &#43;0800">2024-08-26</time><span class="px-2 text-primary-500">&middot;</span><span>7 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/hugos/20240825-3/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hugos/20240825-3/">hugo博客-blowfish主题添加时间轴</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-08-25 00:00:00 &#43;0000 UTC">2024-08-25</time><span class="px-2 text-primary-500">&middot;</span><span>342 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/net/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hugo
+    Net
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/https/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blowfish
+    Https
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/archives/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tools/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Archives
+    Tools
   </span>
 </span>
   </span>
@@ -1971,7 +1881,7 @@
   
   
 
-  <a href="/hugos/20240825-2/" class="min-w-full">
+  <a href="/kubernetes/20230311-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1983,7 +1893,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hugos/20240825-2/">hugo博客-blowfish主题添加音乐组件</div>
+          href="/kubernetes/20230311-1/">docker及containerd镜像代理配置</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2026,281 +1936,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-25 00:00:00 &#43;0000 UTC">2024-08-25</time><span class="px-2 text-primary-500">&middot;</span><span>889 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hugo
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blowfish
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/music/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Music
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/hugos/20240823-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hugos/20240823-1/">hugo博客-blowfish主题添加giscus作为评论系统</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-08-23 00:00:00 &#43;0000 UTC">2024-08-23</time><span class="px-2 text-primary-500">&middot;</span><span>322 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hugo
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blowfish
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/comments/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Comments
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/k8s-solve/20240811-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/k8s-solve/20240811-1/">k8s（kubectl get cs）健康检查报错</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time><span class="px-2 text-primary-500">&middot;</span><span>370 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>124 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -2346,10 +1982,598 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/unhealthy/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Unhealthy
+    Docker
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/containerd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Containerd
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Proxy
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/cloudnetissues/20230211-3/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/cloudnetissues/20230211-3/">k8s网络问题解决记录</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-02-11 00:00:00 &#43;0000 UTC">2023-02-11</time><span class="px-2 text-primary-500">&middot;</span><span>766 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/service/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Service
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/net/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Net
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/cloudnative/20240902-1/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/cloudnative/20240902-1/">Harbor镜像仓库迁移</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>180 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/harbor/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Harbor
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/backup/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Backup
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/image/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Image
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/cloudai/20240902-1/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/cloudai/20240902-1/">kserve安装使用</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1825 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cloud/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cloud
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/machinelearning/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Machinelearning
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Ai
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/k8s-solve/20240901-3/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/k8s-solve/20240901-3/">kubernetes问题解决集合</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">2024-09-01</time><span class="px-2 text-primary-500">&middot;</span><span>990 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/solve/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Solve
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/containerd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Containerd
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/question/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Question
   </span>
 </span>
   </span>
@@ -2385,8 +2609,8 @@
           
         
       <script>
-        var oid = "views_calico\/20240826-1\/index.md"
-        var oid_likes = "likes_calico\/20240826-1\/index.md"
+        var oid = "views_tools\/20240907-1\/index.md"
+        var oid_likes = "likes_tools\/20240907-1\/index.md"
       </script>
       
       
@@ -2397,6 +2621,46 @@
   <footer class="pt-8 max-w-prose print:hidden">
 
     
+  
+    
+    
+    
+      
+      
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/tools/20240729-1/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >各类工具网址记录</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-07-29 00:00:00 &#43;0000 UTC">2024-07-29</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
   
 
 

@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://Wercurial.github.io/tags/frp/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/net/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/proxy/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/20240907-1/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/ai/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -52,18 +94,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/machinelearning/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -273,12 +303,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/net/</loc>
-    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/tags/os/</loc>
     <lastmod>2024-07-29T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -316,12 +340,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tools/20240729-1/</loc>
-    <lastmod>2024-07-29T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tools/</loc>
     <lastmod>2024-07-29T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -412,12 +430,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/kubernetes/20230311-2/</loc>
-    <lastmod>2023-03-11T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/proxy/</loc>
     <lastmod>2023-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
