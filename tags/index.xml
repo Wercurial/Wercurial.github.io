@@ -7,7 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://Wercurial.github.io/tags/docker/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Fnos</title>
+      <link>https://Wercurial.github.io/tags/fnos/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/fnos/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://Wercurial.github.io/tags/kubernetes/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://Wercurial.github.io/tags/linux/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mount</title>
+      <link>https://Wercurial.github.io/tags/mount/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/mount/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nas</title>
+      <link>https://Wercurial.github.io/tags/nas/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/nas/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Path</title>
+      <link>https://Wercurial.github.io/tags/path/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/path/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Frp</title>
       <link>https://Wercurial.github.io/tags/frp/</link>
@@ -84,16 +154,6 @@
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/image/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://Wercurial.github.io/tags/kubernetes/</link>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
       <description></description>
       
     </item>
@@ -339,16 +399,6 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://Wercurial.github.io/tags/linux/</link>
-      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/linux/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Pod</title>
       <link>https://Wercurial.github.io/tags/pod/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
@@ -374,16 +424,6 @@
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/api/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://Wercurial.github.io/tags/docker/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/docker/</guid>
       <description></description>
       
     </item>
