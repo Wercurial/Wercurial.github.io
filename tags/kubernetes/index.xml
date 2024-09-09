@@ -7,7 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Sun, 08 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过kaniko在容器中构建镜像</title>
+      <link>https://Wercurial.github.io/devops/20240900-1/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/devops/20240900-1/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. kaniko介绍 
+    &lt;div id=&#34;1-kaniko%E4%BB%8B%E7%BB%8D&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-kaniko%E4%BB%8B%E7%BB%8D&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GoogleContainerTools/kaniko&#34; target=&#34;_blank&#34;&gt;kaniko&lt;/a&gt; 是一种工具，用于在容器或 Kubernetes 集群内从 Dockerfile 构建容器镜像。&lt;/li&gt;
+&lt;li&gt;与docker不同，Kaniko 并不依赖于Docker daemon进程，完全是在用户空间根据Dockerfile的内容逐行执行命令来构建镜像，这就使得在一些无法获取 docker daemon 进程的环境下也能够构建镜像，比如在标准的Kubernetes Cluster上。&lt;/li&gt;
+&lt;li&gt;Kaniko 以容器镜像的方式来运行的，同时需要三个参数: Dockerfile，上下文，以及远端镜像仓库的地址。
+&lt;ul&gt;
+&lt;li&gt;Kaniko会先提取基础镜像(Dockerfile FROM 之后的镜像)的文件系统&lt;/li&gt;
+&lt;li&gt;然后根据Dockerfile中所描述的，一条条执行命令，每一条命令执行完以后会在用户空间下面创建一个snapshot，并与存储与内存中的上一个状态进行比对，如果有变化，就将新的修改生成一个镜像层添加在基础镜像上，并且将相关的修改信息写入镜像元数据中&lt;/li&gt;
+&lt;li&gt;等所有命令执行完，kaniko会将最终镜像推送到指定的远端镜像仓库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;2. kaniko镜像构建 
+    &lt;div id=&#34;2-kaniko%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-kaniko%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;根据自定义的harbor仓库给kaniko镜像配置权限&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>批量删除卸载docker遗留的大量挂载路径</title>
       <link>https://Wercurial.github.io/kubernetes/20240908-1/</link>

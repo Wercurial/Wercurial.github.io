@@ -34,6 +34,12 @@
   pageRef = "cloudai"
   weight = 13
 
+[[main]]
+  name = "Devops"
+  parent = "云原生"
+  pageRef = "devops"
+  weight = 14
+
 
 # 云原生存储知识专栏
 [[main]]

@@ -7,13 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Sun, 08 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build</title>
+      <link>https://Wercurial.github.io/tags/build/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/build/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Docker</title>
       <link>https://Wercurial.github.io/tags/docker/</link>
-      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kaniko</title>
+      <link>https://Wercurial.github.io/tags/kaniko/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kaniko/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://Wercurial.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
       <description></description>
       
     </item>
@@ -24,16 +54,6 @@
       <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/fnos/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://Wercurial.github.io/tags/kubernetes/</link>
-      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
       <description></description>
       
     </item>
