@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","ci","build","gitlab-runner"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2044"
+    "wordCount": "2095"
   }]
   </script>
 
@@ -1268,7 +1268,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>2044 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>2095 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1496,8 +1496,9 @@
     <li><a href="#3-gitlab-runner安装">3. gitlab-runner安装</a></li>
     <li><a href="#4-ci使用">4. ci使用</a>
       <ul>
-        <li><a href="#41-maven项目配置缓存">4.1 maven项目配置缓存</a></li>
-        <li><a href="#42-node项目配置缓存">4.2 node项目配置缓存</a></li>
+        <li><a href="#41-gitlab-ci中环境变量设置">4.1 gitlab-ci中环境变量设置</a></li>
+        <li><a href="#42-maven项目配置缓存">4.2 maven项目配置缓存</a></li>
+        <li><a href="#43-node项目配置缓存">4.3 node项目配置缓存</a></li>
       </ul>
     </li>
   </ul>
@@ -1528,8 +1529,9 @@
     <li><a href="#3-gitlab-runner安装">3. gitlab-runner安装</a></li>
     <li><a href="#4-ci使用">4. ci使用</a>
       <ul>
-        <li><a href="#41-maven项目配置缓存">4.1 maven项目配置缓存</a></li>
-        <li><a href="#42-node项目配置缓存">4.2 node项目配置缓存</a></li>
+        <li><a href="#41-gitlab-ci中环境变量设置">4.1 gitlab-ci中环境变量设置</a></li>
+        <li><a href="#42-maven项目配置缓存">4.2 maven项目配置缓存</a></li>
+        <li><a href="#43-node项目配置缓存">4.3 node项目配置缓存</a></li>
       </ul>
     </li>
   </ul>
@@ -2029,13 +2031,34 @@ mc alias set minio2 http://172.16.2.xx2:3xxx2  minio minio123
 </ul>
 
 
-<h2 class="relative group">4.1 maven项目配置缓存 
-    <div id="41-maven%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" class="anchor"></div>
+<h2 class="relative group">4.1 gitlab-ci中环境变量设置 
+    <div id="41-gitlab-ci%E4%B8%AD%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#41-maven%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#41-gitlab-ci%E4%B8%AD%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>通过管理员账号设置<code>Variables</code>后，ci运行时可获得对应变量值
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
+      
+    </figure>
+</li>
+</ul>
+
+
+<h2 class="relative group">4.2 maven项目配置缓存 
+    <div id="42-maven%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#42-maven%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" aria-label="锚点">#</a>
     </span>        
     
 </h2>
@@ -2076,13 +2099,13 @@ mc alias set minio2 http://172.16.2.xx2:3xxx2  minio minio123
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l">/usr/lib/jvm/java-8-openjdk-amd64/bin/java Hello</span><span class="w">
 </span></span></span></code></pre></div>
 
-<h2 class="relative group">4.2 node项目配置缓存 
-    <div id="42-node%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" class="anchor"></div>
+<h2 class="relative group">4.3 node项目配置缓存 
+    <div id="43-node%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#42-node%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#43-node%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98" aria-label="锚点">#</a>
     </span>        
     
 </h2>

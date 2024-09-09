@@ -319,7 +319,10 @@ spec:
 # 4. ci使用
 - 在git项目中配置gitlab-ci.yml
 - 提交git项目,自动触发
-## 4.1 maven项目配置缓存
+## 4.1 gitlab-ci中环境变量设置
+- 通过管理员账号设置`Variables`后，ci运行时可获得对应变量值
+![image.png](./1.png)
+## 4.2 maven项目配置缓存
 - 缓存目录: .m2/*
   - maven仓库缓存配置(maven镜像中设置了repository为当前路径下的.m2/repository):  .m2/repository
   - maven工程产生的结果zip文件缓存配置: .m2/xxx-server-1.0.0-SNAPSHOT.zip
@@ -352,7 +355,7 @@ execute:
   stage: execute
   script: /usr/lib/jvm/java-8-openjdk-amd64/bin/java Hello
 ```
-## 4.2 node项目配置缓存
+## 4.3 node项目配置缓存
 ```
 cache:
   key: 项目名
