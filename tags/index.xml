@@ -19,11 +19,31 @@
     </item>
     
     <item>
+      <title>Ci</title>
+      <link>https://Wercurial.github.io/tags/ci/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/ci/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>https://Wercurial.github.io/tags/docker/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Gitlab-Runner</title>
+      <link>https://Wercurial.github.io/tags/gitlab-runner/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/gitlab-runner/</guid>
       <description></description>
       
     </item>

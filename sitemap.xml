@@ -9,7 +9,25 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/ci/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/devops/20240909-2/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/docker/</loc>
+    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/gitlab-runner/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -39,7 +57,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/devops/20240900-1/</loc>
+    <loc>https://Wercurial.github.io/devops/20240909-1/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
