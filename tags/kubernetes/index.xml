@@ -9,6 +9,76 @@
     <copyright>© 2024 古德</copyright>
     <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Devops之ArgoCD部署</title>
+      <link>https://Wercurial.github.io/devops/20240911-2/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/devops/20240911-2/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. argocd部署使用 
+    &lt;div id=&#34;1-argocd%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-argocd%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;2. argocd部署结果通知 
+    &lt;div id=&#34;2-argocd%E9%83%A8%E7%BD%B2%E7%BB%93%E6%9E%9C%E9%80%9A%E7%9F%A5&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-argocd%E9%83%A8%E7%BD%B2%E7%BB%93%E6%9E%9C%E9%80%9A%E7%9F%A5&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;3. argocd部署问题解决 
+    &lt;div id=&#34;3-argocd%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#3-argocd%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;3.1 权限问题 
+    &lt;div id=&#34;31-%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#31-%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;报错如下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Failed to load live state: failed to get cluster info &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://kubernetes.default.svc&amp;#34;&lt;/span&gt;: error synchronizing cache state : failed to sync cluster https://10.96.0.1:443: failed to load initial state of resource BGPFilter.projectcalico.org: bgpfilters.projectcalico.org is forbidden: User &lt;span class=&#34;s2&#34;&gt;&amp;#34;system:serviceaccount:argo-cd:argocd-application-controller&amp;#34;&lt;/span&gt; cannot list resource &lt;span class=&#34;s2&#34;&gt;&amp;#34;bgpfilters&amp;#34;&lt;/span&gt; in API group &lt;span class=&#34;s2&#34;&gt;&amp;#34;projectcalico.org&amp;#34;&lt;/span&gt; at the cluster scope
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;通过排查发现，是因为用了自定义namespace: &lt;code&gt;argo-cd&lt;/code&gt;，而 clusterrolebinding 需要命名空间argocd&lt;/li&gt;
+&lt;li&gt;解决方案
+&lt;ul&gt;
+&lt;li&gt;编辑&lt;code&gt;argocd-application-controller&lt;/code&gt;和&lt;code&gt;argocd-server&lt;/code&gt;对应的clusterrolebinding里面的默认namespace（&lt;code&gt;argocd&lt;/code&gt;）为自定义的namespace（&lt;code&gt;argo-cd&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl edit clusterrolebinding argocd-application-controller -n &amp;lt;namespace&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl edit clusterrolebinding argocd-server -n &amp;lt;namespace&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Devops之CI三种触发构建</title>
       <link>https://Wercurial.github.io/devops/20240911-1/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
