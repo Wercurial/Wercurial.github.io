@@ -3,14 +3,50 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://Wercurial.github.io/tags/auto/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/build/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/ci/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/devops/20240911-1/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/devops/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -39,31 +75,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/kubernetes/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/devops/20240909-1/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/devops/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
