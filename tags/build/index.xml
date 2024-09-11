@@ -90,7 +90,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;在全局用户git配置末尾添加
 &lt;ul&gt;
-&lt;li&gt;windows默认路径：C:\Users\Administrator.gitconfig&lt;/li&gt;
+&lt;li&gt;windows默认路径：C:\Users\Administrator\.gitconfig&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

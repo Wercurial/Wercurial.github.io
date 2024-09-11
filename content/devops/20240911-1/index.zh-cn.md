@@ -63,7 +63,7 @@ echo "Pushed to dev branch with pipeline trigger."
 ```
 
 - 在全局用户git配置末尾添加
-  - windows默认路径：C:\Users\Administrator\.gitconfig
+  - windows默认路径：C:\Users\Administrator\\.gitconfig
 ```conf
 [alias]
   push-ci = "!sh ./git-push-ci.sh"
