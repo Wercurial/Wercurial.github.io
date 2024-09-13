@@ -95,6 +95,13 @@
   pageRef = "go"
   weight = 10
 
+[[main]]
+  name = "Java语言"
+  parent = "编程语言"
+  pageRef = "java"
+  weight = 11
+
+
 # 编程语言知识专栏
 [[main]]
   name = "奇淫技巧"
