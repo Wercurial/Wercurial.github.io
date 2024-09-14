@@ -112,9 +112,10 @@ echo "Pushed to dev branch with pipeline trigger."
 ```
 - 在全局用户git配置末尾添加
   - windows默认路径：C:\Users\Administrator\\.gitconfig
+  - `$1`: 传参占位符，可定义多个
 ```conf
 [alias]
-  push-ci = "!sh ./git-push-ci.sh"
+  push-ci = "!sh ./git-push-ci.sh $1"
 ```
 - 本地推送代码时，添加参数
   - 则变量`DEFINE_NAME`的值被赋予`t1`传递到CICD的构建当中去

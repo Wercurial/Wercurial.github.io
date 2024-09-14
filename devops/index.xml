@@ -498,11 +498,12 @@
 &lt;li&gt;在全局用户git配置末尾添加
 &lt;ul&gt;
 &lt;li&gt;windows默认路径：C:\Users\Administrator\.gitconfig&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$1&lt;/code&gt;: 传参占位符，可定义多个&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;[alias]
-  push-ci = &amp;#34;!sh ./git-push-ci.sh&amp;#34;
+  push-ci = &amp;#34;!sh ./git-push-ci.sh $1&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;本地推送代码时，添加参数
 &lt;ul&gt;
