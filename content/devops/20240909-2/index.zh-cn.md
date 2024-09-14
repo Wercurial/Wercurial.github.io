@@ -377,3 +377,53 @@ install:
     - yarn config set chromedriver_cdnurl "https://cdn.npm.taobao.org/dist/chromedriver"
     - yarn config set cache-folder $(pwd)/.yarn-cache
 ```
+
+# 5. gitlab-ci报错排查
+## 5.1 Job's log exceeded limit of 4194304 bytes
+- 该问题是因为gitlab runner默认日志大小为4096 kB，修改第3步gitlab-runner.yaml配置
+  - 新增默认配置：`RUNNER_OUTPUT_LIMIT`, 该配置不设置时默认为`4096`，对应到配置文件`/home/gitlab-runner/.gitlab-runner/config.toml`中为`[[runners]]`下的output_limit配置
+```yaml
+......
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: gitlab-ci-runner
+  name: gitlab-ci-runner-cm
+  namespace: gitlab
+data:
+  REGISTER_NON_INTERACTIVE: "true"
+  REGISTER_LOCKED: "false"
+  METRICS_SERVER: "0.0.0.0:9100"
+  CI_SERVER_URL: "https://git.jshcbd.com.cn"  # *
+#  CI_REPOSITORY_URL: "http://172.16.2.120:10081/wjp/test4c.git"  # *
+ # CI_PROJECT_URL: "http://172.16.2.120:10081/wjp/test4c"  # *
+  RUNNER_REQUEST_CONCURRENCY: "4"
+  RUNNER_EXECUTOR: "kubernetes"
+  RUNNER_OUTPUT_LIMIT: "8192"
+......
+```
+- 对应的`/home/gitlab-runner/.gitlab-runner/config.toml`配置
+```toml
+......
+[[runners]]
+  name = "gitlab-ci-runner-0"
+  output_limit = 8192
+  request_concurrency = 4
+  url = "https://git.jshcbd.com.cn"
+  id = 834
+  token = "sPoYY9fe1Xp7zcozVKHs"
+  token_obtained_at = 2024-09-14T07:42:21Z
+  token_expires_at = 0001-01-01T00:00:00Z
+  tls-ca-file = "/opt/gitlab-runner/certs/gitlab.crt"
+  executor = "kubernetes"
+  [runners.custom_build_dir]
+......
+```
+- 修改配置后，重装gitlab-runner
+```bash
+k delete -f gitlab-runner.yaml
+
+k apply -f gitlab-runner.yaml
+```

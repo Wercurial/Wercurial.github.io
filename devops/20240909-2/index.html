@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","ci","build","gitlab-runner"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2095"
+    "wordCount": "2456"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>2095 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>2456 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1517,6 +1517,11 @@
         <li><a href="#43-node项目配置缓存">4.3 node项目配置缓存</a></li>
       </ul>
     </li>
+    <li><a href="#5-gitlab-ci报错排查">5. gitlab-ci报错排查</a>
+      <ul>
+        <li><a href="#51-jobs-log-exceeded-limit-of-4194304-bytes">5.1 Job&rsquo;s log exceeded limit of 4194304 bytes</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1548,6 +1553,11 @@
         <li><a href="#41-gitlab-ci中环境变量设置">4.1 gitlab-ci中环境变量设置</a></li>
         <li><a href="#42-maven项目配置缓存">4.2 maven项目配置缓存</a></li>
         <li><a href="#43-node项目配置缓存">4.3 node项目配置缓存</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-gitlab-ci报错排查">5. gitlab-ci报错排查</a>
+      <ul>
+        <li><a href="#51-jobs-log-exceeded-limit-of-4194304-bytes">5.1 Job&rsquo;s log exceeded limit of 4194304 bytes</a></li>
       </ul>
     </li>
   </ul>
@@ -2145,6 +2155,80 @@ install:
     - yarn config set chromedriver_cdnurl &#34;https://cdn.npm.taobao.org/dist/chromedriver&#34;
     - yarn config set cache-folder $(pwd)/.yarn-cache
 </code></pre>
+
+<h1 class="relative group">5. gitlab-ci报错排查 
+    <div id="5-gitlab-ci%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-gitlab-ci%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">5.1 Job&rsquo;s log exceeded limit of 4194304 bytes 
+    <div id="51-jobs-log-exceeded-limit-of-4194304-bytes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#51-jobs-log-exceeded-limit-of-4194304-bytes" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>该问题是因为gitlab runner默认日志大小为4096 kB，修改第3步gitlab-runner.yaml配置
+<ul>
+<li>新增默认配置：<code>RUNNER_OUTPUT_LIMIT</code>, 该配置不设置时默认为<code>4096</code>，对应到配置文件<code>/home/gitlab-runner/.gitlab-runner/config.toml</code>中为<code>[[runners]]</code>下的output_limit配置</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">...</span><span class="l">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ConfigMap</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">gitlab-ci-runner</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">gitlab-ci-runner-cm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l">gitlab</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">data</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">REGISTER_NON_INTERACTIVE</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;true&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">REGISTER_LOCKED</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;false&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">METRICS_SERVER</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0.0.0.0:9100&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">CI_SERVER_URL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://git.jshcbd.com.cn&#34;</span><span class="w">  </span><span class="c"># *</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#  CI_REPOSITORY_URL: &#34;http://172.16.2.120:10081/wjp/test4c.git&#34;  # *</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="c"># CI_PROJECT_URL: &#34;http://172.16.2.120:10081/wjp/test4c&#34;  # *</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">RUNNER_REQUEST_CONCURRENCY</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;4&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">RUNNER_EXECUTOR</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;kubernetes&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">RUNNER_OUTPUT_LIMIT</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;8192&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">...</span><span class="l">...</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>对应的<code>/home/gitlab-runner/.gitlab-runner/config.toml</code>配置</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">......</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;gitlab-ci-runner-0&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">output_limit</span> <span class="p">=</span> <span class="mi">8192</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">request_concurrency</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://git.jshcbd.com.cn&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">id</span> <span class="p">=</span> <span class="mi">834</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;sPoYY9fe1Xp7zcozVKHs&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">token_obtained_at</span> <span class="p">=</span> <span class="ld">2024-09-14T07:42:21Z</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">token_expires_at</span> <span class="p">=</span> <span class="ld">0001-01-01T00:00:00Z</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tls-ca-file</span> <span class="p">=</span> <span class="s2">&#34;/opt/gitlab-runner/certs/gitlab.crt&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;kubernetes&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">......</span>
+</span></span></code></pre></div><ul>
+<li>修改配置后，重装gitlab-runner</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">k delete -f gitlab-runner.yaml
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">k apply -f gitlab-runner.yaml
+</span></span></code></pre></div>
           
           
           
