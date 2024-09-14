@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","docker","build","kaniko"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1071"
+    "wordCount": "1171"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>1071 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>1171 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1505,6 +1505,7 @@
         <li><a href="#41-error-kaniko-should-only-be-run-inside-of-a-container">4.1 Error: kaniko should only be run inside of a container</a></li>
       </ul>
     </li>
+    <li><a href="#5-容器内kaniko构建增加非docker-hub镜像仓库">5. 容器内kaniko构建增加非docker-hub镜像仓库</a></li>
   </ul>
 </nav>
   </div>
@@ -1526,6 +1527,7 @@
         <li><a href="#41-error-kaniko-should-only-be-run-inside-of-a-container">4.1 Error: kaniko should only be run inside of a container</a></li>
       </ul>
     </li>
+    <li><a href="#5-容器内kaniko构建增加非docker-hub镜像仓库">5. 容器内kaniko构建增加非docker-hub镜像仓库</a></li>
   </ul>
 </nav>
   </div>
@@ -1747,6 +1749,22 @@
 <pre tabindex="0"><code>要解决此问题，请将 gcr.io/kaniko-project/executor:debug 容器更新到至少 v1.9.0 的版本，例如 gcr.io/kaniko-project/executor:v1.23.2-debug
 </code></pre><p>而反过来，（版本 19.06.x 或更早版本中主机上的 gcr.io/kaniko-project/executor:v1.23.2-debug 映像和 Docker 引擎）可以正常工作。为了获得最佳策略，您应该经常测试作业环境版本并将其更新到最新版本。这带来了新功能、更高的安全性，并且对于这种特定情况，使运行器主机上底层 Docker Engine 的升级对作业透明。</p>
 
+
+<h1 class="relative group">5. 容器内kaniko构建增加非docker-hub镜像仓库 
+    <div id="5-%E5%AE%B9%E5%99%A8%E5%86%85kaniko%E6%9E%84%E5%BB%BA%E5%A2%9E%E5%8A%A0%E9%9D%9Edocker-hub%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-%E5%AE%B9%E5%99%A8%E5%86%85kaniko%E6%9E%84%E5%BB%BA%E5%A2%9E%E5%8A%A0%E9%9D%9Edocker-hub%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>因某些原因，docker-hub镜像仓库用不了的时候，通过参数<code>--registry-mirror</code>指定可用镜像仓库地址</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/kaniko/executor --build-arg <span class="nv">CI_PROJECT_NAME</span><span class="o">=</span><span class="si">${</span><span class="nv">CI_PROJECT_NAME</span><span class="si">}</span> --build-arg <span class="nv">SERVICE_NAME</span><span class="o">=</span><span class="nv">$SERVICE_NAME</span> --registry-mirror <span class="si">${</span><span class="nv">REGISTRY_MIRROR</span><span class="si">}</span>  --dockerfile Dockerfile --skip-tls-verify --destination <span class="si">${</span><span class="nv">HARBOR_REGISTRY</span><span class="si">}</span>/test/<span class="nv">$SERVICE_NAME</span>:<span class="nv">$VERSION_VAR</span>
+</span></span></code></pre></div>
           
           
           

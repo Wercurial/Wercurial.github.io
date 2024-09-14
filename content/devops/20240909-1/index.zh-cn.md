@@ -84,3 +84,9 @@ kaniko should only be run inside of a container, run with the --force flag if yo
 要解决此问题，请将 gcr.io/kaniko-project/executor:debug 容器更新到至少 v1.9.0 的版本，例如 gcr.io/kaniko-project/executor:v1.23.2-debug
 ```
 而反过来，（版本 19.06.x 或更早版本中主机上的 gcr.io/kaniko-project/executor:v1.23.2-debug 映像和 Docker 引擎）可以正常工作。为了获得最佳策略，您应该经常测试作业环境版本并将其更新到最新版本。这带来了新功能、更高的安全性，并且对于这种特定情况，使运行器主机上底层 Docker Engine 的升级对作业透明。
+
+# 5. 容器内kaniko构建增加非docker-hub镜像仓库
+- 因某些原因，docker-hub镜像仓库用不了的时候，通过参数`--registry-mirror`指定可用镜像仓库地址
+```bash
+/kaniko/executor --build-arg CI_PROJECT_NAME=${CI_PROJECT_NAME} --build-arg SERVICE_NAME=$SERVICE_NAME --registry-mirror ${REGISTRY_MIRROR}  --dockerfile Dockerfile --skip-tls-verify --destination ${HARBOR_REGISTRY}/test/$SERVICE_NAME:$VERSION_VAR
+```
