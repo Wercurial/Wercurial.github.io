@@ -68,7 +68,8 @@ echo "Pushed to dev branch with pipeline trigger."
 [alias]
   push-ci = "!sh ./git-push-ci.sh"
 ```
-- 提交代码时，使用`git push-ci`代替`git push`，即可触发CICD流程
+- 提交代码时，使用`git push-ci`代替`git push`，即可自动触发CICD流程
+- 提交代码时，仍使用`git push`，则不触发CICD流程
 
 # 3. 手动构建
 - 通过在需要手动执行的步骤，指定rules对应参数
@@ -90,3 +91,33 @@ build_docker:
 - 选择需要执行的分支，输入上一步定义变量及值
 ![image.png](./2.png)
 - 即可手动执行CICD流程
+
+
+# 4. 推送代码时通过命令行传递参数
+- 在项目根目录下创建`git-push-ci.sh`文件
+```bash
+#!/bin/bash
+
+# 检查当前分支是否为 dev
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$current_branch" != "dev" ]; then
+    echo "Error: This script should only be run on the dev branch."
+    exit 1
+fi
+
+# 设置 CI 变量并推送
+git push origin dev -o ci.variable="RUN_PIPELINE=true" -o ci.variable="DEFINE_NAME=$1"
+
+echo "Pushed to dev branch with pipeline trigger."
+```
+- 在全局用户git配置末尾添加
+  - windows默认路径：C:\Users\Administrator\\.gitconfig
+```conf
+[alias]
+  push-ci = "!sh ./git-push-ci.sh"
+```
+- 本地推送代码时，添加参数
+  - 则变量`DEFINE_NAME`的值被赋予`t1`传递到CICD的构建当中去
+```bash
+git push-ci t1
+```
