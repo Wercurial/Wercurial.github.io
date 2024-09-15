@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>k8s资源删除报Terminating卡住 &middot; 云一二三</title>
-  <meta name="title" content="k8s资源删除报Terminating卡住 &middot; 云一二三" />
+  <title>Windows通过KTConnect连接服务器K8S集群 &middot; 云一二三</title>
+  <meta name="title" content="Windows通过KTConnect连接服务器K8S集群 &middot; 云一二三" />
   
-  <meta name="description" content="k8s资源删除报Terminating卡住。" />
-  <meta name="keywords" content="Kubernetes, terminating, crd, namespace, " />
+  <meta name="description" content="Windows通过KTConnect连接服务器K8S集群" />
+  <meta name="keywords" content="Kubernetes, ktconnect, windows, proxy, " />
   
   
-  <link rel="canonical" href="https://Wercurial.github.io/k8s-solve/20240829-2/" />
+  <link rel="canonical" href="https://Wercurial.github.io/kubernetes/20240713-1/" />
   
   
   
@@ -64,51 +64,51 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/k8s-solve/20240829-2/">
+  <meta property="og:url" content="https://Wercurial.github.io/kubernetes/20240713-1/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="k8s资源删除报Terminating卡住">
-  <meta property="og:description" content="k8s资源删除报Terminating卡住。">
+  <meta property="og:title" content="Windows通过KTConnect连接服务器K8S集群">
+  <meta property="og:description" content="Windows通过KTConnect连接服务器K8S集群">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="k8s-solve">
-    <meta property="article:published_time" content="2024-08-29T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-08-29T00:00:00+00:00">
+    <meta property="article:section" content="kubernetes">
+    <meta property="article:published_time" content="2024-07-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-13T00:00:00+00:00">
     <meta property="article:tag" content="Kubernetes">
-    <meta property="article:tag" content="Terminating">
-    <meta property="article:tag" content="Crd">
-    <meta property="article:tag" content="Namespace">
+    <meta property="article:tag" content="Ktconnect">
+    <meta property="article:tag" content="Windows">
+    <meta property="article:tag" content="Proxy">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="k8s资源删除报Terminating卡住">
-  <meta name="twitter:description" content="k8s资源删除报Terminating卡住。">
+  <meta name="twitter:title" content="Windows通过KTConnect连接服务器K8S集群">
+  <meta name="twitter:description" content="Windows通过KTConnect连接服务器K8S集群">
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "k8s问题解决与记录",
-    "name": "k8s资源删除报Terminating卡住",
-    "headline": "k8s资源删除报Terminating卡住",
-    "description": "k8s资源删除报Terminating卡住。",
-    "abstract": "\u003cp\u003e本文解决了k8s资源删除报Terminating卡住的问题。\u003c\/p\u003e",
+    "articleSection": "Kubernetes",
+    "name": "Windows通过KTConnect连接服务器K8S集群",
+    "headline": "Windows通过KTConnect连接服务器K8S集群",
+    "description": "Windows通过KTConnect连接服务器K8S集群",
+    "abstract": "\u003ch1 class=\u0022relative group\u0022\u003e0. 前言 \n    \u003cdiv id=\u00220-%E5%89%8D%E8%A8%80\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#0-%E5%89%8D%E8%A8%80\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cblockquote\u003e\n\u003cp\u003e随着Kubernetes技术的普及，越来越多的应用被容器化，并部署到Kubernetes上。随之而来的问题是当容器中发生错误时，对错误的定位和调试也变得很复杂。当一个工具给你带来便利时，它也可能给你带来另一些麻烦。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/k8s-solve\/20240829-2\/",
+    "url" : "https:\/\/Wercurial.github.io\/kubernetes\/20240713-1\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-08-29T00:00:00\u002b00:00",
-    "datePublished": "2024-08-29T00:00:00\u002b00:00",
+    "dateCreated": "2024-07-13T00:00:00\u002b00:00",
+    "datePublished": "2024-07-13T00:00:00\u002b00:00",
     
-    "dateModified": "2024-08-29T00:00:00\u002b00:00",
+    "dateModified": "2024-07-13T00:00:00\u002b00:00",
     
-    "keywords": ["Kubernetes","terminating","crd","namespace"],
+    "keywords": ["Kubernetes","ktconnect","windows","proxy"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "190"
+    "wordCount": "768"
   }]
   </script>
 
@@ -1218,8 +1218,8 @@
   <li class="inline ">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/k8s-solve/"
-      >k8s问题解决与记录</a
+      href="/kubernetes/"
+      >Kubernetes</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1227,8 +1227,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/k8s-solve/20240829-2/"
-      >k8s资源删除报Terminating卡住</a
+      href="/kubernetes/20240713-1/"
+      >Windows通过KTConnect连接服务器K8S集群</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1237,7 +1237,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      k8s资源删除报Terminating卡住
+      Windows通过KTConnect连接服务器K8S集群
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-29 00:00:00 &#43;0000 UTC">2024-08-29</time><span class="px-2 text-primary-500">&middot;</span><span>190 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>768 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1351,26 +1351,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/terminating/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ktconnect/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Terminating
+    Ktconnect
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/crd/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/windows/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Crd
+    Windows
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/namespace/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Namespace
+    Proxy
   </span>
 </span>
   </span>
@@ -1497,8 +1497,14 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1方案一">1.方案一</a></li>
-    <li><a href="#2方案2优先方案一">2.方案2(优先方案一)</a></li>
+    <li><a href="#0-前言">0. 前言</a></li>
+    <li><a href="#1-下载kubectl-client命令行工具">1. 下载kubectl client命令行工具</a></li>
+    <li><a href="#2-配置kubectl环境变量并验证是否安装成功">2. 配置kubectl环境变量并验证是否安装成功</a></li>
+    <li><a href="#3-配置kubes-config">3. 配置kube&rsquo;s config</a></li>
+    <li><a href="#4-验证是否能连接k8s集群">4. 验证是否能连接k8s集群</a></li>
+    <li><a href="#5-ktconnect下载安装">5. KTConnect下载安装</a></li>
+    <li><a href="#6-验证是否安装成功">6. 验证是否安装成功：</a></li>
+    <li><a href="#7-通过管理员启动powershell并启动ktconnect">7. 通过管理员启动PowerShell并启动KTConnect</a></li>
   </ul>
 </nav>
   </div>
@@ -1512,8 +1518,14 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1方案一">1.方案一</a></li>
-    <li><a href="#2方案2优先方案一">2.方案2(优先方案一)</a></li>
+    <li><a href="#0-前言">0. 前言</a></li>
+    <li><a href="#1-下载kubectl-client命令行工具">1. 下载kubectl client命令行工具</a></li>
+    <li><a href="#2-配置kubectl环境变量并验证是否安装成功">2. 配置kubectl环境变量并验证是否安装成功</a></li>
+    <li><a href="#3-配置kubes-config">3. 配置kube&rsquo;s config</a></li>
+    <li><a href="#4-验证是否能连接k8s集群">4. 验证是否能连接k8s集群</a></li>
+    <li><a href="#5-ktconnect下载安装">5. KTConnect下载安装</a></li>
+    <li><a href="#6-验证是否安装成功">6. 验证是否安装成功：</a></li>
+    <li><a href="#7-通过管理员启动powershell并启动ktconnect">7. 通过管理员启动PowerShell并启动KTConnect</a></li>
   </ul>
 </nav>
   </div>
@@ -1595,50 +1607,201 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>本文解决了k8s资源删除报Terminating卡住的问题。</p>
+          
 
-
-<h1 class="relative group">1.方案一 
-    <div id="1%E6%96%B9%E6%A1%88%E4%B8%80" class="anchor"></div>
+<h1 class="relative group">0. 前言 
+    <div id="0-%E5%89%8D%E8%A8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1%E6%96%B9%E6%A1%88%E4%B8%80" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#0-%E5%89%8D%E8%A8%80" aria-label="锚点">#</a>
     </span>        
     
 </h1>
 <blockquote>
-<p>适用资源类型：pod、deploy、namespaces、crd</p>
+<p>随着Kubernetes技术的普及，越来越多的应用被容器化，并部署到Kubernetes上。随之而来的问题是当容器中发生错误时，对错误的定位和调试也变得很复杂。当一个工具给你带来便利时，它也可能给你带来另一些麻烦。</p>
 </blockquote>
 <ul>
-<li>使用kubectl delete crd卡住，用以下命令更新该资源的状态：</li>
+<li>而KTConnect就可以在本地联通Kubernetes集群并进行调试。</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl patch crd/inferenceservices.serving.kserve.io -p <span class="s1">&#39;{&#34;metadata&#34;:{&#34;finalizers&#34;:[]}}&#39;</span> --type<span class="o">=</span>merge
-</span></span></code></pre></div>
+<p>KTConnect是阿里巴巴开源的一款云原生协同开发测试解决方案，目前的功能包括：</p>
+<ul>
+<li>直接访问 Kubernetes 集群</li>
+<li>转发集群流量到本地</li>
+<li>Service Mesh 支持</li>
+<li>基于 SSH 的轻量级 VPN 网络</li>
+<li>作为 kubectl 插件，集成到 Kubectl</li>
+</ul>
+<p>（以上内容来自官方文档）</p>
+<p>其中最实用的功能就是直连Kubernetes网络，从而实现在本地使用Kubernetes自定义内网域名调用Kubernetes集群内的服务以及将Kubernetes集群中的流量转发到开发机本地，作用类似于一个VPN代理，将开发机本地网络与Kubernetes集群网络连接。</p>
 
-<h1 class="relative group">2.方案2(优先方案一) 
-    <div id="2%E6%96%B9%E6%A1%882%E4%BC%98%E5%85%88%E6%96%B9%E6%A1%88%E4%B8%80" class="anchor"></div>
+
+<h1 class="relative group">1. 下载kubectl client命令行工具 
+    <div id="1-%E4%B8%8B%E8%BD%BDkubectl-client%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2%E6%96%B9%E6%A1%882%E4%BC%98%E5%85%88%E6%96%B9%E6%A1%88%E4%B8%80" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#1-%E4%B8%8B%E8%BD%BDkubectl-client%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7" aria-label="锚点">#</a>
     </span>        
     
 </h1>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 1.导出配置</span>
-</span></span><span class="line"><span class="cl">kubectl get ns rook-ceph -o json &gt; tmp.json
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 2.删除tmp.json中spec及status部分的内容</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 3.启动代理</span>
-</span></span><span class="line"><span class="cl">kubectl proxy
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 4.调用接口删除</span>
-</span></span><span class="line"><span class="cl">curl -k -H <span class="s2">&#34;Content-Type: application/json&#34;</span> -X PUT --data-binary @tmp.json http://127.0.0.1:8001/api/v1/namespaces/rook-ceph/finalize
-</span></span></code></pre></div>
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.22.md#v1222" target="_blank">Kubernets-github-页面</a></li>
+<li><a href="https://dl.k8s.io/v1.22.2/kubernetes-client-windows-amd64.tar.gz" target="_blank">Kubernets-windows-client-1.22.2</a></li>
+</ul>
+
+
+<h1 class="relative group">2. 配置kubectl环境变量并验证是否安装成功 
+    <div id="2-%E9%85%8D%E7%BD%AEkubectl%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B9%B6%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-%E9%85%8D%E7%BD%AEkubectl%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B9%B6%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>配置环境变量
+<ul>
+<li>将kubectl解压到软件目录</li>
+<li>windows配置环境变量</li>
+</ul>
+</li>
+<li>检查是否成功</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl version --client
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">3. 配置kube&rsquo;s config 
+    <div id="3-%E9%85%8D%E7%BD%AEkubes-config" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E9%85%8D%E7%BD%AEkubes-config" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>将k8s集群的config文件拷贝到Windows的<code>C:\Users\username\.kube</code>文件夹中
+<ul>
+<li>config文件路径：<code>$HOME/.kube/config</code></li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS......o=
+    server: https://xxx.xxx.xxx:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: LS0tLS1CRUdJTiBDRVJ......K
+    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQ.....=
+</code></pre>
+
+<h1 class="relative group">4. 验证是否能连接k8s集群 
+    <div id="4-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E8%83%BD%E8%BF%9E%E6%8E%A5k8s%E9%9B%86%E7%BE%A4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E8%83%BD%E8%BF%9E%E6%8E%A5k8s%E9%9B%86%E7%BE%A4" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>命令如下</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl cluster-info
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./2.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">5. KTConnect下载安装 
+    <div id="5-ktconnect%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-ktconnect%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li><a href="https://alibaba.github.io/kt-connect/#/zh-cn/guide/downloads" target="_blank">KTConnect下载地址</a></li>
+<li>下载KTConnect并将其放到和kubectl-windows-client的同一个bin目录下
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./3.png" alt="image.png" />
+      
+    </figure>
+</li>
+</ul>
+
+
+<h1 class="relative group">6. 验证是否安装成功： 
+    <div id="6-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./4.png" alt="image.png" />
+      
+    </figure>
+</p>
+
+
+<h1 class="relative group">7. 通过管理员启动PowerShell并启动KTConnect 
+    <div id="7-%E9%80%9A%E8%BF%87%E7%AE%A1%E7%90%86%E5%91%98%E5%90%AF%E5%8A%A8powershell%E5%B9%B6%E5%90%AF%E5%8A%A8ktconnect" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#7-%E9%80%9A%E8%BF%87%E7%AE%A1%E7%90%86%E5%91%98%E5%90%AF%E5%8A%A8powershell%E5%B9%B6%E5%90%AF%E5%8A%A8ktconnect" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>启动命令</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ktctl connect -n <span class="nb">test</span> --excludeIps 172.16.2.0/24
+</span></span></code></pre></div><p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./5.png" alt="image.png" />
+      
+    </figure>
+</p>
+
           
           
           
@@ -1671,7 +1834,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/k8s-solve/20240829-2/&amp;subject=k8s%e8%b5%84%e6%ba%90%e5%88%a0%e9%99%a4%e6%8a%a5Terminating%e5%8d%a1%e4%bd%8f"
+      href="mailto:?body=https://Wercurial.github.io/kubernetes/20240713-1/&amp;subject=Windows%e9%80%9a%e8%bf%87KTConnect%e8%bf%9e%e6%8e%a5%e6%9c%8d%e5%8a%a1%e5%99%a8K8S%e9%9b%86%e7%be%a4"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1697,7 +1860,7 @@
   
   
 
-  <a href="/kubernetes/20240713-1/" class="min-w-full">
+  <a href="/kubernetes/20230311-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1709,7 +1872,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/kubernetes/20240713-1/">Windows通过KTConnect连接服务器K8S集群</div>
+          href="/kubernetes/20230311-1/">docker及containerd镜像代理配置</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1752,7 +1915,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>768 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>124 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -1798,18 +1961,18 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ktconnect/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ktconnect
+    Docker
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/windows/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/containerd/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Windows
+    Containerd
   </span>
 </span>
   </span>
@@ -2116,151 +2279,6 @@
   
   
 
-  <a href="/kubernetes/20230311-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/kubernetes/20230311-1/">docker及containerd镜像代理配置</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>124 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Kubernetes
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/containerd/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Containerd
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Proxy
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
   <a href="/kubernetes/20230311-2/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
@@ -2533,6 +2551,151 @@
   </a>
 
   
+  
+
+  <a href="/kubernetes/20220312-3/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/kubernetes/20220312-3/">Kubernetes命令集合</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2022-03-12 00:00:00 &#43;0000 UTC">2022-03-12</time><span class="px-2 text-primary-500">&middot;</span><span>53 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/shell/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Shell
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/command/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Command
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sh/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Sh
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
 </section>
 
   
@@ -2546,8 +2709,8 @@
           
         
       <script>
-        var oid = "views_k8s-solve\/20240829-2\/index.md"
-        var oid_likes = "likes_k8s-solve\/20240829-2\/index.md"
+        var oid = "views_Kubernetes\/20240713-1\/index.md"
+        var oid_likes = "likes_Kubernetes\/20240713-1\/index.md"
       </script>
       
       
@@ -2570,7 +2733,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/k8s-solve/20240901-3/">
+            <a class="flex group mr-3" href="/kubernetes/20240908-1/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2582,11 +2745,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >kubernetes问题解决集合</span
+                  >批量删除卸载docker遗留的大量挂载路径</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">2024-09-01</time>
+                    <time datetime="2024-09-08 00:00:00 &#43;0000 UTC">2024-09-08</time>
                   
                 </span>
               </span>
@@ -2595,15 +2758,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/k8s-solve/20240811-1/">
+            <a class="flex text-right group ml-3" href="/kubernetes/20240311-4/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >k8s（kubectl get cs）健康检查报错</span
+                  >【Kubernetes知识】OwnerReference和Finalizers</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-08-11 00:00:00 &#43;0000 UTC">2024-08-11</time>
+                    <time datetime="2024-03-11 00:00:00 &#43;0000 UTC">2024-03-11</time>
                   
                 </span>
               </span>

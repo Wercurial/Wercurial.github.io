@@ -483,6 +483,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/ktconnect/</loc>
+    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/kubernetes/20240713-1/</loc>
+    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/centos7/</loc>
     <lastmod>2024-03-29T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
