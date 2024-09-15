@@ -7,7 +7,187 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k8s集群监控告警：Prometheus&#43;Grafana&#43;AlterManager&#43;钉钉告警</title>
+      <link>https://Wercurial.github.io/kubernetes/20240915-1/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/20240915-1/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. 环境信息 
+    &lt;div id=&#34;1-%E7%8E%AF%E5%A2%83%E4%BF%A1%E6%81%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-%E7%8E%AF%E5%A2%83%E4%BF%A1%E6%81%AF&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;1.1 集群信息 
+    &lt;div id=&#34;11-%E9%9B%86%E7%BE%A4%E4%BF%A1%E6%81%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#11-%E9%9B%86%E7%BE%A4%E4%BF%A1%E6%81%AF&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;IP地址&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;主机名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;角色&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;K8S版本&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Docker版本&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;172.16.2.80&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;k8s01&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;master&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.29.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;26.1.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;172.16.2.81&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;k8s02&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;worker&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.29.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;26.1.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;172.16.2.82&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;k8s03&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;worker&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.29.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;26.1.4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;1.2 部署组件版本 
+    &lt;div id=&#34;12-%E9%83%A8%E7%BD%B2%E7%BB%84%E4%BB%B6%E7%89%88%E6%9C%AC&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#12-%E9%83%A8%E7%BD%B2%E7%BB%84%E4%BB%B6%E7%89%88%E6%9C%AC&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;序号&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;版本&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;作用&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Prometheus&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v2.33.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;收集、存储和处理指标数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Node_exporter&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v0.16.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;采集服务器指标，如CPU、内存、磁盘、网络等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Kube-state-metrics&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v1.9.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;采集K8S资源指标，如Pod、Node、Deployment、Service等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Grafana&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v8.4.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;可视化展示Prometheus收集数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;webhook-dingtalk插件  ( 非容器化  )&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/timonwong/prometheus-webhook-dingtalk/releases/download/v2.1.0/prometheus-webhook-dingtalk-2.1.0.linux-amd64.tar.&#34; target=&#34;_blank&#34;&gt;v2.1.0&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用于发送集群告警信息给钉钉机器人&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;6&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AlterManager&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;v0.23.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;建新的Prometheus ConfigMap资源清单，添加监控K8S集群告警规则&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;2. 准备工作 
+    &lt;div id=&#34;2-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.1 创建名称空间，下面所有资源都放到这里 
+    &lt;div id=&#34;21-%E5%88%9B%E5%BB%BA%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4%E4%B8%8B%E9%9D%A2%E6%89%80%E6%9C%89%E8%B5%84%E6%BA%90%E9%83%BD%E6%94%BE%E5%88%B0%E8%BF%99%E9%87%8C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#21-%E5%88%9B%E5%BB%BA%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4%E4%B8%8B%E9%9D%A2%E6%89%80%E6%9C%89%E8%B5%84%E6%BA%90%E9%83%BD%E6%94%BE%E5%88%B0%E8%BF%99%E9%87%8C&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl create ns prometheus
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.2 创建ServiceAccount账号，并绑定cluster-admin集群角色(Prometheus中需要指定) 
+    &lt;div id=&#34;22-%E5%88%9B%E5%BB%BAserviceaccount%E8%B4%A6%E5%8F%B7%E5%B9%B6%E7%BB%91%E5%AE%9Acluster-admin%E9%9B%86%E7%BE%A4%E8%A7%92%E8%89%B2prometheus%E4%B8%AD%E9%9C%80%E8%A6%81%E6%8C%87%E5%AE%9A&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#22-%E5%88%9B%E5%BB%BAserviceaccount%E8%B4%A6%E5%8F%B7%E5%B9%B6%E7%BB%91%E5%AE%9Acluster-admin%E9%9B%86%E7%BE%A4%E8%A7%92%E8%89%B2prometheus%E4%B8%AD%E9%9C%80%E8%A6%81%E6%8C%87%E5%AE%9A&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl create serviceaccount prometheus -n prometheus
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl create clusterrolebinding prometheus-clusterrolebinding -n prometheus --clusterrole&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;cluster-admin  --serviceaccount&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;prometheus:prometheus
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl create clusterrolebinding prometheus-clusterrolebinding-1 -n prometheus --clusterrole&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;cluster-admin --user&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;system:serviceaccount:prometheus:prometheus
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.3 创建Prometheus存放数据目录 
+    &lt;div id=&#34;23-%E5%88%9B%E5%BB%BAprometheus%E5%AD%98%E6%94%BE%E6%95%B0%E6%8D%AE%E7%9B%AE%E5%BD%95&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#23-%E5%88%9B%E5%BB%BAprometheus%E5%AD%98%E6%94%BE%E6%95%B0%E6%8D%AE%E7%9B%AE%E5%BD%95&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;注意：我准备将&lt;code&gt;Prometheus&lt;/code&gt;服务部署在&lt;code&gt;k8s01&lt;/code&gt;节点，所以此步骤在&lt;code&gt;k8s01&lt;/code&gt;节点执行&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>ConfigMap使用</title>
       <link>https://Wercurial.github.io/kubernetes/20240913-1/</link>

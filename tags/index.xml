@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlterManager</title>
+      <link>https://Wercurial.github.io/tags/altermanager/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/altermanager/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Grafana</title>
+      <link>https://Wercurial.github.io/tags/grafana/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/grafana/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://Wercurial.github.io/tags/kubernetes/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Prometheus</title>
+      <link>https://Wercurial.github.io/tags/prometheus/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tags/prometheus/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Cm</title>
       <link>https://Wercurial.github.io/tags/cm/</link>
@@ -24,16 +64,6 @@
       <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://Wercurial.github.io/tags/configmap/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://Wercurial.github.io/tags/kubernetes/</link>
-      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://Wercurial.github.io/tags/kubernetes/</guid>
       <description></description>
       
     </item>
