@@ -107,7 +107,7 @@
     "keywords": ["nas","fnos","homepage"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1653"
+    "wordCount": "1656"
   }]
   </script>
 
@@ -1283,7 +1283,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-17 00:00:00 &#43;0000 UTC">2024-09-17</time><span class="px-2 text-primary-500">&middot;</span><span>1653 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-17 00:00:00 &#43;0000 UTC">2024-09-17</time><span class="px-2 text-primary-500">&middot;</span><span>1656 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1866,15 +1866,15 @@
 </blockquote>
 <ul>
 <li>label: 对资源进行标签分组展示</li>
+<li>展示详细信息：<code>expanded: true</code></li>
 <li>全部硬盘容量显示设置
 <ul>
 <li>将主机硬盘对应根目录映射到容器的<code>/diskx</code>路径下：/mnt/dev1:/disk1</li>
 <li>设置容量对应关系，有几块盘就设置几个：disk: /disk1</li>
-<li>展示详细信息：<code>expanded: true</code></li>
 </ul>
 </li>
 <li>设置默认搜索引擎为<code>百度</code></li>
-<li>设置天气组件，根据<a href="https://open-meteo.com/en/docs" target="_blank">Open-Meteo</a>获取经纬度</li>
+<li>openmeteo: 设置天气组件，根据<a href="https://open-meteo.com/en/docs" target="_blank">Open-Meteo</a>获取经纬度</li>
 <li>设置时间显示</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
@@ -1883,6 +1883,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">resources</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">machine</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">expanded</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">

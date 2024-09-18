@@ -86,12 +86,12 @@ background:
 > 
 > 更多配置请参考：https://gethomepage.dev/latest/configs/service-widgets
 - label: 对资源进行标签分组展示
+- 展示详细信息：`expanded: true`
 - 全部硬盘容量显示设置
   - 将主机硬盘对应根目录映射到容器的`/diskx`路径下：/mnt/dev1:/disk1
   - 设置容量对应关系，有几块盘就设置几个：disk: /disk1
-  - 展示详细信息：`expanded: true`
 - 设置默认搜索引擎为`百度`
-- 设置天气组件，根据[Open-Meteo](https://open-meteo.com/en/docs)获取经纬度
+- openmeteo: 设置天气组件，根据[Open-Meteo](https://open-meteo.com/en/docs)获取经纬度
 - 设置时间显示
 ```yaml
 ---
@@ -100,6 +100,7 @@ background:
 
 - resources:
     label: machine
+    expanded: true
     cpu: true
     memory: true
 
