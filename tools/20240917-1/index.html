@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>通过vmware虚拟机安装国产nas系统FnOS &middot; 云一二三</title>
-  <meta name="title" content="通过vmware虚拟机安装国产nas系统FnOS &middot; 云一二三" />
+  <title>FnOS-NAS部署配置homepage &middot; 云一二三</title>
+  <meta name="title" content="FnOS-NAS部署配置homepage &middot; 云一二三" />
   
-  <meta name="description" content="内网穿透工具。" />
-  <meta name="keywords" content="nas, linux, fnos, " />
+  <meta name="description" content="nas部署配置homepage" />
+  <meta name="keywords" content="nas, fnos, homepage, " />
   
   
-  <link rel="canonical" href="https://Wercurial.github.io/tools/20240908-1/" />
+  <link rel="canonical" href="https://Wercurial.github.io/tools/20240917-1/" />
   
   
   
@@ -64,23 +64,23 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/tools/20240908-1/">
+  <meta property="og:url" content="https://Wercurial.github.io/tools/20240917-1/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="通过vmware虚拟机安装国产nas系统FnOS">
-  <meta property="og:description" content="内网穿透工具。">
+  <meta property="og:title" content="FnOS-NAS部署配置homepage">
+  <meta property="og:description" content="nas部署配置homepage">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="tools">
-    <meta property="article:published_time" content="2024-09-08T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-08T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-17T00:00:00+00:00">
     <meta property="article:tag" content="Nas">
-    <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Fnos">
+    <meta property="article:tag" content="Homepage">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="通过vmware虚拟机安装国产nas系统FnOS">
-  <meta name="twitter:description" content="内网穿透工具。">
+  <meta name="twitter:title" content="FnOS-NAS部署配置homepage">
+  <meta name="twitter:description" content="nas部署配置homepage">
 
   
   <script type="application/ld+json">
@@ -88,26 +88,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "工具合集",
-    "name": "通过vmware虚拟机安装国产nas系统FnOS",
-    "headline": "通过vmware虚拟机安装国产nas系统FnOS",
-    "description": "内网穿透工具。",
-    "abstract": "\u003ch1 class=\u0022relative group\u0022\u003e0. 前言 \n    \u003cdiv id=\u00220-%E5%89%8D%E8%A8%80\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#0-%E5%89%8D%E8%A8%80\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cp\u003e飞牛云推出的飞牛云nas操作系统，FnOS基于最新 Linux 内核（Debian 发行版）深度开发，兼容主流 x86 硬件，自由组装 NAS，灵活扩展外部存储\n\u003ca href=\u0022https:\/\/www.fnnas.com\/download?key=fnos\u0022 target=\u0022_blank\u0022\u003e飞牛云官网\u003c\/a\u003e\u003c\/p\u003e",
+    "name": "FnOS-NAS部署配置homepage",
+    "headline": "FnOS-NAS部署配置homepage",
+    "description": "nas部署配置homepage",
+    "abstract": "\u003ch1 class=\u0022relative group\u0022\u003e1. 介绍 \n    \u003cdiv id=\u00221-%E4%BB%8B%E7%BB%8D\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#1-%E4%BB%8B%E7%BB%8D\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\u0022https:\/\/gethomepage.dev\/latest\u0022 target=\u0022_blank\u0022\u003ehomepage\u003c\/a\u003e: 一个现代、完全静态、快速、安全、完全代理、高度可定制的应用程序仪表板，集成了100多 种服务和多种语言的翻译。通过YAML文件或docker标签发现轻松配置。\u003c\/p\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/tools\/20240908-1\/",
+    "url" : "https:\/\/Wercurial.github.io\/tools\/20240917-1\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-09-08T00:00:00\u002b00:00",
-    "datePublished": "2024-09-08T00:00:00\u002b00:00",
+    "dateCreated": "2024-09-17T00:00:00\u002b00:00",
+    "datePublished": "2024-09-17T00:00:00\u002b00:00",
     
-    "dateModified": "2024-09-08T00:00:00\u002b00:00",
+    "dateModified": "2024-09-17T00:00:00\u002b00:00",
     
-    "keywords": ["nas","linux","fnos"],
+    "keywords": ["nas","fnos","homepage"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "548"
+    "wordCount": "1653"
   }]
   </script>
 
@@ -1226,8 +1226,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/tools/20240908-1/"
-      >通过vmware虚拟机安装国产nas系统FnOS</a
+      href="/tools/20240917-1/"
+      >FnOS-NAS部署配置homepage</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1236,7 +1236,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      通过vmware虚拟机安装国产nas系统FnOS
+      FnOS-NAS部署配置homepage
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1283,7 +1283,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-08 00:00:00 &#43;0000 UTC">2024-09-08</time><span class="px-2 text-primary-500">&middot;</span><span>548 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-17 00:00:00 &#43;0000 UTC">2024-09-17</time><span class="px-2 text-primary-500">&middot;</span><span>1653 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1350,18 +1350,18 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Linux
-  </span>
-</span>
-  </span>
-  
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fnos/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Fnos
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/homepage/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Homepage
   </span>
 </span>
   </span>
@@ -1488,17 +1488,25 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#0-前言">0. 前言</a></li>
-    <li><a href="#1-安装步骤">1. 安装步骤</a>
+    <li><a href="#1-介绍">1. 介绍</a>
       <ul>
-        <li><a href="#11-创建虚拟机">1.1 创建虚拟机</a></li>
+        <li><a href="#11-特征">1.1 特征</a></li>
       </ul>
     </li>
-    <li><a href="#2-使用步骤">2. 使用步骤</a>
+    <li><a href="#2-飞牛云fnosnas部署homepage">2. 飞牛云（FnOS）NAS部署homepage</a>
       <ul>
-        <li><a href="#21-第一次登陆">2.1 第一次登陆</a></li>
-        <li><a href="#22-第二次登陆">2.2 第二次登陆</a></li>
-        <li><a href="#23-享受国产nas吧">2.3 享受国产Nas吧</a></li>
+        <li><a href="#21-创建docker项目">2.1 创建Docker项目</a></li>
+        <li><a href="#22-编写docker-composeyml">2.2 编写docker-compose.yml</a></li>
+        <li><a href="#23-启动homepage项目">2.3 启动homepage项目</a></li>
+        <li><a href="#24-查看效果">2.4 查看效果</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-homepage配置优化">3. homepage配置优化</a>
+      <ul>
+        <li><a href="#31-settingsyaml配置更改整体配置">3.1 settings.yaml配置更改（整体配置）</a></li>
+        <li><a href="#32-widgetsyaml配置更改顶部导航栏">3.2 widgets.yaml配置更改(顶部导航栏)</a></li>
+        <li><a href="#33-servicesyaml配置更改服务配置">3.3 services.yaml配置更改（服务配置）</a></li>
+        <li><a href="#34-bookmarkssyaml配置更改底部配置">3.4 bookmarkss.yaml配置更改（底部配置）</a></li>
       </ul>
     </li>
   </ul>
@@ -1514,17 +1522,25 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#0-前言">0. 前言</a></li>
-    <li><a href="#1-安装步骤">1. 安装步骤</a>
+    <li><a href="#1-介绍">1. 介绍</a>
       <ul>
-        <li><a href="#11-创建虚拟机">1.1 创建虚拟机</a></li>
+        <li><a href="#11-特征">1.1 特征</a></li>
       </ul>
     </li>
-    <li><a href="#2-使用步骤">2. 使用步骤</a>
+    <li><a href="#2-飞牛云fnosnas部署homepage">2. 飞牛云（FnOS）NAS部署homepage</a>
       <ul>
-        <li><a href="#21-第一次登陆">2.1 第一次登陆</a></li>
-        <li><a href="#22-第二次登陆">2.2 第二次登陆</a></li>
-        <li><a href="#23-享受国产nas吧">2.3 享受国产Nas吧</a></li>
+        <li><a href="#21-创建docker项目">2.1 创建Docker项目</a></li>
+        <li><a href="#22-编写docker-composeyml">2.2 编写docker-compose.yml</a></li>
+        <li><a href="#23-启动homepage项目">2.3 启动homepage项目</a></li>
+        <li><a href="#24-查看效果">2.4 查看效果</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-homepage配置优化">3. homepage配置优化</a>
+      <ul>
+        <li><a href="#31-settingsyaml配置更改整体配置">3.1 settings.yaml配置更改（整体配置）</a></li>
+        <li><a href="#32-widgetsyaml配置更改顶部导航栏">3.2 widgets.yaml配置更改(顶部导航栏)</a></li>
+        <li><a href="#33-servicesyaml配置更改服务配置">3.3 services.yaml配置更改（服务配置）</a></li>
+        <li><a href="#34-bookmarkssyaml配置更改底部配置">3.4 bookmarkss.yaml配置更改（底部配置）</a></li>
       </ul>
     </li>
   </ul>
@@ -1610,61 +1626,138 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h1 class="relative group">0. 前言 
-    <div id="0-%E5%89%8D%E8%A8%80" class="anchor"></div>
+<h1 class="relative group">1. 介绍 
+    <div id="1-%E4%BB%8B%E7%BB%8D" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#0-%E5%89%8D%E8%A8%80" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#1-%E4%BB%8B%E7%BB%8D" aria-label="锚点">#</a>
     </span>        
     
 </h1>
-<p>飞牛云推出的飞牛云nas操作系统，FnOS基于最新 Linux 内核（Debian 发行版）深度开发，兼容主流 x86 硬件，自由组装 NAS，灵活扩展外部存储
-<a href="https://www.fnnas.com/download?key=fnos" target="_blank">飞牛云官网</a></p>
+<blockquote>
+<p><a href="https://gethomepage.dev/latest" target="_blank">homepage</a>: 一个现代、完全静态、快速、安全、完全代理、高度可定制的应用程序仪表板，集成了100多 种服务和多种语言的翻译。通过YAML文件或docker标签发现轻松配置。</p>
+</blockquote>
 
 
-<h1 class="relative group">1. 安装步骤 
-    <div id="1-%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" class="anchor"></div>
+<h2 class="relative group">1.1 特征 
+    <div id="11-%E7%89%B9%E5%BE%81" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4" aria-label="锚点">#</a>
-    </span>        
-    
-</h1>
-<p>本文通过vmware虚拟机进行FnOS的安装操作，主打体验</p>
-
-
-<h2 class="relative group">1.1 创建虚拟机 
-    <div id="11-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#11-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#11-%E7%89%B9%E5%BE%81" aria-label="锚点">#</a>
     </span>        
     
 </h2>
+<p>Homepage具有快速搜索、书签、天气支持、广泛的集成和小部件、优雅现代的设计以及对性能的关注等功能，是您一天的理想开始，也是整个一天的便捷伴侣。</p>
 <ul>
-<li>点击vmware主页创建新的虚拟机
+<li>Fast（快速）-站点在构建时静态生成，以便立即加载。</li>
+<li>安全-对后端服务的所有API请求都是代理的，从而隐藏您的API密钥。社区不断审查安全性。</li>
+<li>面向所有人-为 AMD64、ARM64、ARMv7 和 ARMv6 构建的映像。</li>
+<li>完整的i18n-支持 40 多种语言。</li>
+<li>服务和网络书签-在主页上添加自定义链接。</li>
+<li>Docker集成-容器状态和统计信息。通过标签自动发现服务。</li>
+<li>服务集成-超过 100 种服务集成，包括流行的 starr 和自托管应用程序。</li>
+<li>信息和实用工具小部件-天气、时间、日期、搜索等。</li>
+<li>还有更多&hellip;</li>
+</ul>
 
+
+<h1 class="relative group">2. 飞牛云（FnOS）NAS部署homepage 
+    <div id="2-%E9%A3%9E%E7%89%9B%E4%BA%91fnosnas%E9%83%A8%E7%BD%B2homepage" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-%E9%A3%9E%E7%89%9B%E4%BA%91fnosnas%E9%83%A8%E7%BD%B2homepage" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<p>项目地址：https://github.com/gethomepage/homepage?tab=readme-ov-file</p>
+
+
+<h2 class="relative group">2.1 创建Docker项目 
+    <div id="21-%E5%88%9B%E5%BB%BAdocker%E9%A1%B9%E7%9B%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#21-%E5%88%9B%E5%BB%BAdocker%E9%A1%B9%E7%9B%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
       
     </figure>
-</li>
-<li>选择稍后安装操作系统
+</p>
 
+
+<h2 class="relative group">2.2 编写docker-compose.yml 
+    <div id="22-%E7%BC%96%E5%86%99docker-composeyml" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#22-%E7%BC%96%E5%86%99docker-composeyml" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>从github上copydocker-compose.yml内容到Docker编辑器内
+<ul>
+<li>修改volumes内容，将容器内配置<code>/app/config</code>的路径映射到创建项目时创建的路径<code>/vol1/1000/files/homepage1</code></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">homepage</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ghcr.io/gethomepage/homepage:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">homepage</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">PUID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="c"># optional, your user id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">PGID</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="c"># optional, your group id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="m">3000</span><span class="p">:</span><span class="m">3000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/vol1/1000/files/homepage1:/app/config</span><span class="w"> </span><span class="c"># Make sure your local config directory exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock:ro</span><span class="w"> </span><span class="c"># optional, for docker integrations</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span></code></pre></div>
+
+<h2 class="relative group">2.3 启动homepage项目 
+    <div id="23-%E5%90%AF%E5%8A%A8homepage%E9%A1%B9%E7%9B%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#23-%E5%90%AF%E5%8A%A8homepage%E9%A1%B9%E7%9B%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./2.png" alt="image.png" />
       
     </figure>
-</li>
-<li>选择Linux操作系统
+</p>
+
+
+<h2 class="relative group">2.4 查看效果 
+    <div id="24-%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#24-%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
 <ul>
-<li>选择Debian 9.x（FnOS基于此开发）
+<li>输入nas-ip:3000,查看部署后效果
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./3.png" alt="image.png" />
@@ -1672,186 +1765,254 @@
     </figure>
 </li>
 </ul>
-</li>
-<li>选择虚拟机所在目录
+
+
+<h1 class="relative group">3. homepage配置优化 
+    <div id="3-homepage%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-homepage%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>所有配置都在<code>2.2</code>配置的路径下面：
+<ul>
+<li>修改对应yaml文件后，刷新浏览器更改实时生效
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./4.png" alt="image.png" />
       
     </figure>
 </li>
-<li>给虚拟机分配存储空间
+</ul>
+</li>
+</ul>
+
+
+<h2 class="relative group">3.1 settings.yaml配置更改（整体配置） 
+    <div id="31-settingsyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E6%95%B4%E4%BD%93%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#31-settingsyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E6%95%B4%E4%BD%93%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<blockquote>
+<p>更多配置请参考：https://gethomepage.dev/latest/configs/settings</p>
+</blockquote>
+<ul>
+<li>更改语言
+<ul>
+<li>language: zh-CN</li>
+</ul>
+</li>
+<li>更改网站标题
+<ul>
+<li>title: test&rsquo;s HomePage</li>
+</ul>
+</li>
+<li>更改网站背景图
+<ul>
+<li>image: xxx(找一些图片api接口)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/settings</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">providers</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">openweathermap</span><span class="p">:</span><span class="w"> </span><span class="l">openweathermapapikey</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">weatherapi</span><span class="p">:</span><span class="w"> </span><span class="l">weatherapiapikey</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">zh-CN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">test&#39;s HomePage</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">background</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.bing.com/th?id=OHR.WatSriSawai_ZH-CN7688908090_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">blur</span><span class="p">:</span><span class="w"> </span><span class="l">sm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">saturate</span><span class="p">:</span><span class="w"> </span><span class="m">50</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">brightness</span><span class="p">:</span><span class="w"> </span><span class="m">50</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">opacity</span><span class="p">:</span><span class="w"> </span><span class="m">50</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>效果
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./5.png" alt="image.png" />
       
     </figure>
 </li>
-<li>给虚拟机分配内存、cpu等资源
+</ul>
+
+
+<h2 class="relative group">3.2 widgets.yaml配置更改(顶部导航栏) 
+    <div id="32-widgetsyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E9%A1%B6%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#32-widgetsyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E9%A1%B6%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<blockquote>
+<p>导航栏的组件显示内容，可以根据个人爱好，调整yaml中的先后顺序即可。</p>
+<p>更多配置请参考：https://gethomepage.dev/latest/configs/service-widgets</p>
+</blockquote>
+<ul>
+<li>label: 对资源进行标签分组展示</li>
+<li>全部硬盘容量显示设置
+<ul>
+<li>将主机硬盘对应根目录映射到容器的<code>/diskx</code>路径下：/mnt/dev1:/disk1</li>
+<li>设置容量对应关系，有几块盘就设置几个：disk: /disk1</li>
+<li>展示详细信息：<code>expanded: true</code></li>
+</ul>
+</li>
+<li>设置默认搜索引擎为<code>百度</code></li>
+<li>设置天气组件，根据<a href="https://open-meteo.com/en/docs" target="_blank">Open-Meteo</a>获取经纬度</li>
+<li>设置时间显示</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/service-widgets</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">resources</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">machine</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">resources</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">ssd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">expanded</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">disk</span><span class="p">:</span><span class="w"> </span><span class="l">/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">resources</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">hdd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">disk</span><span class="p">:</span><span class="w"> </span><span class="l">/disk1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">search</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l">baidu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">focus</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">_blank</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">openmeteo</span><span class="p">:</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">广州</span><span class="w"> </span><span class="c"># optional    </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">latitude</span><span class="p">:</span><span class="w"> </span><span class="m">23.18</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">longitude</span><span class="p">:</span><span class="w"> </span><span class="m">113.37</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="l">Asia/Shanghai</span><span class="w"> </span><span class="c"># optional    </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">units</span><span class="p">:</span><span class="w"> </span><span class="l">metric</span><span class="w"> </span><span class="c"># or imperial    </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">cache</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="c"># Time in minutes to cache API responses, to stay within limits</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">datetime</span><span class="p">:</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">text_size</span><span class="p">:</span><span class="w"> </span><span class="l">xl    </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">format</span><span class="p">:</span><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">timeStyle</span><span class="p">:</span><span class="w"> </span><span class="l">short</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>效果
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./6.png" alt="image.png" />
       
     </figure>
 </li>
-<li>设置合适的内存、cpu大小
+</ul>
+
+
+<h2 class="relative group">3.3 services.yaml配置更改（服务配置） 
+    <div id="33-servicesyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#33-servicesyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<blockquote>
+<p>更多配置请参考：https://gethomepage.dev/latest/configs/services</p>
+</blockquote>
+<ul>
+<li>本次配置修改对应如下图内容
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./7.png" alt="image.png" />
       
     </figure>
 </li>
-<li>给虚拟机选择操作系统镜像
+<li>可以根据使用场景进行应用分组，这里分成了内部访问和外部访问</li>
+<li>内部访问中，可以设置emby的key，则直接可以在界面查看当前emby浏览记录</li>
+<li>外部访问中，不设置widget，仅展示入口</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/services</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">内部访问</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">Emby</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">https://emby.media/favicon-16x16.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://xxxx:xx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">影音服务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">widget</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">emby</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://xxx:xxx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">xxx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">外部访问</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">Emby</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">https://emby.media/favicon-16x16.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">http://xxxx:xx</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">影音服务</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>效果
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./8.png" alt="image.png" />
       
     </figure>
 </li>
-<li>选择提前下载好的<code>trim.iso</code>镜像文件
+</ul>
 
+
+<h2 class="relative group">3.4 bookmarkss.yaml配置更改（底部配置） 
+    <div id="34-bookmarkssyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E5%BA%95%E9%83%A8%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#34-bookmarkssyaml%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%E5%BA%95%E9%83%A8%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<blockquote>
+<p>更多配置请参考：https://gethomepage.dev/latest/configs/bookmarks</p>
+</blockquote>
+<ul>
+<li>根据个人喜好，设定常用书签，可以是外部网站，也可以是自定义服务</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># For configuration options and examples, please see:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://gethomepage.dev/latest/configs/bookmarks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">Developer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">Github</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com/favicon.ico</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">Social</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">baidu</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.baidu.com/favicon.ico</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">href</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.baidu.com</span><span class="w">
+</span></span></span></code></pre></div><p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./9.png" alt="image.png" />
       
     </figure>
-</li>
-<li>点击开启此虚拟机，进行虚拟机的安装操作
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./10.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>选择分配好的虚拟硬盘
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./11.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>设置系统分区大小，根据硬盘富裕程度分配
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./12.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>格式化该虚拟硬盘
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./13.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>等待安装
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./14.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>安装完成
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./15.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>等待几秒自动进入系统
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./16.png" alt="image.png" />
-      
-    </figure>
-</li>
-<li>弹出系统终端界面，安装成功
-<ul>
-<li>然后可以将vmware虚拟机最小化了，接下来操作都将在浏览器完成</li>
-<li>根据终端给出给出的Web UI地址（默认端口是8000）去浏览器访问
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./17.png" alt="image.png" />
-      
-    </figure>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h1 class="relative group">2. 使用步骤 
-    <div id="2-%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4" aria-label="锚点">#</a>
-    </span>        
-    
-</h1>
-
-
-<h2 class="relative group">2.1 第一次登陆 
-    <div id="21-%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%99%BB%E9%99%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#21-%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%99%BB%E9%99%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>浏览器输入第一步安装完成后给出的WebUI地址
-<ul>
-<li>第一次登陆，设置用户名/密码</li>
-<li>此步骤设置的用户名密码即为FnOS底层debian系统的管理员用户与密码
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./19.png" alt="image.png" />
-      
-    </figure>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h2 class="relative group">2.2 第二次登陆 
-    <div id="22-%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%99%BB%E9%99%86" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#22-%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%99%BB%E9%99%86" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>浏览器输入第一步安装完成后给出的WebUI地址
-<ul>
-<li>输入设置好的用户名/密码
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="./18.png" alt="image.png" />
-      
-    </figure>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h2 class="relative group">2.3 享受国产Nas吧 
-    <div id="23-%E4%BA%AB%E5%8F%97%E5%9B%BD%E4%BA%A7nas%E5%90%A7" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#23-%E4%BA%AB%E5%8F%97%E5%9B%BD%E4%BA%A7nas%E5%90%A7" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
+</p>
 
           
           
@@ -1885,7 +2046,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/tools/20240908-1/&amp;subject=%e9%80%9a%e8%bf%87vmware%e8%99%9a%e6%8b%9f%e6%9c%ba%e5%ae%89%e8%a3%85%e5%9b%bd%e4%ba%a7nas%e7%b3%bb%e7%bb%9fFnOS"
+      href="mailto:?body=https://Wercurial.github.io/tools/20240917-1/&amp;subject=FnOS-NAS%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%aehomepage"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1911,7 +2072,7 @@
   
   
 
-  <a href="/tools/20240907-1/" class="min-w-full">
+  <a href="/tools/20240908-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -1923,7 +2084,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/tools/20240907-1/">内网穿透工具FRP使用</div>
+          href="/tools/20240908-1/">通过vmware虚拟机安装国产nas系统FnOS</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1966,7 +2127,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-07 00:00:00 &#43;0000 UTC">2024-09-07</time><span class="px-2 text-primary-500">&middot;</span><span>528 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-09-08 00:00:00 &#43;0000 UTC">2024-09-08</time><span class="px-2 text-primary-500">&middot;</span><span>548 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
   
 
   
@@ -2004,26 +2165,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/net/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nas/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Net
+    Nas
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Proxy
+    Linux
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/frp/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fnos/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Frp
+    Fnos
   </span>
 </span>
   </span>
@@ -2048,7 +2209,7 @@
   
   
 
-  <a href="/kubernetes/20240713-1/" class="min-w-full">
+  <a href="/kubernetes/20240915-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -2060,7 +2221,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/kubernetes/20240713-1/">Windows通过KTConnect连接服务器K8S集群</div>
+          href="/kubernetes/20240915-1/">k8s集群监控告警：Prometheus+Grafana+AlterManager+钉钉告警</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2103,7 +2264,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>768 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-09-15 00:00:00 &#43;0000 UTC">2024-09-15</time><span class="px-2 text-primary-500">&middot;</span><span>61523 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">123 分钟</span>
   
 
   
@@ -2149,26 +2310,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ktconnect/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/prometheus/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ktconnect
+    Prometheus
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/windows/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/grafana/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Windows
+    Grafana
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/proxy/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/altermanager/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Proxy
+    AlterManager
   </span>
 </span>
   </span>
@@ -2193,7 +2354,7 @@
   
   
 
-  <a href="/kubernetes/20240908-1/" class="min-w-full">
+  <a href="/kubernetes/20240913-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -2205,7 +2366,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/kubernetes/20240908-1/">批量删除卸载docker遗留的大量挂载路径</div>
+          href="/kubernetes/20240913-1/">ConfigMap使用</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2248,7 +2409,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-08 00:00:00 &#43;0000 UTC">2024-09-08</time><span class="px-2 text-primary-500">&middot;</span><span>177 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2024-09-13 00:00:00 &#43;0000 UTC">2024-09-13</time><span class="px-2 text-primary-500">&middot;</span><span>429 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -2294,18 +2455,18 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/docker/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/configmap/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Docker
+    Configmap
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mount/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cm/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Mount
+    Cm
   </span>
 </span>
   </span>
@@ -2338,7 +2499,7 @@
   
   
 
-  <a href="/cloudnative/20240902-1/" class="min-w-full">
+  <a href="/devops/20240911-2/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -2350,7 +2511,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/cloudnative/20240902-1/">Harbor镜像仓库迁移</div>
+          href="/devops/20240911-2/">Devops之ArgoCD部署</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2393,7 +2554,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>205 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">2024-09-11</time><span class="px-2 text-primary-500">&middot;</span><span>2118 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span>
   
 
   
@@ -2439,26 +2600,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/harbor/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cd/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Harbor
+    Cd
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/backup/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/devops/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Backup
+    Devops
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/image/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/argocd/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Image
+    Argocd
   </span>
 </span>
   </span>
@@ -2483,7 +2644,7 @@
   
   
 
-  <a href="/cloudai/20240902-1/" class="min-w-full">
+  <a href="/devops/20240911-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -2495,7 +2656,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/cloudai/20240902-1/">kserve安装使用</div>
+          href="/devops/20240911-1/">Devops之CI三种触发构建</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2538,7 +2699,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-02 00:00:00 &#43;0000 UTC">2024-09-02</time><span class="px-2 text-primary-500">&middot;</span><span>1825 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
+  <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">2024-09-11</time><span class="px-2 text-primary-500">&middot;</span><span>762 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
   
 
   
@@ -2584,26 +2745,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cloud/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ci/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Cloud
+    Ci
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/machinelearning/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/build/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Machinelearning
+    Build
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ai/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/auto/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ai
+    Auto
   </span>
 </span>
   </span>
@@ -2628,7 +2789,7 @@
   
   
 
-  <a href="/k8s-solve/20240901-3/" class="min-w-full">
+  <a href="/devops/20240909-2/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
@@ -2640,7 +2801,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/k8s-solve/20240901-3/">kubernetes问题解决集合</div>
+          href="/devops/20240909-2/">Devops之gitlab-ci部署</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2683,7 +2844,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">2024-09-01</time><span class="px-2 text-primary-500">&middot;</span><span>990 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-09-09 00:00:00 &#43;0000 UTC">2024-09-09</time><span class="px-2 text-primary-500">&middot;</span><span>2456 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span>
   
 
   
@@ -2729,26 +2890,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/solve/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ci/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Solve
+    Ci
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/containerd/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/build/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Containerd
+    Build
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/question/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gitlab-runner/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Question
+    Gitlab-Runner
   </span>
 </span>
   </span>
@@ -2784,8 +2945,8 @@
           
         
       <script>
-        var oid = "views_tools\/20240908-1\/index.md"
-        var oid_likes = "likes_tools\/20240908-1\/index.md"
+        var oid = "views_tools\/20240917-1\/index.md"
+        var oid_likes = "likes_tools\/20240917-1\/index.md"
       </script>
       
       
@@ -2808,40 +2969,18 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/tools/20240917-1/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >FnOS-NAS部署配置homepage</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-09-17 00:00:00 &#43;0000 UTC">2024-09-17</time>
-                  
-                </span>
-              </span>
-            </a>
-          
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/tools/20240907-1/">
+            <a class="flex text-right group ml-3" href="/tools/20240908-1/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >内网穿透工具FRP使用</span
+                  >通过vmware虚拟机安装国产nas系统FnOS</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-09-07 00:00:00 &#43;0000 UTC">2024-09-07</time>
+                    <time datetime="2024-09-08 00:00:00 &#43;0000 UTC">2024-09-08</time>
                   
                 </span>
               </span>

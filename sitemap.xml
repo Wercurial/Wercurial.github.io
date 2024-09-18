@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://Wercurial.github.io/tags/fnos/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/20240917-1/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/homepage/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/nas/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/altermanager/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -34,18 +76,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/prometheus/</loc>
-    <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -159,12 +189,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://Wercurial.github.io/tags/fnos/</loc>
-    <lastmod>2024-09-08T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://Wercurial.github.io/tags/linux/</loc>
     <lastmod>2024-09-08T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
@@ -172,18 +196,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/mount/</loc>
-    <lastmod>2024-09-08T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/nas/</loc>
-    <lastmod>2024-09-08T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tools/</loc>
     <lastmod>2024-09-08T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
