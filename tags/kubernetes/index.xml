@@ -1257,6 +1257,26 @@
     </item>
     
     <item>
+      <title>修复Pod内部Cpu、Mem显示不正确问题</title>
+      <link>https://Wercurial.github.io/kubernetes/20230713-1/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/20230713-1/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. 背景 
+    &lt;div id=&#34;1-%E8%83%8C%E6%99%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-%E8%83%8C%E6%99%AF&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;Linux 利用 Cgroup 实现了对&lt;a href=&#34;https://cloud.tencent.com/product/tke?from=10680&#34; target=&#34;_blank&#34;&gt;容器&lt;/a&gt;的资源限制，但在容器内部依然缺省挂载了&lt;a href=&#34;https://cloud.tencent.com/product/cdh?from=10680&#34; target=&#34;_blank&#34;&gt;宿主机&lt;/a&gt;上的 procfs 的 /proc 目录，其包含如：meminfo、cpuinfo、stat、uptime 等资源信息。一些监控工具如 free、top 或 业务应用还依赖上述文件内容获取资源配置和使用情况。当它们在容器中运行时，就会把宿主机的资源状态读取出来，导致资源设置不对。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>docker及containerd镜像代理配置</title>
       <link>https://Wercurial.github.io/kubernetes/20230311-1/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
