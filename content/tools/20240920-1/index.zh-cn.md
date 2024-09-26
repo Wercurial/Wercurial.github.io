@@ -31,10 +31,14 @@ wget https://hf-mirror.com/hfd/hfd.sh && chmod a+x hfd.sh
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
-### 1.1.4 immich智能搜索模型下载
-- 模型：immich-app/XLM-Roberta-Large-Vit-B-16Plus
+### 1.1.4 immich模型下载
+- 智能搜索模型：immich-app/XLM-Roberta-Large-Vit-B-16Plus
 ```bash
 ./hfd.sh immich-app/XLM-Roberta-Large-Vit-B-16Plus --tool aria2c -x 4
+```
+- 人脸识别模型：
+```bash
+./hfd.sh immich-app/buffalo_l --tool aria2c -x 4
 ```
 
 ### 1.1.5 数据集下载(immich不需要，仅提供给需要的人)
@@ -49,15 +53,21 @@ export HF_ENDPOINT=https://hf-mirror.com
 hfd meta-llama/Llama-2-7b --hf_username YOUR_HF_USERNAME --hf_token hf_***
 ```
 
-# 2. 替换immich智能搜索模型
+# 2. 替换immich模型
 ## 2.1 将模型移动至immich-machine-learning容器映射的模型目录
 - 如果网络条件允许，则可跳过本步骤，直接进行2.2，会自动下载模型
 ```bash
 # 创建智能搜索模型目录
 mkdir /vol1/docker/volumes/immich_model-cache/_data/clip
 
-# 移动模型到clip目录下
+# 创建人脸识别模型目录
+mkdir /vol1/docker/volumes/immich_model-cache/_data/facial-recognition
+
+# 移动智能搜索模型到clip目录下
 cp -r XLM-Roberta-Large-Vit-B-16Plus /vol1/docker/volumes/immich_model-cache/_data/clip
+
+# 移动人脸识别模型到facial-recognition目录下
+cp -r buffalo_l /vol1/docker/volumes/immich_model-cache/_data/clip
 ```
 ![image.png](./1.png)
 ## 2.2 immich模型替换
@@ -65,9 +75,11 @@ cp -r XLM-Roberta-Large-Vit-B-16Plus /vol1/docker/volumes/immich_model-cache/_da
 ![image.png](./2.png)
 - 打开机器学习设置
 ![image.png](./3.png)
-- 修改模型为指定模型并保存：XLM-Roberta-Large-Vit-B-16Plus
+- 修改模型为指定模型并保存：`XLM-Roberta-Large-Vit-B-16Plus`
+  - 人脸识别模型为默认`buffalo_l`，则不用修改
 ![image.png](./4.png)
 - 重跑智能搜索任务
+  - 重跑人脸识别任务
 ![image.png](./5.png)
 - 查看`immich-machine-learning`容器日志
   - 如果未出现下图日志，可重启模型后，运行智能搜索任务查看对应日志

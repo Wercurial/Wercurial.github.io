@@ -108,7 +108,7 @@
     "keywords": ["nas","fnos","immich","models"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "886"
+    "wordCount": "979"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-20 00:00:00 &#43;0000 UTC">2024-09-20</time><span class="px-2 text-primary-500">&middot;</span><span>886 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-20 00:00:00 &#43;0000 UTC">2024-09-20</time><span class="px-2 text-primary-500">&middot;</span><span>979 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1504,14 +1504,14 @@
             <li><a href="#111-准备工作">1.1.1 准备工作</a></li>
             <li><a href="#112-hfd下载">1.1.2 hfd下载</a></li>
             <li><a href="#113-设置镜像源环境变量">1.1.3 设置镜像源环境变量</a></li>
-            <li><a href="#114-immich智能搜索模型下载">1.1.4 immich智能搜索模型下载</a></li>
+            <li><a href="#114-immich模型下载">1.1.4 immich模型下载</a></li>
             <li><a href="#115-数据集下载immich不需要仅提供给需要的人">1.1.5 数据集下载(immich不需要，仅提供给需要的人)</a></li>
             <li><a href="#116-针对需要登陆的模型下载方案">1.1.6 针对需要登陆的模型下载方案</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#2-替换immich智能搜索模型">2. 替换immich智能搜索模型</a>
+    <li><a href="#2-替换immich模型">2. 替换immich模型</a>
       <ul>
         <li><a href="#21-将模型移动至immich-machine-learning容器映射的模型目录">2.1 将模型移动至immich-machine-learning容器映射的模型目录</a></li>
         <li><a href="#22-immich模型替换">2.2 immich模型替换</a></li>
@@ -1538,14 +1538,14 @@
             <li><a href="#111-准备工作">1.1.1 准备工作</a></li>
             <li><a href="#112-hfd下载">1.1.2 hfd下载</a></li>
             <li><a href="#113-设置镜像源环境变量">1.1.3 设置镜像源环境变量</a></li>
-            <li><a href="#114-immich智能搜索模型下载">1.1.4 immich智能搜索模型下载</a></li>
+            <li><a href="#114-immich模型下载">1.1.4 immich模型下载</a></li>
             <li><a href="#115-数据集下载immich不需要仅提供给需要的人">1.1.5 数据集下载(immich不需要，仅提供给需要的人)</a></li>
             <li><a href="#116-针对需要登陆的模型下载方案">1.1.6 针对需要登陆的模型下载方案</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#2-替换immich智能搜索模型">2. 替换immich智能搜索模型</a>
+    <li><a href="#2-替换immich模型">2. 替换immich模型</a>
       <ul>
         <li><a href="#21-将模型移动至immich-machine-learning容器映射的模型目录">2.1 将模型移动至immich-machine-learning容器映射的模型目录</a></li>
         <li><a href="#22-immich模型替换">2.2 immich模型替换</a></li>
@@ -1708,20 +1708,24 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bashrc" data-lang="bashrc"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">HF_ENDPOINT</span><span class="o">=</span>https://hf-mirror.com
 </span></span></code></pre></div>
 
-<h3 class="relative group">1.1.4 immich智能搜索模型下载 
-    <div id="114-immich%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD" class="anchor"></div>
+<h3 class="relative group">1.1.4 immich模型下载 
+    <div id="114-immich%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#114-immich%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#114-immich%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD" aria-label="锚点">#</a>
     </span>        
     
 </h3>
 <ul>
-<li>模型：immich-app/XLM-Roberta-Large-Vit-B-16Plus</li>
+<li>智能搜索模型：immich-app/XLM-Roberta-Large-Vit-B-16Plus</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./hfd.sh immich-app/XLM-Roberta-Large-Vit-B-16Plus --tool aria2c -x <span class="m">4</span>
+</span></span></code></pre></div><ul>
+<li>人脸识别模型：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./hfd.sh immich-app/buffalo_l --tool aria2c -x <span class="m">4</span>
 </span></span></code></pre></div>
 
 <h3 class="relative group">1.1.5 数据集下载(immich不需要，仅提供给需要的人) 
@@ -1754,13 +1758,13 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hfd meta-llama/Llama-2-7b --hf_username YOUR_HF_USERNAME --hf_token hf_***
 </span></span></code></pre></div>
 
-<h1 class="relative group">2. 替换immich智能搜索模型 
-    <div id="2-%E6%9B%BF%E6%8D%A2immich%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E6%A8%A1%E5%9E%8B" class="anchor"></div>
+<h1 class="relative group">2. 替换immich模型 
+    <div id="2-%E6%9B%BF%E6%8D%A2immich%E6%A8%A1%E5%9E%8B" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E6%9B%BF%E6%8D%A2immich%E6%99%BA%E8%83%BD%E6%90%9C%E7%B4%A2%E6%A8%A1%E5%9E%8B" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#2-%E6%9B%BF%E6%8D%A2immich%E6%A8%A1%E5%9E%8B" aria-label="锚点">#</a>
     </span>        
     
 </h1>
@@ -1782,8 +1786,14 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建智能搜索模型目录</span>
 </span></span><span class="line"><span class="cl">mkdir /vol1/docker/volumes/immich_model-cache/_data/clip
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 移动模型到clip目录下</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建人脸识别模型目录</span>
+</span></span><span class="line"><span class="cl">mkdir /vol1/docker/volumes/immich_model-cache/_data/facial-recognition
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 移动智能搜索模型到clip目录下</span>
 </span></span><span class="line"><span class="cl">cp -r XLM-Roberta-Large-Vit-B-16Plus /vol1/docker/volumes/immich_model-cache/_data/clip
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 移动人脸识别模型到facial-recognition目录下</span>
+</span></span><span class="line"><span class="cl">cp -r buffalo_l /vol1/docker/volumes/immich_model-cache/_data/clip
 </span></span></code></pre></div><p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
@@ -1817,19 +1827,27 @@
       
     </figure>
 </li>
-<li>修改模型为指定模型并保存：XLM-Roberta-Large-Vit-B-16Plus
+<li>修改模型为指定模型并保存：<code>XLM-Roberta-Large-Vit-B-16Plus</code>
+<ul>
+<li>人脸识别模型为默认<code>buffalo_l</code>，则不用修改
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./4.png" alt="image.png" />
       
     </figure>
 </li>
+</ul>
+</li>
 <li>重跑智能搜索任务
+<ul>
+<li>重跑人脸识别任务
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./5.png" alt="image.png" />
       
     </figure>
+</li>
+</ul>
 </li>
 <li>查看<code>immich-machine-learning</code>容器日志
 <ul>
