@@ -105,3 +105,27 @@ custom_domains = frps.ip
 customDomains = xx.xx.xx
 remote_port = 5x2x
 ```
+## 2.1 frpc客户端tcp访问
+- 配置：frpc.toml
+    - token、server_addr、server_port：对应frps的配置来填写
+    - custom_domains、customDomains：如果没有域名，则填写frps服务器的ip地址
+    - remote_port：设定frps服务器代理的端口，仅需开放对应公网ip，frps端无需单独设置
+```toml
+[common]
+server_addr = xx.xx.xx.xx
+server_port = 5xxx
+token = "123456"
+log.to = "./frpc.log"
+log.level = info
+log.maxDays = 3
+log.disablePrintColor = false
+
+[[proxies]]
+name = xxxx
+type = tcp
+local_ip = 0.0.0.0
+local_port = xxxx
+custom_domains = frps.ip
+customDomains = xx.xx.xx
+remote_port = 5x2x
+```

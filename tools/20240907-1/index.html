@@ -107,7 +107,7 @@
     "keywords": ["net","proxy","frp"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "528"
+    "wordCount": "740"
   }]
   </script>
 
@@ -1283,7 +1283,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-07 00:00:00 &#43;0000 UTC">2024-09-07</time><span class="px-2 text-primary-500">&middot;</span><span>528 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-07 00:00:00 &#43;0000 UTC">2024-09-07</time><span class="px-2 text-primary-500">&middot;</span><span>740 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1490,7 +1490,11 @@
   <ul>
     <li><a href="#0-前言">0. 前言</a></li>
     <li><a href="#1-frps配置及部署服务端">1. frps配置及部署（服务端）</a></li>
-    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a></li>
+    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a>
+      <ul>
+        <li><a href="#21-frpc客户端tcp访问">2.1 frpc客户端tcp访问</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1506,7 +1510,11 @@
   <ul>
     <li><a href="#0-前言">0. 前言</a></li>
     <li><a href="#1-frps配置及部署服务端">1. frps配置及部署（服务端）</a></li>
-    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a></li>
+    <li><a href="#2-frpc配置及部署客户端">2. frpc配置及部署（客户端）</a>
+      <ul>
+        <li><a href="#21-frpc客户端tcp访问">2.1 frpc客户端tcp访问</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1712,6 +1720,44 @@
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">proxies</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="nx">xxxx</span>
 </span></span><span class="line"><span class="cl"><span class="nx">type</span> <span class="p">=</span> <span class="nx">http</span>
+</span></span><span class="line"><span class="cl"><span class="nx">local_ip</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">.</span><span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">local_port</span> <span class="p">=</span> <span class="nx">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">custom_domains</span> <span class="p">=</span> <span class="nx">frps</span><span class="p">.</span><span class="nx">ip</span>
+</span></span><span class="line"><span class="cl"><span class="nx">customDomains</span> <span class="p">=</span> <span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">remote_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">x2x</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">2.1 frpc客户端tcp访问 
+    <div id="21-frpc%E5%AE%A2%E6%88%B7%E7%AB%AFtcp%E8%AE%BF%E9%97%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#21-frpc%E5%AE%A2%E6%88%B7%E7%AB%AFtcp%E8%AE%BF%E9%97%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>配置：frpc.toml
+<ul>
+<li>token、server_addr、server_port：对应frps的配置来填写</li>
+<li>custom_domains、customDomains：如果没有域名，则填写frps服务器的ip地址</li>
+<li>remote_port：设定frps服务器代理的端口，仅需开放对应公网ip，frps端无需单独设置</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">common</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">server_addr</span> <span class="p">=</span> <span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span><span class="p">.</span><span class="nx">xx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">server_port</span> <span class="p">=</span> <span class="mi">5</span><span class="nx">xxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;123456&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">to</span> <span class="p">=</span> <span class="s2">&#34;./frpc.log&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">level</span> <span class="p">=</span> <span class="nx">info</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">maxDays</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">log</span><span class="p">.</span><span class="nx">disablePrintColor</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">proxies</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="nx">xxxx</span>
+</span></span><span class="line"><span class="cl"><span class="nx">type</span> <span class="p">=</span> <span class="nx">tcp</span>
 </span></span><span class="line"><span class="cl"><span class="nx">local_ip</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">.</span><span class="mf">0.0</span>
 </span></span><span class="line"><span class="cl"><span class="nx">local_port</span> <span class="p">=</span> <span class="nx">xxxx</span>
 </span></span><span class="line"><span class="cl"><span class="nx">custom_domains</span> <span class="p">=</span> <span class="nx">frps</span><span class="p">.</span><span class="nx">ip</span>
