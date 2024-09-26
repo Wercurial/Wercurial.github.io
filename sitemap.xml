@@ -4,7 +4,49 @@
 
   <url>
     <loc>https://Wercurial.github.io/tags/fnos/</loc>
-    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/20240920-1/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/immich/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/models/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/nas/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tools/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/</loc>
+    <lastmod>2024-09-20T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16,30 +58,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/homepage/</loc>
-    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/nas/</loc>
-    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/</loc>
-    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tools/</loc>
-    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/</loc>
     <lastmod>2024-09-17T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>

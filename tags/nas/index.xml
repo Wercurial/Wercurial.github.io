@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FnOS环境下手动下载huggingface的immich模型并替换</title>
+      <link>https://Wercurial.github.io/tools/20240920-1/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tools/20240920-1/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. 配置国内镜像站下载huggingface 
+    &lt;div id=&#34;1-%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99%E4%B8%8B%E8%BD%BDhuggingface&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99%E4%B8%8B%E8%BD%BDhuggingface&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hf-mirror.com/&#34; target=&#34;_blank&#34;&gt;镜像站: https://hf-mirror.com/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>FnOS-NAS部署配置homepage</title>
       <link>https://Wercurial.github.io/tools/20240917-1/</link>
