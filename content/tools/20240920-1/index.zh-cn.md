@@ -32,11 +32,11 @@ export HF_ENDPOINT=https://hf-mirror.com
 ```
 
 ### 1.1.4 immich模型下载
-- 智能搜索模型：immich-app/XLM-Roberta-Large-Vit-B-16Plus
+- 智能搜索模型：`immich-app/XLM-Roberta-Large-Vit-B-16Plus`
 ```bash
 ./hfd.sh immich-app/XLM-Roberta-Large-Vit-B-16Plus --tool aria2c -x 4
 ```
-- 人脸识别模型：
+- 人脸识别模型：`immich-app/buffalo_l`
 ```bash
 ./hfd.sh immich-app/buffalo_l --tool aria2c -x 4
 ```
@@ -67,7 +67,7 @@ mkdir /vol1/docker/volumes/immich_model-cache/_data/facial-recognition
 cp -r XLM-Roberta-Large-Vit-B-16Plus /vol1/docker/volumes/immich_model-cache/_data/clip
 
 # 移动人脸识别模型到facial-recognition目录下
-cp -r buffalo_l /vol1/docker/volumes/immich_model-cache/_data/clip
+cp -r buffalo_l /vol1/docker/volumes/immich_model-cache/_data/facial-recognition
 ```
 ![image.png](./1.png)
 ## 2.2 immich模型替换
