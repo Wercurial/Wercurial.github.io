@@ -39,7 +39,11 @@ services:
 ![image.png](./2.png)
 
 # 2. 安装客户端音流
-- 下载地址：(音流)[https://music.aqzscn.cn/docs/versions/latest/]
+>音流是一款 NAS 音乐播放器，可以连接到您部署在 NAS 上的音乐服务，能让您在不同平台享受一致的音乐盛宴。
+>
+>在使用音流之前，您必须拥有一台运行着音乐服务的 NAS，因为音流是一个纯粹的音乐播放器，专注于串流您已拥有的音乐，并不提供任何音乐资料。
+
+- 下载地址：[音流](https://music.aqzscn.cn/docs/versions/latest/)
   - 安卓手机版本：Arm64
 ## 2.1 配置音乐库源
 - 主页选择音乐库源为: `Navidrome`
