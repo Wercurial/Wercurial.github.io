@@ -9,7 +9,7 @@ type: 'blog'
 # 1. 配置国内镜像站下载huggingface
 > [镜像站: https://hf-mirror.com/](https://hf-mirror.com/)
 > 
-> 本站域名  hf-mirror.com，用于镜像  huggingface.co 域名。作为一个公益项目，致力于帮助国内AI开发者快速、稳定的下载模型、数据集。捐赠支持请看网页左下角，感谢支持！ 
+> hf-mirror.com用于镜像huggingface.co。作为一个公益项目，致力于帮助国内AI开发者快速、稳定的下载模型、数据集。
 
 ## 1.1 镜像站命令行下载工具：hfd
 hfd是`padeoe`开发的[(]huggingface专用下载工具](https://gist.github.com/padeoe/697678ab8e528b85a2a7bddafea1fa4f)，基于成熟工具`git+aria2`，可以做到稳定下载不断线。
