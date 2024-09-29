@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Taosync on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/taosync/</link>
+    <description>Recent content in Taosync on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/taosync/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FnOS环境下通过docker安装alist以及同步软件taosync</title>
+      <link>https://Wercurial.github.io/tools/20240928-1/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tools/20240928-1/</guid>
+      <description>&lt;p&gt;因为FnOS目前备份功能较为简陋，因此通过网盘挂载神器&lt;code&gt;alist&lt;/code&gt; + 同步软件&lt;code&gt;taosync&lt;/code&gt;的组合提供加密备份功能&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
