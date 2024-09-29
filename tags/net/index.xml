@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FnOS环境下通过docker安装虚拟组网工具Tailscale</title>
+      <link>https://Wercurial.github.io/tools/20240928-2/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tools/20240928-2/</guid>
+      <description>&lt;p&gt;因为FnOS提供的内网穿透网速+端口有所限制，因此在没有公网IP的时候通过虚拟组网工具&lt;code&gt;Tailscale&lt;/code&gt;提供稍微好一些的网络代理能力。&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>内网穿透工具FRP使用</title>
       <link>https://Wercurial.github.io/tools/20240907-1/</link>

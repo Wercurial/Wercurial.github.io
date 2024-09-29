@@ -21,13 +21,31 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tools/20240928-2/</loc>
+    <lastmod>2024-09-28T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/nas/</loc>
     <lastmod>2024-09-28T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://Wercurial.github.io/tags/net/</loc>
+    <lastmod>2024-09-28T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://Wercurial.github.io/tags/</loc>
+    <lastmod>2024-09-28T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://Wercurial.github.io/tags/tailscale/</loc>
     <lastmod>2024-09-28T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -268,12 +286,6 @@
   </url>
   <url>
     <loc>https://Wercurial.github.io/tags/frp/</loc>
-    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://Wercurial.github.io/tags/net/</loc>
     <lastmod>2024-09-07T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
