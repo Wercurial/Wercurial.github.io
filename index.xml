@@ -60,7 +60,7 @@
     </item>
     
     <item>
-      <title>QD框架配置gotify通知</title>
+      <title>qd-today配置gotify通知</title>
       <link>https://Wercurial.github.io/tools/20240918-1/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       
@@ -68,116 +68,46 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;QD [v20240210] —— HTTP请求定时任务自动执行框架 base on HAR Editor and Tornado Server&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在&lt;a href=&#34;https://github.com/qd-today/qd&#34; target=&#34;_blank&#34;&gt;QD框架&lt;/a&gt;中配置gotify通知.&lt;/p&gt;
 
 
-&lt;h1 class=&#34;relative group&#34;&gt;1. gotify中创建qdtoday应用 
-    &lt;div id=&#34;1-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+&lt;h1 class=&#34;relative group&#34;&gt;1. qd-today部署 
+    &lt;div id=&#34;1-qd-today%E9%83%A8%E7%BD%B2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
         class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
         &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-qd-today%E9%83%A8%E7%BD%B2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;在gotify页面的&lt;code&gt;APPS&lt;/code&gt;下面创建qdtoday应用
-&lt;ul&gt;
-&lt;li&gt;记录对应的&lt;code&gt;token&lt;/code&gt;备用
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./1.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/li&gt;
+&lt;li&gt;docker-compose.yaml&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;qd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;qdtoday/qd:latest&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;container_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;qd&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;s2&#34;&gt;&amp;#34;8923:80&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/data/docker-files/qdtoday-files/qd:/usr/src/app/config&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;登陆后输入&lt;code&gt;Email 地址&lt;/code&gt;和&lt;code&gt;密码&lt;/code&gt;，点击&lt;code&gt;注册&lt;/code&gt;按钮进入面板&lt;/li&gt;
+&lt;li&gt;初次&lt;code&gt;注册账号&lt;/code&gt;后没有完整管理员权限，需先登出后再登陆即可获取完整权限&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h1 class=&#34;relative group&#34;&gt;2. qdtoday中创建自定义通知推送 
-    &lt;div id=&#34;2-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+&lt;h1 class=&#34;relative group&#34;&gt;2. gotify中创建qdtoday应用 
+    &lt;div id=&#34;2-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
         class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
         &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h1&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;2.1 创建自定义推送 
-    &lt;div id=&#34;21-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#21-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;工具箱&lt;/code&gt; -&amp;gt; &lt;code&gt;自定义推送&lt;/code&gt;
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./2.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./3.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;配置gotify的地址以及token
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;t&lt;/code&gt;：标题&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;log&lt;/code&gt;：通知内容
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./4.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# POST Url&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://gotify.xxx.xxx/message?token&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;xxxxxxx
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Post Data&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;QDToday-{t}&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;{log}&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;priority&amp;#34;&lt;/span&gt;:0&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 class=&#34;relative group&#34;&gt;2.2 开启自定义推送 
-    &lt;div id=&#34;22-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#22-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;工具箱&lt;/code&gt; -&amp;gt; &lt;code&gt;推送设置&lt;/code&gt;
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./5.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;勾选自定义推送以及任务结果通知
-
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./6.png&#34; alt=&#34;image.png&#34; /&gt;
-      
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;在&lt;a href=&#34;https://github.com/qd-today/qd&#34; target=&#34;_blank&#34;&gt;QD框架&lt;/a&gt;中配置gotify通知.&lt;/p&gt;</description>
       
     </item>
     
