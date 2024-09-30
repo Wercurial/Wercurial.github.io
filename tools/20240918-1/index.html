@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>FnOS环境下通过docker安装音乐组件Navidrome及音流 &middot; 云一二三</title>
-  <meta name="title" content="FnOS环境下通过docker安装音乐组件Navidrome及音流 &middot; 云一二三" />
+  <title>QD框架配置gotify通知 &middot; 云一二三</title>
+  <meta name="title" content="QD框架配置gotify通知 &middot; 云一二三" />
   
-  <meta name="description" content="FnOS环境下通过docker安装音乐组件Navidrome及音流" />
-  <meta name="keywords" content="nas, fnos, music, navidrome, " />
+  <meta name="description" content="QD框架配置gotify通知" />
+  <meta name="keywords" content="nas, qdtoday, gofity, sendmessage, " />
   
   
-  <link rel="canonical" href="https://Wercurial.github.io/tools/20240921-1/" />
+  <link rel="canonical" href="https://Wercurial.github.io/tools/20240918-1/" />
   
   
   
@@ -64,24 +64,24 @@
   
   
   
-  <meta property="og:url" content="https://Wercurial.github.io/tools/20240921-1/">
+  <meta property="og:url" content="https://Wercurial.github.io/tools/20240918-1/">
   <meta property="og:site_name" content="云一二三">
-  <meta property="og:title" content="FnOS环境下通过docker安装音乐组件Navidrome及音流">
-  <meta property="og:description" content="FnOS环境下通过docker安装音乐组件Navidrome及音流">
+  <meta property="og:title" content="QD框架配置gotify通知">
+  <meta property="og:description" content="QD框架配置gotify通知">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="tools">
-    <meta property="article:published_time" content="2024-09-21T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-21T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-18T00:00:00+00:00">
     <meta property="article:tag" content="Nas">
-    <meta property="article:tag" content="Fnos">
-    <meta property="article:tag" content="Music">
-    <meta property="article:tag" content="Navidrome">
+    <meta property="article:tag" content="Qdtoday">
+    <meta property="article:tag" content="Gofity">
+    <meta property="article:tag" content="Sendmessage">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="FnOS环境下通过docker安装音乐组件Navidrome及音流">
-  <meta name="twitter:description" content="FnOS环境下通过docker安装音乐组件Navidrome及音流">
+  <meta name="twitter:title" content="QD框架配置gotify通知">
+  <meta name="twitter:description" content="QD框架配置gotify通知">
 
   
   <script type="application/ld+json">
@@ -89,26 +89,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "工具合集",
-    "name": "FnOS环境下通过docker安装音乐组件Navidrome及音流",
-    "headline": "FnOS环境下通过docker安装音乐组件Navidrome及音流",
-    "description": "FnOS环境下通过docker安装音乐组件Navidrome及音流",
-    "abstract": "\u003cp\u003e因为FnOS未自带音乐软件，因此通过音乐库\u003ccode\u003eNavidrome\u003c\/code\u003e \u002b 客户端\u003ccode\u003e音流\u003c\/code\u003e的组合提供音乐服务\u003c\/p\u003e",
+    "name": "QD框架配置gotify通知",
+    "headline": "QD框架配置gotify通知",
+    "description": "QD框架配置gotify通知",
+    "abstract": "\u003cblockquote\u003e\n\u003cp\u003eQD [v20240210] —— HTTP请求定时任务自动执行框架 base on HAR Editor and Tornado Server\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003cp\u003e在\u003ca href=\u0022https:\/\/github.com\/qd-today\/qd\u0022 target=\u0022_blank\u0022\u003eQD框架\u003c\/a\u003e中配置gotify通知.\u003c\/p\u003e\n\n\n\u003ch1 class=\u0022relative group\u0022\u003e1. gotify中创建qdtoday应用 \n    \u003cdiv id=\u00221-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#1-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\u003cul\u003e\n\u003cli\u003e在gotify页面的\u003ccode\u003eAPPS\u003c\/code\u003e下面创建qdtoday应用\n\u003cul\u003e\n\u003cli\u003e记录对应的\u003ccode\u003etoken\u003c\/code\u003e备用\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/1.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\n\n\u003ch1 class=\u0022relative group\u0022\u003e2. qdtoday中创建自定义通知推送 \n    \u003cdiv id=\u00222-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#2-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h1\u003e\n\n\n\u003ch2 class=\u0022relative group\u0022\u003e2.1 创建自定义推送 \n    \u003cdiv id=\u002221-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#21-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003e工具箱\u003c\/code\u003e -\u0026gt; \u003ccode\u003e自定义推送\u003c\/code\u003e\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/2.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/3.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/li\u003e\n\u003cli\u003e配置gotify的地址以及token\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003et\u003c\/code\u003e：标题\u003c\/li\u003e\n\u003cli\u003e\u003ccode\u003elog\u003c\/code\u003e：通知内容\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/4.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 class=\u0022chroma\u0022\u003e\u003ccode class=\u0022language-bash\u0022 data-lang=\u0022bash\u0022\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# POST Url\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003ehttps:\/\/gotify.xxx.xxx\/message?token\u003cspan class=\u0022o\u0022\u003e=\u003c\/span\u003exxxxxxx\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022c1\u0022\u003e# Post Data\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\u0022line\u0022\u003e\u003cspan class=\u0022cl\u0022\u003e\u003cspan class=\u0022o\u0022\u003e{\u003c\/span\u003e\u003cspan class=\u0022s2\u0022\u003e\u0026#34;title\u0026#34;\u003c\/span\u003e:\u003cspan class=\u0022s2\u0022\u003e\u0026#34;QDToday-{t}\u0026#34;\u003c\/span\u003e,\u003cspan class=\u0022s2\u0022\u003e\u0026#34;message\u0026#34;\u003c\/span\u003e:\u003cspan class=\u0022s2\u0022\u003e\u0026#34;{log}\u0026#34;\u003c\/span\u003e,\u003cspan class=\u0022s2\u0022\u003e\u0026#34;priority\u0026#34;\u003c\/span\u003e:0\u003cspan class=\u0022o\u0022\u003e}\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\n\n\u003ch2 class=\u0022relative group\u0022\u003e2.2 开启自定义推送 \n    \u003cdiv id=\u002222-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\n    \n    \u003cspan\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#22-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81\u0022 aria-label=\u0022锚点\u0022\u003e#\u003c\/a\u003e\n    \u003c\/span\u003e        \n    \n\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003e工具箱\u003c\/code\u003e -\u0026gt; \u003ccode\u003e推送设置\u003c\/code\u003e\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/5.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/li\u003e\n\u003cli\u003e勾选自定义推送以及任务结果通知\n\n    \u003cfigure\u003e\n      \u003cimg class=\u0022my-0 rounded-md\u0022 loading=\u0022lazy\u0022 src=\u0022.\/6.png\u0022 alt=\u0022image.png\u0022 \/\u003e\n      \n    \u003c\/figure\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/Wercurial.github.io\/tools\/20240921-1\/",
+    "url" : "https:\/\/Wercurial.github.io\/tools\/20240918-1\/",
     "author" : {
       "@type": "Person",
       "name": "古德"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-09-21T00:00:00\u002b00:00",
-    "datePublished": "2024-09-21T00:00:00\u002b00:00",
+    "dateCreated": "2024-09-18T00:00:00\u002b00:00",
+    "datePublished": "2024-09-18T00:00:00\u002b00:00",
     
-    "dateModified": "2024-09-21T00:00:00\u002b00:00",
+    "dateModified": "2024-09-18T00:00:00\u002b00:00",
     
-    "keywords": ["nas","fnos","music","navidrome"],
+    "keywords": ["nas","qdtoday","gofity","sendmessage"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "474"
+    "wordCount": "210"
   }]
   </script>
 
@@ -1227,8 +1227,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/tools/20240921-1/"
-      >FnOS环境下通过docker安装音乐组件Navidrome及音流</a
+      href="/tools/20240918-1/"
+      >QD框架配置gotify通知</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -1237,7 +1237,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      FnOS环境下通过docker安装音乐组件Navidrome及音流
+      QD框架配置gotify通知
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-21 00:00:00 &#43;0000 UTC">2024-09-21</time><span class="px-2 text-primary-500">&middot;</span><span>474 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-18 00:00:00 &#43;0000 UTC">2024-09-18</time><span class="px-2 text-primary-500">&middot;</span><span>210 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1351,26 +1351,26 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fnos/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/qdtoday/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Fnos
+    Qdtoday
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/music/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gofity/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Music
+    Gofity
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/navidrome/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sendmessage/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Navidrome
+    Sendmessage
   </span>
 </span>
   </span>
@@ -1497,16 +1497,11 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-安装音乐库软件navidrome">1. 安装音乐库软件Navidrome</a>
+    <li><a href="#1-gotify中创建qdtoday应用">1. gotify中创建qdtoday应用</a></li>
+    <li><a href="#2-qdtoday中创建自定义通知推送">2. qdtoday中创建自定义通知推送</a>
       <ul>
-        <li><a href="#11-更改语言为中文">1.1 更改语言为中文</a></li>
-        <li><a href="#12-导入音乐">1.2 导入音乐</a></li>
-        <li><a href="#13-扫描音乐">1.3 扫描音乐</a></li>
-      </ul>
-    </li>
-    <li><a href="#2-安装客户端音流">2. 安装客户端音流</a>
-      <ul>
-        <li><a href="#21-配置音乐库源">2.1 配置音乐库源</a></li>
+        <li><a href="#21-创建自定义推送">2.1 创建自定义推送</a></li>
+        <li><a href="#22-开启自定义推送">2.2 开启自定义推送</a></li>
       </ul>
     </li>
   </ul>
@@ -1522,16 +1517,11 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-安装音乐库软件navidrome">1. 安装音乐库软件Navidrome</a>
+    <li><a href="#1-gotify中创建qdtoday应用">1. gotify中创建qdtoday应用</a></li>
+    <li><a href="#2-qdtoday中创建自定义通知推送">2. qdtoday中创建自定义通知推送</a>
       <ul>
-        <li><a href="#11-更改语言为中文">1.1 更改语言为中文</a></li>
-        <li><a href="#12-导入音乐">1.2 导入音乐</a></li>
-        <li><a href="#13-扫描音乐">1.3 扫描音乐</a></li>
-      </ul>
-    </li>
-    <li><a href="#2-安装客户端音流">2. 安装客户端音流</a>
-      <ul>
-        <li><a href="#21-配置音乐库源">2.1 配置音乐库源</a></li>
+        <li><a href="#21-创建自定义推送">2.1 创建自定义推送</a></li>
+        <li><a href="#22-开启自定义推送">2.2 开启自定义推送</a></li>
       </ul>
     </li>
   </ul>
@@ -1615,56 +1605,26 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>因为FnOS未自带音乐软件，因此通过音乐库<code>Navidrome</code> + 客户端<code>音流</code>的组合提供音乐服务</p>
+          <blockquote>
+<p>QD [v20240210] —— HTTP请求定时任务自动执行框架 base on HAR Editor and Tornado Server</p>
+</blockquote>
+<p>在<a href="https://github.com/qd-today/qd" target="_blank">QD框架</a>中配置gotify通知.</p>
 
 
-<h1 class="relative group">1. 安装音乐库软件Navidrome 
-    <div id="1-%E5%AE%89%E8%A3%85%E9%9F%B3%E4%B9%90%E5%BA%93%E8%BD%AF%E4%BB%B6navidrome" class="anchor"></div>
+<h1 class="relative group">1. gotify中创建qdtoday应用 
+    <div id="1-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-%E5%AE%89%E8%A3%85%E9%9F%B3%E4%B9%90%E5%BA%93%E8%BD%AF%E4%BB%B6navidrome" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#1-gotify%E4%B8%AD%E5%88%9B%E5%BB%BAqdtoday%E5%BA%94%E7%94%A8" aria-label="锚点">#</a>
     </span>        
     
 </h1>
 <ul>
-<li>通过Docker安装
+<li>在gotify页面的<code>APPS</code>下面创建qdtoday应用
 <ul>
-<li>需提前创建好/vol1/1000/navidrome目录</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">navidrome</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">deluan/navidrome:latest</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;4533:4533&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">ND_SCANSCHEDULE</span><span class="p">:</span><span class="w"> </span><span class="l">1h</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">ND_LOGLEVEL</span><span class="p">:</span><span class="w"> </span><span class="l">info</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">ND_SESSIONTIMEOUT</span><span class="p">:</span><span class="w"> </span><span class="l">24h</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">ND_BASEURL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;/vol1/1000/navidrome/data:/data&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;/vol1/1000/navidrome/Music:/music:ro&#34;</span><span class="w">
-</span></span></span></code></pre></div>
-
-<h2 class="relative group">1.1 更改语言为中文 
-    <div id="11-%E6%9B%B4%E6%94%B9%E8%AF%AD%E8%A8%80%E4%B8%BA%E4%B8%AD%E6%96%87" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#11-%E6%9B%B4%E6%94%B9%E8%AF%AD%E8%A8%80%E4%B8%BA%E4%B8%AD%E6%96%87" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>登陆地址：<code>192.xx.xx.xx:4533</code></li>
-<li>登陆后按图所示，将语言切换为<code>简体中文</code>
+<li>记录对应的<code>token</code>备用
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./1.png" alt="image.png" />
@@ -1672,92 +1632,92 @@
     </figure>
 </li>
 </ul>
-
-
-<h2 class="relative group">1.2 导入音乐 
-    <div id="12-%E5%AF%BC%E5%85%A5%E9%9F%B3%E4%B9%90" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#12-%E5%AF%BC%E5%85%A5%E9%9F%B3%E4%B9%90" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>将提前准备好的音乐及歌词，导入到<code>Navidrome</code>映射到FnOS物理目录的路径<code>/vol1/1000/navidrome/Music</code></li>
+</li>
 </ul>
 
 
-<h2 class="relative group">1.3 扫描音乐 
-    <div id="13-%E6%89%AB%E6%8F%8F%E9%9F%B3%E4%B9%90" class="anchor"></div>
+<h1 class="relative group">2. qdtoday中创建自定义通知推送 
+    <div id="2-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#13-%E6%89%AB%E6%8F%8F%E9%9F%B3%E4%B9%90" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#2-qdtoday%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%80%9A%E7%9F%A5%E6%8E%A8%E9%80%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">2.1 创建自定义推送 
+    <div id="21-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#21-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81" aria-label="锚点">#</a>
     </span>        
     
 </h2>
 <ul>
-<li>通过<code>Navidrome</code>界面扫描按钮，手动扫描目录下音乐
+<li><code>工具箱</code> -&gt; <code>自定义推送</code>
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./2.png" alt="image.png" />
       
     </figure>
-</li>
-</ul>
 
-
-<h1 class="relative group">2. 安装客户端音流 
-    <div id="2-%E5%AE%89%E8%A3%85%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%9F%B3%E6%B5%81" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E5%AE%89%E8%A3%85%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%9F%B3%E6%B5%81" aria-label="锚点">#</a>
-    </span>        
-    
-</h1>
-<blockquote>
-<p>音流是一款 NAS 音乐播放器，可以连接到您部署在 NAS 上的音乐服务，能让您在不同平台享受一致的音乐盛宴。</p>
-<p>在使用音流之前，您必须拥有一台运行着音乐服务的 NAS，因为音流是一个纯粹的音乐播放器，专注于串流您已拥有的音乐，并不提供任何音乐资料。</p>
-</blockquote>
-<ul>
-<li>下载地址：<a href="https://music.aqzscn.cn/docs/versions/latest/" target="_blank">音流</a>
-<ul>
-<li>安卓手机版本：Arm64</li>
-</ul>
-</li>
-</ul>
-
-
-<h2 class="relative group">2.1 配置音乐库源 
-    <div id="21-%E9%85%8D%E7%BD%AE%E9%9F%B3%E4%B9%90%E5%BA%93%E6%BA%90" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#21-%E9%85%8D%E7%BD%AE%E9%9F%B3%E4%B9%90%E5%BA%93%E6%BA%90" aria-label="锚点">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>主页选择音乐库源为: <code>Navidrome</code>
-<ul>
-<li>填写外网可以访问的<code>Navidrome</code>地址</li>
-<li>填写用户名/密码
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="./3.png" alt="image.png" />
       
     </figure>
 </li>
+<li>配置gotify的地址以及token
+<ul>
+<li><code>t</code>：标题</li>
+<li><code>log</code>：通知内容
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./4.png" alt="image.png" />
+      
+    </figure>
+</li>
 </ul>
 </li>
 </ul>
-<p>尽情享受吧~</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># POST Url</span>
+</span></span><span class="line"><span class="cl">https://gotify.xxx.xxx/message?token<span class="o">=</span>xxxxxxx
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Post Data</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;title&#34;</span>:<span class="s2">&#34;QDToday-{t}&#34;</span>,<span class="s2">&#34;message&#34;</span>:<span class="s2">&#34;{log}&#34;</span>,<span class="s2">&#34;priority&#34;</span>:0<span class="o">}</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">2.2 开启自定义推送 
+    <div id="22-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#22-%E5%BC%80%E5%90%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A8%E9%80%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li><code>工具箱</code> -&gt; <code>推送设置</code>
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./5.png" alt="image.png" />
+      
+    </figure>
+</li>
+<li>勾选自定义推送以及任务结果通知
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./6.png" alt="image.png" />
+      
+    </figure>
+</li>
+</ul>
 
           
           
@@ -1791,7 +1751,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://Wercurial.github.io/tools/20240921-1/&amp;subject=FnOS%e7%8e%af%e5%a2%83%e4%b8%8b%e9%80%9a%e8%bf%87docker%e5%ae%89%e8%a3%85%e9%9f%b3%e4%b9%90%e7%bb%84%e4%bb%b6Navidrome%e5%8f%8a%e9%9f%b3%e6%b5%81"
+      href="mailto:?body=https://Wercurial.github.io/tools/20240918-1/&amp;subject=QD%e6%a1%86%e6%9e%b6%e9%85%8d%e7%bd%aegotify%e9%80%9a%e7%9f%a5"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1814,151 +1774,6 @@
 
 <h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2>
 <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-  
-  
-
-  <a href="/tools/20240920-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/tools/20240920-1/">FnOS环境下手动下载huggingface的immich模型并替换</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-09-20 00:00:00 &#43;0000 UTC">2024-09-20</time><span class="px-2 text-primary-500">&middot;</span><span>999 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nas/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nas
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/fnos/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Fnos
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/immich/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Immich
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/models/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Models
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
   
   
 
@@ -2236,288 +2051,6 @@
   
   
 
-  <a href="/tools/20240918-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/tools/20240918-1/">QD框架配置gotify通知</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-09-18 00:00:00 &#43;0000 UTC">2024-09-18</time><span class="px-2 text-primary-500">&middot;</span><span>210 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nas/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nas
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/qdtoday/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Qdtoday
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gofity/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Gofity
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/sendmessage/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Sendmessage
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/hugos/20240825-2/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/hugos/20240825-2/">hugo博客-blowfish主题添加音乐组件</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-08-25 00:00:00 &#43;0000 UTC">2024-08-25</time><span class="px-2 text-primary-500">&middot;</span><span>889 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hugo
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blowfish
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/music/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Music
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
   <a href="/kubernetes/20240915-1/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
@@ -2661,6 +2194,441 @@
   </a>
 
   
+  
+
+  <a href="/kubernetes/20240913-1/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/kubernetes/20240913-1/">ConfigMap使用</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-13 00:00:00 &#43;0000 UTC">2024-09-13</time><span class="px-2 text-primary-500">&middot;</span><span>429 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/configmap/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Configmap
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cm/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cm
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/path/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Path
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/devops/20240911-2/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/devops/20240911-2/">Devops之ArgoCD部署</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">2024-09-11</time><span class="px-2 text-primary-500">&middot;</span><span>2118 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cd
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/devops/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Devops
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/argocd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Argocd
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/devops/20240911-1/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/devops/20240911-1/">Devops之CI三种触发构建</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">2024-09-11</time><span class="px-2 text-primary-500">&middot;</span><span>762 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ci/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Ci
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/build/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Build
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/auto/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Auto
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
 </section>
 
   
@@ -2674,8 +2642,8 @@
           
         
       <script>
-        var oid = "views_tools\/20240921-1\/index.md"
-        var oid_likes = "likes_tools\/20240921-1\/index.md"
+        var oid = "views_tools\/20240918-1\/index.md"
+        var oid_likes = "likes_tools\/20240918-1\/index.md"
       </script>
       
       
@@ -2698,7 +2666,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/tools/20240928-2/">
+            <a class="flex group mr-3" href="/tools/20240920-1/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2710,11 +2678,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >FnOS环境下通过docker安装虚拟组网工具Tailscale</span
+                  >FnOS环境下手动下载huggingface的immich模型并替换</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-09-28 00:00:00 &#43;0000 UTC">2024-09-28</time>
+                    <time datetime="2024-09-20 00:00:00 &#43;0000 UTC">2024-09-20</time>
                   
                 </span>
               </span>
@@ -2723,15 +2691,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/tools/20240920-1/">
+            <a class="flex text-right group ml-3" href="/tools/20240917-1/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >FnOS环境下手动下载huggingface的immich模型并替换</span
+                  >FnOS-NAS部署配置homepage</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-09-20 00:00:00 &#43;0000 UTC">2024-09-20</time>
+                    <time datetime="2024-09-17 00:00:00 &#43;0000 UTC">2024-09-17</time>
                   
                 </span>
               </span>
