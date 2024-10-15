@@ -107,7 +107,7 @@
     "keywords": ["os","Linux","virtual"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1689"
+    "wordCount": "1854"
   }]
   </script>
 
@@ -1283,7 +1283,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-28 00:00:00 &#43;0000 UTC">2024-09-28</time><span class="px-2 text-primary-500">&middot;</span><span>1689 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-28 00:00:00 &#43;0000 UTC">2024-09-28</time><span class="px-2 text-primary-500">&middot;</span><span>1854 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1524,7 +1524,12 @@
             <li><a href="#321-虚拟机网卡配置">3.2.1 虚拟机网卡配置</a></li>
             <li><a href="#322-重启网络服务">3.2.2 重启网络服务</a></li>
             <li><a href="#323-设置主机名">3.2.3 设置主机名</a></li>
-            <li><a href="#324-配置yum源">3.2.4 配置yum源</a></li>
+            <li><a href="#324-配置yum源">3.2.4 配置yum源</a>
+              <ul>
+                <li><a href="#3241-华为源">3.2.4.1 华为源</a></li>
+                <li><a href="#3242-网络下载源">3.2.4.2 网络下载源</a></li>
+              </ul>
+            </li>
             <li><a href="#325-关闭防火墙">3.2.5 关闭防火墙</a></li>
           </ul>
         </li>
@@ -1588,7 +1593,12 @@
             <li><a href="#321-虚拟机网卡配置">3.2.1 虚拟机网卡配置</a></li>
             <li><a href="#322-重启网络服务">3.2.2 重启网络服务</a></li>
             <li><a href="#323-设置主机名">3.2.3 设置主机名</a></li>
-            <li><a href="#324-配置yum源">3.2.4 配置yum源</a></li>
+            <li><a href="#324-配置yum源">3.2.4 配置yum源</a>
+              <ul>
+                <li><a href="#3241-华为源">3.2.4.1 华为源</a></li>
+                <li><a href="#3242-网络下载源">3.2.4.2 网络下载源</a></li>
+              </ul>
+            </li>
             <li><a href="#325-关闭防火墙">3.2.5 关闭防火墙</a></li>
           </ul>
         </li>
@@ -2154,6 +2164,88 @@
     </span>        
     
 </h3>
+
+
+<h4 class="relative group">3.2.4.1 华为源 
+    <div id="3241-%E5%8D%8E%E4%B8%BA%E6%BA%90" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3241-%E5%8D%8E%E4%B8%BA%E6%BA%90" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li><code>/etc/yum.repos.d/CentOS-Base.repo</code>
+<ul>
+<li>推荐：采用华为源</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># CentOS-Base.repo</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># The mirror system uses the connecting IP address of the client and the</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># update status of each mirror to pick mirrors that are updated to and</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># geographically close to the client.  You should use this for CentOS updates</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># unless you are manually picking other mirrors.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># If the mirrorlist= does not work for you, as a fall back you can try the </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># remarked out baseurl= line instead.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[base]</span>
+</span></span><span class="line"><span class="cl"><span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Base - repo.huaweicloud.com</span>
+</span></span><span class="line"><span class="cl"><span class="na">baseurl</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/$releasever/os/$basearch/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgkey</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#released updates </span>
+</span></span><span class="line"><span class="cl"><span class="k">[updates]</span>
+</span></span><span class="line"><span class="cl"><span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Updates - repo.huaweicloud.com</span>
+</span></span><span class="line"><span class="cl"><span class="na">baseurl</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/$releasever/updates/$basearch/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgkey</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#additional packages that may be useful</span>
+</span></span><span class="line"><span class="cl"><span class="k">[extras]</span>
+</span></span><span class="line"><span class="cl"><span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Extras - repo.huaweicloud.com</span>
+</span></span><span class="line"><span class="cl"><span class="na">baseurl</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/$releasever/extras/$basearch/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgkey</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#additional packages that extend functionality of existing packages</span>
+</span></span><span class="line"><span class="cl"><span class="k">[centosplus]</span>
+</span></span><span class="line"><span class="cl"><span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Plus - repo.huaweicloud.com</span>
+</span></span><span class="line"><span class="cl"><span class="na">baseurl</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/$releasever/centosplus/$basearch/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#mirrorlist=https://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+</span></span><span class="line"><span class="cl"><span class="na">enabled</span><span class="o">=</span><span class="s">0</span>
+</span></span><span class="line"><span class="cl"><span class="na">gpgkey</span><span class="o">=</span><span class="s">https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-7</span>
+</span></span></code></pre></div><ul>
+<li>更新</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum clean all
+</span></span><span class="line"><span class="cl">yum makecache
+</span></span></code></pre></div>
+
+<h4 class="relative group">3.2.4.2 网络下载源 
+    <div id="3242-%E7%BD%91%E7%BB%9C%E4%B8%8B%E8%BD%BD%E6%BA%90" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3242-%E7%BD%91%E7%BB%9C%E4%B8%8B%E8%BD%BD%E6%BA%90" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>备用</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bk
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> /etc/yum.repos.d
 </span></span><span class="line"><span class="cl">
