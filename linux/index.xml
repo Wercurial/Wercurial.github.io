@@ -7,7 +7,196 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 古德</copyright>
-    <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS物理机通过KVM安装虚拟机</title>
+      <link>https://Wercurial.github.io/linux/20240928-1/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/linux/20240928-1/</guid>
+      <description>&lt;p&gt;！！！仅供参考，如有数据丢失，网络损坏，概不负责&lt;/p&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;1. 安装KVM 
+    &lt;div id=&#34;1-%E5%AE%89%E8%A3%85kvm&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-%E5%AE%89%E8%A3%85kvm&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;1.1 安装kvm及初始化操作 
+    &lt;div id=&#34;11-%E5%AE%89%E8%A3%85kvm%E5%8F%8A%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#11-%E5%AE%89%E8%A3%85kvm%E5%8F%8A%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;qemu-kvm:
+&lt;ul&gt;
+&lt;li&gt;提供对cpu，内存（KVM负责），IO设备（QEMU负责）的虚拟。[弥补 KVM 的缺陷. 同时提高 QEMU 虚拟出来的虚拟硬件设备性能]&lt;/li&gt;
+&lt;li&gt;对各种虚拟设备的创建，调用进行管理（QEMU负责）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;libvirt:
+&lt;ul&gt;
+&lt;li&gt;由应用程序编程接口库、libvirtd 守护进程、virsh CLI 组成. 其中 libvirtd 守护进程负责调度管理虚拟机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;virt-install:
+&lt;ul&gt;
+&lt;li&gt;一个命令行工具，能够为KVM、Xen或其它支持libvrit API的hypervisor创建虚拟机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl stop firewalld
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setenforce &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yum -y install qemu-kvm libvirt virt-install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;通过命令查看&lt;code&gt;qemu-img&lt;/code&gt;是否安装成功，出现版本号等信息，说明成功
+
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./1.png&#34; alt=&#34;image.png&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;2. 安装虚拟机 
+    &lt;div id=&#34;2-%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2-%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.1 创建虚拟机磁盘 
+    &lt;div id=&#34;21-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A3%81%E7%9B%98&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#21-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%A3%81%E7%9B%98&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;centos-01：对应虚拟机名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-img create -f qcow2 ./centos-01.qcow2 300G
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.2 创建虚拟机 
+    &lt;div id=&#34;22-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#22-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;-r: 对应内存&lt;/li&gt;
+&lt;li&gt;&amp;ndash;vcpus：对应核数&lt;/li&gt;
+&lt;li&gt;&amp;ndash;disk：对应虚拟机硬盘位置&lt;/li&gt;
+&lt;li&gt;centos-01：对应虚拟机名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;virt-install -n centos-01 -r &lt;span class=&#34;m&#34;&gt;12288&lt;/span&gt; --vcpus &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; --disk ./centos-01.qcow2 --location /home/data1/CentOS-7-x86_64-DVD-2009.iso --nographics --network &lt;span class=&#34;nv&#34;&gt;bridge&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;br0 --network &lt;span class=&#34;nv&#34;&gt;bridge&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;br0 --os-type linux --os-variant rhel7 --console pty,target_type&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;serial --extra-args &lt;span class=&#34;s1&#34;&gt;&amp;#39;console=ttyS0,115200n8 serial&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 class=&#34;relative group&#34;&gt;2.2.1 从已有硬盘启动（第一次创建，无需使用） 
+    &lt;div id=&#34;221-%E4%BB%8E%E5%B7%B2%E6%9C%89%E7%A1%AC%E7%9B%98%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%88%9B%E5%BB%BA%E6%97%A0%E9%9C%80%E4%BD%BF%E7%94%A8&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#221-%E4%BB%8E%E5%B7%B2%E6%9C%89%E7%A1%AC%E7%9B%98%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%88%9B%E5%BB%BA%E6%97%A0%E9%9C%80%E4%BD%BF%E7%94%A8&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;virt-install -n centos-01 -r 12288 --vcpus 4 --disk ./centos-01.qcow2  --nographics --network bridge=br0 --boot hd  --virt-type kvm --network bridge=br0 --noautoconsole --autostart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 class=&#34;relative group&#34;&gt;2.3 安装过程配置 
+    &lt;div id=&#34;23-%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E9%85%8D%E7%BD%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#23-%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E9%85%8D%E7%BD%AE&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;2.3.1 设置时区 
+    &lt;div id=&#34;231-%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#231-%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2-&amp;gt;1-&amp;gt;2-&amp;gt;65
+
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./2.png&#34; alt=&#34;image.png&#34; /&gt;
+      
+    &lt;/figure&gt;
+
+
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./3.png&#34; alt=&#34;image.png&#34; /&gt;
+      
+    &lt;/figure&gt;
+
+
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./4.png&#34; alt=&#34;image.png&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;2.3.2 设置磁盘分区 
+    &lt;div id=&#34;232-%E8%AE%BE%E7%BD%AE%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#232-%E8%AE%BE%E7%BD%AE%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;./5.png&#34; alt=&#34;image.png&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Gitlab-ce中文版安装及维护</title>
       <link>https://Wercurial.github.io/linux/20240329-2/</link>
