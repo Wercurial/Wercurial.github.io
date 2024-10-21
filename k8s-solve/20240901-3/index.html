@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","solve","containerd","question"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "990"
+    "wordCount": "1150"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">2024-09-01</time><span class="px-2 text-primary-500">&middot;</span><span>990 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">2024-09-01</time><span class="px-2 text-primary-500">&middot;</span><span>1150 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1521,6 +1521,12 @@
         </li>
       </ul>
     </li>
+    <li><a href="#5-ubuntu系统重启后导致docker启动失败">5. ubuntu系统重启后导致docker启动失败</a>
+      <ul>
+        <li><a href="#51-报错信息">5.1 报错信息</a></li>
+        <li><a href="#52-临时解决方案">5.2 临时解决方案</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1556,6 +1562,12 @@
             </li>
           </ul>
         </li>
+      </ul>
+    </li>
+    <li><a href="#5-ubuntu系统重启后导致docker启动失败">5. ubuntu系统重启后导致docker启动失败</a>
+      <ul>
+        <li><a href="#51-报错信息">5.1 报错信息</a></li>
+        <li><a href="#52-临时解决方案">5.2 临时解决方案</a></li>
       </ul>
     </li>
   </ul>
@@ -1850,6 +1862,59 @@
 <ul>
 <li>具体升级方案参考《Centos7内核升级》一文</li>
 </ul>
+
+
+<h1 class="relative group">5. ubuntu系统重启后导致docker启动失败 
+    <div id="5-ubuntu%E7%B3%BB%E7%BB%9F%E9%87%8D%E5%90%AF%E5%90%8E%E5%AF%BC%E8%87%B4docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-ubuntu%E7%B3%BB%E7%BB%9F%E9%87%8D%E5%90%AF%E5%90%8E%E5%AF%BC%E8%87%B4docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+<ul>
+<li>ubuntu版本：<code>Ubuntu 22.04.1 LTS</code></li>
+<li>内核：<code>5.15.0-124-generic</code></li>
+<li>docker配置：<code>/etc/docker/daemon.json</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="na">{</span>
+</span></span><span class="line"><span class="cl"><span class="na">&#34;graph&#34;: &#34;/data/docker&#34;,</span>
+</span></span><span class="line"><span class="cl"><span class="na">&#34;exec-opts&#34;: [&#34;native.cgroupdriver</span><span class="o">=</span><span class="s">systemd&#34;],</span>
+</span></span><span class="line"><span class="cl"><span class="na">&#34;hosts&#34;: [&#34;tcp://0.0.0.0:2375&#34;, &#34;unix:///var/run/docker.sock&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="na">}</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">5.1 报错信息 
+    <div id="51-%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#51-%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>错误信息指出：cgroup的挂载点不存在</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Error response from daemon: cgroups: cgroup mountpoint does not exist: unknown
+</span></span></code></pre></div>
+
+<h2 class="relative group">5.2 临时解决方案 
+    <div id="52-%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#52-%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<pre tabindex="0"><code>sudo mkdir /sys/fs/cgroup/systemd
+sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+</code></pre>
           
           
           
@@ -2174,6 +2239,151 @@
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Namespace
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/kubernetes/20240713-2/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/kubernetes/20240713-2/">K8S集群通过velero备份及还原</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>1761 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Kubernetes
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/velero/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Velero
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/backup/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Backup
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/restore/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Restore
   </span>
 </span>
   </span>
@@ -2601,143 +2811,6 @@
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Mem
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/volume-solve/20230311-1/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/2_hu1635824069494699803.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/volume-solve/20230311-1/">PVC误删除后恢复操作</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2023-03-11 00:00:00 &#43;0000 UTC">2023-03-11</time><span class="px-2 text-primary-500">&middot;</span><span>275 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/kubernetes/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Kubernetes
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pvc/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Pvc
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/volume/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Volume
   </span>
 </span>
   </span>

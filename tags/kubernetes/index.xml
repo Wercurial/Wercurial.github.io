@@ -1330,6 +1330,27 @@
     </item>
     
     <item>
+      <title>K8S集群通过velero备份及还原</title>
+      <link>https://Wercurial.github.io/kubernetes/20240713-2/</link>
+      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/kubernetes/20240713-2/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;0. 前言 
+    &lt;div id=&#34;0-%E5%89%8D%E8%A8%80&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#0-%E5%89%8D%E8%A8%80&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;相比其他传统备份工具，Velero 并不仅仅备份存储数据，它还能够备份 Kubernetes 中的应用状态和集群资源。Kubernetes 集群中的资源包括 Pod、Service、ConfigMap、Ingress 等，它们共同定义了应用的状态和行为。Velero 可以将这些资源与持久化卷（Persistent Volume，PV）的数据一起备份，保证整个应用环境的完整性.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Windows通过KTConnect连接服务器K8S集群</title>
       <link>https://Wercurial.github.io/kubernetes/20240713-1/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>

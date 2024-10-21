@@ -109,3 +109,24 @@ Normal   Scheduled                 7m19s                  default-scheduler  Suc
 #### 4.3.2 升级内核版本-4.x（永久解决）
 - 具体升级方案参考《Centos7内核升级》一文
 
+# 5. ubuntu系统重启后导致docker启动失败
+- ubuntu版本：`Ubuntu 22.04.1 LTS`
+- 内核：`5.15.0-124-generic`
+- docker配置：`/etc/docker/daemon.json`
+```ini
+{
+"graph": "/data/docker",
+"exec-opts": ["native.cgroupdriver=systemd"],
+"hosts": ["tcp://0.0.0.0:2375", "unix:///var/run/docker.sock"]
+}
+```
+## 5.1 报错信息
+- 错误信息指出：cgroup的挂载点不存在
+```bash
+Error response from daemon: cgroups: cgroup mountpoint does not exist: unknown
+```
+## 5.2 临时解决方案
+```
+sudo mkdir /sys/fs/cgroup/systemd
+sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+```
