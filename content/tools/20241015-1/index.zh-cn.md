@@ -7,6 +7,7 @@ type: 'blog'
 ---
 
 ！！！使用旧笔记本电脑安装以前，务必将所有资料备份完毕，再行格式化安装！！！
+！！！旧笔记本需注意电池安全，防止起火！！！
 # 1. 安装FnOS
 - 通过官网教程制作引导盘并安装：[如何安装和初始化飞牛私有云 fnOS？](https://help.fnnas.com/articles/fnosV1/start/install-os.md)
 
@@ -92,3 +93,39 @@ LidSwitchIgnoreInhibited=yes
 ```
 ## 3.2 重启
 - 重启系统后，可以看到笔记本合盖也不会休眠了
+
+# 4. 设置将笔记本电池当作UPS
+## 4.1 安装upower
+- 安装upower来管理电池
+```bash
+api install upower
+```
+
+## 4.2 设置upower开机自启
+- 通过systemctl设置开机自启
+```bash
+systemctl enable upower
+```
+
+## 4.3 自定义upower配置
+- 自定义电池电量与开关机
+```bash
+# 进入upower配置目录
+cd /etc/UPower
+```
+- 修改配置：`vim /etc/UPower/UPower.conf`
+```ini
+# 设置电量低于多少时，自动关机
+PercentageLow=40 # <=40% 低电量
+PercentageCritical=30 # <=30% 警告电量
+PercentageAction=20 # <=20% 执行动作（即CriticalPowerAction)的电量
+
+# 当电量过低时，执行
+CriticalPowerAction=Poweroff # (在本示例中是电量<=20%）执行关机，以此保护硬盘
+```
+
+## 4.4 查看状态
+- 查看upower服务状态
+```bash
+systemctl status upower
+```

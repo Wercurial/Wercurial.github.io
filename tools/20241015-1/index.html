@@ -92,7 +92,7 @@
     "name": "ThinkPad E555（amd）安装FnOS并进行相关配置",
     "headline": "ThinkPad E555（amd）安装FnOS并进行相关配置",
     "description": "ThinkPad E555（amd）安装FnOS并进行相关配置",
-    "abstract": "\u003cp\u003e！！！使用旧笔记本电脑安装以前，务必将所有资料备份完毕，再行格式化安装！！！\u003c\/p\u003e",
+    "abstract": "\u003cp\u003e！！！使用旧笔记本电脑安装以前，务必将所有资料备份完毕，再行格式化安装！！！\n！！！旧笔记本需注意电池安全，防止起火！！！\u003c\/p\u003e",
     "inLanguage": "zh-cn",
     "url" : "https:\/\/Wercurial.github.io\/tools\/20241015-1\/",
     "author" : {
@@ -108,7 +108,7 @@
     "keywords": ["nas","fnos","debian","network"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "816"
+    "wordCount": "1083"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-15 00:00:00 &#43;0000 UTC">2024-10-15</time><span class="px-2 text-primary-500">&middot;</span><span>816 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-10-15 00:00:00 &#43;0000 UTC">2024-10-15</time><span class="px-2 text-primary-500">&middot;</span><span>1083 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1518,6 +1518,14 @@
         <li><a href="#32-重启">3.2 重启</a></li>
       </ul>
     </li>
+    <li><a href="#4-设置将笔记本电池当作ups">4. 设置将笔记本电池当作UPS</a>
+      <ul>
+        <li><a href="#41-安装upower">4.1 安装upower</a></li>
+        <li><a href="#42-设置upower开机自启">4.2 设置upower开机自启</a></li>
+        <li><a href="#43-自定义upower配置">4.3 自定义upower配置</a></li>
+        <li><a href="#44-查看状态">4.4 查看状态</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1550,6 +1558,14 @@
       <ul>
         <li><a href="#31-更改配置">3.1 更改配置</a></li>
         <li><a href="#32-重启">3.2 重启</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-设置将笔记本电池当作ups">4. 设置将笔记本电池当作UPS</a>
+      <ul>
+        <li><a href="#41-安装upower">4.1 安装upower</a></li>
+        <li><a href="#42-设置upower开机自启">4.2 设置upower开机自启</a></li>
+        <li><a href="#43-自定义upower配置">4.3 自定义upower配置</a></li>
+        <li><a href="#44-查看状态">4.4 查看状态</a></li>
       </ul>
     </li>
   </ul>
@@ -1633,7 +1649,8 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>！！！使用旧笔记本电脑安装以前，务必将所有资料备份完毕，再行格式化安装！！！</p>
+          <p>！！！使用旧笔记本电脑安装以前，务必将所有资料备份完毕，再行格式化安装！！！
+！！！旧笔记本需注意电池安全，防止起火！！！</p>
 
 
 <h1 class="relative group">1. 安装FnOS 
@@ -1890,6 +1907,93 @@
 <li>重启系统后，可以看到笔记本合盖也不会休眠了</li>
 </ul>
 
+
+<h1 class="relative group">4. 设置将笔记本电池当作UPS 
+    <div id="4-%E8%AE%BE%E7%BD%AE%E5%B0%86%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E6%B1%A0%E5%BD%93%E4%BD%9Cups" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-%E8%AE%BE%E7%BD%AE%E5%B0%86%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E6%B1%A0%E5%BD%93%E4%BD%9Cups" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
+
+
+<h2 class="relative group">4.1 安装upower 
+    <div id="41-%E5%AE%89%E8%A3%85upower" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#41-%E5%AE%89%E8%A3%85upower" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>安装upower来管理电池</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">api install upower
+</span></span></code></pre></div>
+
+<h2 class="relative group">4.2 设置upower开机自启 
+    <div id="42-%E8%AE%BE%E7%BD%AEupower%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#42-%E8%AE%BE%E7%BD%AEupower%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>通过systemctl设置开机自启</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> upower
+</span></span></code></pre></div>
+
+<h2 class="relative group">4.3 自定义upower配置 
+    <div id="43-%E8%87%AA%E5%AE%9A%E4%B9%89upower%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#43-%E8%87%AA%E5%AE%9A%E4%B9%89upower%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>自定义电池电量与开关机</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 进入upower配置目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /etc/UPower
+</span></span></code></pre></div><ul>
+<li>修改配置：<code>vim /etc/UPower/UPower.conf</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># 设置电量低于多少时，自动关机</span>
+</span></span><span class="line"><span class="cl"><span class="na">PercentageLow</span><span class="o">=</span><span class="s">40 # &lt;=40% 低电量</span>
+</span></span><span class="line"><span class="cl"><span class="na">PercentageCritical</span><span class="o">=</span><span class="s">30 # &lt;=30% 警告电量</span>
+</span></span><span class="line"><span class="cl"><span class="na">PercentageAction</span><span class="o">=</span><span class="s">20 # &lt;=20% 执行动作（即CriticalPowerAction)的电量</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 当电量过低时，执行</span>
+</span></span><span class="line"><span class="cl"><span class="na">CriticalPowerAction</span><span class="o">=</span><span class="s">Poweroff # (在本示例中是电量&lt;=20%）执行关机，以此保护硬盘</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">4.4 查看状态 
+    <div id="44-%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#44-%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>查看upower服务状态</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status upower
+</span></span></code></pre></div>
           
           
           
