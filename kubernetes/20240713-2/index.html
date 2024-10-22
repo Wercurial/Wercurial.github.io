@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","velero","backup","restore"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2721"
+    "wordCount": "2883"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>2721 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>2883 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1521,6 +1521,8 @@
         </li>
         <li><a href="#32-还原">3.2 还原</a>
           <ul>
+            <li><a href="#321-锁定备份文件为只读可选">3.2.1 锁定备份文件为只读(可选)</a></li>
+            <li><a href="#322-还原操作">3.2.2 还原操作</a></li>
             <li><a href="#321-将备份资源还原至来源不同的namespace">3.2.1 将备份资源还原至来源不同的namespace</a></li>
           </ul>
         </li>
@@ -1567,6 +1569,8 @@
         </li>
         <li><a href="#32-还原">3.2 还原</a>
           <ul>
+            <li><a href="#321-锁定备份文件为只读可选">3.2.1 锁定备份文件为只读(可选)</a></li>
+            <li><a href="#322-还原操作">3.2.2 还原操作</a></li>
             <li><a href="#321-将备份资源还原至来源不同的namespace">3.2.1 将备份资源还原至来源不同的namespace</a></li>
           </ul>
         </li>
@@ -2024,6 +2028,50 @@
     </span>        
     
 </h2>
+
+
+<h3 class="relative group">3.2.1 锁定备份文件为只读(可选) 
+    <div id="321-%E9%94%81%E5%AE%9A%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%BA%E5%8F%AA%E8%AF%BB%E5%8F%AF%E9%80%89" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#321-%E9%94%81%E5%AE%9A%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6%E4%B8%BA%E5%8F%AA%E8%AF%BB%E5%8F%AF%E9%80%89" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>(备份前操作)查看本地备份资料</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>root@master01:~<span class="o">]</span><span class="c1"># kubectl get backupstoragelocations -A </span>
+</span></span><span class="line"><span class="cl">NAMESPACE   NAME      PHASE       LAST VALIDATED   AGE   DEFAULT
+</span></span><span class="line"><span class="cl">velero      default   Available   49s              21h   <span class="nb">true</span>
+</span></span></code></pre></div><ul>
+<li>(备份前操作)将备份存储位置更新为只读模式（这可以防止在恢复过程中在备份存储位置中创建或删除备份对象）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl patch backupstoragelocation &lt;STORAGE LOCATION NAME&gt; <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --namespace velero <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --type merge <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --patch <span class="s1">&#39;{&#34;spec&#34;:{&#34;accessMode&#34;:&#34;ReadOnly&#34;}}&#39;</span>
+</span></span></code></pre></div><ul>
+<li>(备份后操作)准备就绪后，将备份存储位置恢复为读写模式</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl patch backupstoragelocation &lt;STORAGE LOCATION NAME&gt; <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --namespace velero <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --type merge <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --patch <span class="s1">&#39;{&#34;spec&#34;:{&#34;accessMode&#34;:&#34;ReadWrite&#34;}}&#39;</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">3.2.2 还原操作 
+    <div id="322-%E8%BF%98%E5%8E%9F%E6%93%8D%E4%BD%9C" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#322-%E8%BF%98%E5%8E%9F%E6%93%8D%E4%BD%9C" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
 <ul>
 <li>删除集群中已经存在的<code>Postgres</code>的deployment及其pvc</li>
 <li>恢复命令</li>

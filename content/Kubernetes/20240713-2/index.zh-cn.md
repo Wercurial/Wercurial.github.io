@@ -183,6 +183,31 @@ velero backup create backup-k8s-test --include-namespaces test
 ```
 
 ## 3.2 还原
+### 3.2.1 锁定备份文件为只读(可选)
+- (备份前操作)查看本地备份资料
+```bash
+[root@master01:~]# kubectl get backupstoragelocations -A 
+NAMESPACE   NAME      PHASE       LAST VALIDATED   AGE   DEFAULT
+velero      default   Available   49s              21h   true
+```
+
+- (备份前操作)将备份存储位置更新为只读模式（这可以防止在恢复过程中在备份存储位置中创建或删除备份对象）
+```bash
+kubectl patch backupstoragelocation <STORAGE LOCATION NAME> \
+    --namespace velero \
+    --type merge \
+    --patch '{"spec":{"accessMode":"ReadOnly"}}'
+```
+
+- (备份后操作)准备就绪后，将备份存储位置恢复为读写模式
+```bash
+kubectl patch backupstoragelocation <STORAGE LOCATION NAME> \
+   --namespace velero \
+   --type merge \
+   --patch '{"spec":{"accessMode":"ReadWrite"}}'
+```
+
+### 3.2.2 还原操作
 - 删除集群中已经存在的`Postgres`的deployment及其pvc
 - 恢复命令
 ```bash
