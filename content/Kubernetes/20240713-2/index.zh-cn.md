@@ -194,7 +194,15 @@ velero restore create --from-backup backup-k8s-test --include-namespaces test
 - 最后按照原先集群中的`Postgres`状态恢复
 ![image.png](./7.png)
 
+### 3.2.1 将备份资源还原至来源不同的namespace
+- velero可以将资源还原到与其备份来源不同的命名空间中。
+  - 通过使用`–namespace-mappings`
+```bash
+velero restore create RESTORE_NAME --from-backup BACKUP_NAME --namespace-mappings old-ns-1:new-ns-1,old-ns-2:new-ns-2
+```
+
 ## 3.3 定时备份
+`设置定时备份前，请注意服务器时间与velero内部时间是否一致，比如本例中设置了cst凌晨2点进行备份，但因为容器内部时间为utc时间，因此到了cst10点才开始备份，需要注意这个坑，解决方案（方案一：部署velero时指定时区为cst；方案二：将utc时间转换为cst时间去设置定时任务）`
 - 设置定时任务，每天凌晨2点进行备份
   - velero schedule create backup-k8s-all：这部分是命令的开头，它告诉 Velero 要创建一个新的备份调度任务，并将这个任务命名为 k8s-dev。
   - --schedule="0 2 * * *"：这个参数指定了备份任务的调度时间。它使用的是一个 cron 表达式，用于定义任务应该何时运行。在这个例子中，0 2 * * * 的含义是每天的凌晨 2 点执行一次备份。cron 表达式的格式通常是 分钟 小时 日 月 星期，其中星号（*）表示任意值。
@@ -203,3 +211,62 @@ velero restore create --from-backup backup-k8s-test --include-namespaces test
 ```bash
 velero schedule create backup-k8s-all --schedule="0 2 * * *"  --exclude-resources pods --ttl 240h
 ```
+
+## 3.4 查看备份资源
+- 查看普通备份
+```bash
+velero get backup
+```
+![image.png](./8.png)
+
+- 查看定时备份
+```bash
+velero get schedule
+```
+![image.png](./9.png)
+
+- 查看已有恢复
+```bash
+velero get restore
+```
+![image.png](./10.png)
+
+- 查看插件
+```bash
+velero get plugins
+```
+![image.png](./11.png)
+
+- 批量删除定时备份的所有备份
+```bash
+velero backup get --selector velero.io/schedule-name=backup-k8s-xxx | awk 'NR>1{print $1}' | xargs -I % velero backup delete % --confirm
+```
+
+- 删除定时备份任务
+```bash
+velero schedule delete backup-k8s-xxx
+```
+
+# 4. 卸载velero
+- 卸载
+```bash
+kubectl delete namespace/velero clusterrolebinding/velero
+kubectl delete crds -l component=velero
+```
+
+# 5. 注意事项
+备份前注意：
+- 在velero备份的时候，备份过程中创建的对象是不会被备份的
+- 可以将velero作为一个cronjob来运行，定期备份数据
+- velero restore 恢复`不会覆盖已有的资源`，只恢复当前集群中不存在的资源。已有的资源不会回滚到之前的版本，如需要回滚，需在restore之前提前删除现有的资源
+- restore： 对历史备份的 Kubernetes 资源对象和持久卷进行还原，且允许按需选择指定部分资源对象还原到指定命名空间（namespace）中。且可以选择在备份还原期间或还原后执行 restore hook 操作（比如：执行自定义数据库的还原操作之后，再执行数据库应用容器启动动作）
+
+Tips： 默认情况下，Velero 进行的是非破坏性还原操作（non-destructive restore），这意味着它不会删除目标集群上的任何数据，即如果备份中的资源对象已经存在于目标集群中，restore 操作将会跳过该资源的还原。当然，也可通配置更新策略 (`–existing-resource-policy=update`)，尝试更新目标集群中已存在资源，以匹配备份中的资源数据
+- 备份使用volumes的Pod，需要给Pod加上注解
+- 备份时禁用快照，可指定参数–snapshot-volumes=false
+- [各云厂商Volumes快照插件](https://velero.io/plugins/)
+
+使用 Velero 跨集群迁移资源，确保如下检查工作:
+- 确保镜像资源在迁移后可以正常拉取
+- 确保`两个集群`的 K8S 版本的 API 兼容，最好是`相同版本`
+- 绑定集群外部资源的无法迁移，例如 LoadBalancer 类型的service，创建备份建议忽略
