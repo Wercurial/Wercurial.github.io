@@ -108,7 +108,7 @@
     "keywords": ["Kubernetes","velero","backup","restore"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2883"
+    "wordCount": "2962"
   }]
   </script>
 
@@ -1284,7 +1284,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>2883 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-07-13 00:00:00 &#43;0000 UTC">2024-07-13</time><span class="px-2 text-primary-500">&middot;</span><span>2962 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -2110,6 +2110,7 @@
 <li>velero可以将资源还原到与其备份来源不同的命名空间中。
 <ul>
 <li>通过使用<code>–namespace-mappings</code></li>
+<li>需要注意的是，需提前创建好与<code>旧pvc</code>及<code>旧pv</code>同名的<code>新pvc</code>及<code>新pv</code>，否则velero会创建绑定<code>旧pv</code>的<code>新pvc</code>，导致<code>新pvc</code>绑定已经被<code>旧pvc</code>绑定的<code>旧pv</code>失败</li>
 </ul>
 </li>
 </ul>

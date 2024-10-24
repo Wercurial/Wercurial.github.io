@@ -222,6 +222,7 @@ velero restore create --from-backup backup-k8s-test --include-namespaces test
 ### 3.2.1 将备份资源还原至来源不同的namespace
 - velero可以将资源还原到与其备份来源不同的命名空间中。
   - 通过使用`–namespace-mappings`
+  - 需要注意的是，需提前创建好与`旧pvc`及`旧pv`同名的`新pvc`及`新pv`，否则velero会创建绑定`旧pv`的`新pvc`，导致`新pvc`绑定已经被`旧pvc`绑定的`旧pv`失败
 ```bash
 velero restore create RESTORE_NAME --from-backup BACKUP_NAME --namespace-mappings old-ns-1:new-ns-1,old-ns-2:new-ns-2
 ```
