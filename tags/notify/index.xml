@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notify on 云一二三</title>
+    <link>https://Wercurial.github.io/tags/notify/</link>
+    <description>Recent content in Notify on 云一二三</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 古德</copyright>
+    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Wercurial.github.io/tags/notify/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gotify部署使用</title>
+      <link>https://Wercurial.github.io/tools/20240917-2/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://Wercurial.github.io/tools/20240917-2/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;1. 介绍 
+    &lt;div id=&#34;1-%E4%BB%8B%E7%BB%8D&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#1-%E4%BB%8B%E7%BB%8D&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gotify/server&#34; target=&#34;_blank&#34;&gt;gotify&lt;/a&gt;: Gotify是一个极简的免费开源消息推送服务器。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
