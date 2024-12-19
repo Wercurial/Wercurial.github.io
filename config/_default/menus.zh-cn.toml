@@ -160,13 +160,13 @@
 [[main]]
   identifier = "github"
   pre = "github"
-  url = "https://github.com/Wercurial"
+  url = "https://github.com/wjp-cn"
   weight = 400
 
 [[main]]
   identifier = "rss"
   pre = "rss"
-  url = "https://wercurial.github.io/index.xml"
+  url = "https://wjp-cn.github.io/index.xml"
   weight = 400
 
 
